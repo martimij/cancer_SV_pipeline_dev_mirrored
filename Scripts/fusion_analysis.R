@@ -498,17 +498,15 @@ samples$local_VCF_path <- sapply(1:dim(samples)[1], function(x){
 
 # Extract SVs overlapping fusion-related transcripts ("samples" list is already based on non-excluded samples)
 fusions <- lapply(samples$local_VCF_path, getSVsInTranscripts, transcripts_fusion$transcript_ID)
-fusions <- rbind_all(fusions)  # empty
+fusions <- rbind_all(fusions)
 
 
 
 ##### Summary of extracted SVs ##### 
 
-# Read RData with extracted SVs
-load("./Data/fusions.RData")  # fusions object
-
 # Summary by sample
-table(fusions$SAMPLE_WELL_ID)  # transl counted twice
+table((fusions %>% filter(Application == "Manta") %>% pull(SAMPLE_WELL_ID)))  # transl counted twice
+length(unique((fusions %>% filter(Application == "Manta") %>% pull(SAMPLE_WELL_ID))))  # 18
 
 # Summary by type and filter
 table(fusions$SVTYPE, fusions$FILTER, exclude = NULL)
