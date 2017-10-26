@@ -502,32 +502,192 @@ fusions <- rbind_all(fusions)
 
 
 
-##### Summary of extracted SVs ##### 
+#### Add gene names to extracted fusions ####
 
-# Summary by sample
-table((fusions %>% filter(Application == "Manta") %>% pull(SAMPLE_WELL_ID)))  # transl counted twice
-length(unique((fusions %>% filter(Application == "Manta") %>% pull(SAMPLE_WELL_ID))))  # 18
+# Reduce fusion table to relevant columns
+fusions2 <- fusions %>% dplyr::select(-(LEFT_SVINSSEQ), -(RIGHT_SVINSSEQ), -(AF1000G), -(AA), -(GMAF), -(cosmic), -(clinvar), -(EVS), -(RefMinor), -(phyloP), -(CSQT), -(CSQR))
 
-# Summary by type and filter
-table(fusions$SVTYPE, fusions$FILTER, exclude = NULL)
+# Annotate fusion table (VCF info data frame) with all canonical ENSEMBL transcripts
+annGenes <- function(vcf_info, transcripts){
+  
+  require(ensembldb)
+  require(dplyr)
+  
+  txdb_pth <- '/Users/MartinaMijuskovic/cancer_SV_pipeline_dev/Homo_sapiens.GRCh38.84.sqlite'
+  if (!file.exists(txdb_pth)) {
+    #txdb_pth <- ensDbFromGtf(gtf="../Ensembl_db/Homo_sapiens.GRCh38.84.gtf.gz")
+    print("No Homo_sapiens.GRCh38.84.sqlite found. See https://blog.liang2.tw/posts/2016/05/biocondutor-ensembl-reference/ for installation")
+  }
+  txdb <- EnsDb(txdb_pth)
+  
+  # Get transcript ranges from Ensembl transcript database
+  transcripts_gr <- transcripts(txdb, filter=TxidFilter(transcripts))
+  
+  # Flag if start overlaps with any transcripts
+  vcf_info$all_transcript_related_start <- as.numeric(overlapsAny(GRanges(seqnames=vcf_info$CHR, ranges=IRanges(start = vcf_info$START, width = 1)), transcripts_gr))
+  
+  # Flag if end overlaps with any transcripts
+  vcf_info$all_transcript_related_end <- sapply(1:dim(vcf_info)[1], function(x){
+    if(is.na(vcf_info$END[x])){
+      return(NA)
+    } 
+    else {
+      if(overlapsAny(GRanges(seqnames=vcf_info$CHR[x], ranges=IRanges(start = vcf_info$END[x], width = 1)), transcripts_gr)) {
+        return(1)
+      }
+      else {
+        return(0)
+      }
+    }
+  })
+  
+  
+  
+  # Initiate gene annotations
+  vcf_info$ann_start <- ""
+  vcf_info$ann_end  <- ""
+  
+  # Find exact overlaps of start and end position with transcripts
+  #overlaps_start <- findOverlaps(GRanges(seqnames=vcf_info$CHR, ranges=IRanges(start = vcf_info$START, width = 100000)), transcripts_gr)  # testing
+  overlaps_start <- findOverlaps(GRanges(seqnames=vcf_info$CHR, ranges=IRanges(start = vcf_info$START, width = 1)), transcripts_gr)
+  overlaps_end <- findOverlaps(GRanges(seqnames=vcf_info[!is.na(vcf_info$all_transcript_related_end),]$CHR, ranges=IRanges(start = vcf_info[!is.na(vcf_info$all_transcript_related_end),]$END, width = 1)), transcripts_gr)
+  
+  # Add start position overlaps to table
+  if (dim(vcf_info[queryHits(overlaps_start),])[1] > 0) {
+    vcf_info[queryHits(overlaps_start),]$ann_start <- sapply(seq(length(overlaps_start)), function(x){
+      i <- queryHits(overlaps_start)[x]
+      j <- subjectHits(overlaps_start)[x]
+      vcf_info[i,]$ann_start <- transcripts_gr@elementMetadata$tx_name[j]
+    })
+  }
+  
+  # Add end position overlaps to table --- FIXED
+  if (dim(vcf_info[queryHits(overlaps_end),])[1] > 0) {
+    vcf_info[!is.na(vcf_info$all_transcript_related_end),][queryHits(overlaps_end),]$ann_end <- sapply(seq(length(overlaps_end)), function(x){
+      i <- queryHits(overlaps_end)[x]
+      j <- subjectHits(overlaps_end)[x]
+      vcf_info[!is.na(vcf_info$all_transcript_related_end),][i,]$ann_end <- transcripts_gr@elementMetadata$tx_name[j]
+    })
+  }
+  
+  
+  return(vcf_info)  
+}
+
+# Add annotations for all breakpoints
+fusions2 <- annGenes(fusions2, transcripts_all$transcript_ID)
+
+# Add gene names
+fusions2$gene_start <- ""
+fusions2$gene_end <- ""
+transcripts_all$gene_name <- as.character(transcripts_all$gene_name)
+
+fusions2[fusions2$ann_start != "",]$gene_start <- transcripts_all[match(fusions2[fusions2$ann_start != "",]$ann_start, transcripts_all$transcript_ID,),]$gene_name
+fusions2[fusions2$ann_end != "",]$gene_end <- transcripts_all[match(fusions2[fusions2$ann_end != "",]$ann_end, transcripts_all$transcript_ID,),]$gene_name
+
+# Table of fusions (precise breakpoints)
+table(fusions2[fusions2$Application == "Manta",]$gene_start, fusions2[fusions2$Application == "Manta",]$gene_end)
 
 
-########## DEBUG
+#### TMPRSS2-ERG fusions #### 
 
-# Check end annotation
-getSVsInTranscripts("./Data/VCFs/LP3000114-DNA_F03_LP3000206-DNA_A02.somatic.SV.vcf.gz", transcripts_fusion$transcript_ID)
+# Manta calls
+fusions2 %>% filter(gene_start == "ERG", gene_end == "TMPRSS2", Application == "Manta")
+# Number of samples with a manta call
+length(unique(fusions2 %>% filter(gene_start == "ERG", gene_end == "TMPRSS2", Application == "Manta") %>% pull(SAMPLE_WELL_ID)))  # 12
+
+# Samples with a Canvas call
+temp <- fusions2 %>% filter(gene_start == "ERG", gene_end == "TMPRSS2", Application == "Canvas") %>% pull(SAMPLE_WELL_ID)
+fusions2 %>% filter(SAMPLE_WELL_ID %in% temp) %>%  filter(gene_start == "ERG", gene_end == "TMPRSS2")
+
+# Purity of samples with a call
+temp <- fusions2 %>% filter(gene_start == "ERG", gene_end == "TMPRSS2", Application == "Manta") %>% pull(SAMPLE_WELL_ID)
+samples %>% filter(sampleId %in% temp) %>% select(sampleId, TUMOUR_PURITY)
+
+# ERG breakpoints
+ggplot((fusions2 %>% filter(gene_start == "ERG", gene_end == "TMPRSS2", Application == "Manta")), aes(x = START, y = 0)) +
+  geom_point(alpha = 0.4, size = 2) +
+  tiltedX +
+  theme(axis.title.y = element_blank(),
+        axis.text.y=element_blank(),
+        axis.ticks.y=element_blank(),
+        axis.title.x = element_blank())
+  
+# How many ERG breakpoints fall within the Weier et al ERG hotspot (chr21:38482768-38510697)
+fusions2 %>% filter(gene_start == "ERG", gene_end == "TMPRSS2", Application == "Manta", START > 38482768, START < 38510697) # 7/13
+
+# TMPRSS breakpoints
+ggplot((fusions2 %>% filter(gene_start == "ERG", gene_end == "TMPRSS2", Application == "Manta")), aes(x = END, y = 0)) +
+  geom_point(alpha = 0.4, size = 2) +
+  tiltedX +
+  theme(axis.title.y = element_blank(),
+        axis.text.y=element_blank(),
+        axis.ticks.y=element_blank(),
+        axis.title.x = element_blank())
+
+### Samples with colocalized Canvas call
+
+# Canvas call overlapping the transcripts
+temp <- fusions2 %>% filter(gene_start == "ERG", gene_end == "TMPRSS2", Application == "Canvas") %>% pull(SAMPLE_WELL_ID)
+fusions2 %>% filter(SAMPLE_WELL_ID %in% temp) %>%  filter(gene_start == "ERG", gene_end == "TMPRSS2")
+# Other colocalized Canvas call
+fusions2 %>% filter(gene_start == "ERG", gene_end == "TMPRSS2", Application == "Manta", ColocalizedCanvas == TRUE, !SAMPLE_WELL_ID %in% temp)
 
 
 
-##### Add repeats overlaps ##### 
+
+#### TMPRSS2 translocations #### 
+
+# All TMPRSS2
+fusions2 %>% filter((gene_start == "TMPRSS2" | gene_end == "TMPRSS2"), Application == "Manta")
+
+# Translocation partners
+temp <- fusions2 %>% filter((gene_start == "TMPRSS2" | gene_end == "TMPRSS2"), SVTYPE == "BND") %>% pull(MATEID)
+fusions2 %>% filter(ID %in% temp)
+
+# Breakpoint location range (all)
+range(c(fusions2 %>% filter(gene_start == "TMPRSS2", Application == "Manta") %>% pull(START)), (fusions2 %>% filter(gene_end == "TMPRSS2", Application == "Manta") %>% pull(END)))
+# chr21:41464721-41507611
+# Breakpoint location range (TMPRSS2-ERG fusions)
+range(fusions2 %>% filter(gene_start == "ERG", gene_end == "TMPRSS2", Application == "Manta") %>% pull(END))
+# chr21:41485614-41507611
+range(fusions2 %>% filter(gene_start == "ERG", gene_end == "TMPRSS2", Application == "Manta") %>% pull(START))
+# chr21:38448535-38569131
 
 
 
+#### ERG translocations #### 
+
+# All ERG
+fusions2 %>% filter((gene_start == "ERG" | gene_end == "ERG"), Application == "Manta")
+
+# ERG translocation partners
+temp2 <- fusions2 %>% filter((gene_start == "ERG" | gene_end == "ERG"), SVTYPE == "BND") %>% pull(MATEID)
+fusions2 %>% filter(ID %in% temp2) %>% pull(gene_start)
 
 
+#### Other rearrangements #### 
+
+#### ETV1 rearrangements 
+
+# All ETV1 
+fusions2 %>% filter((gene_start == "ETV1" | gene_end == "ETV1"), Application == "Manta")
+
+# ETV1 translocation partners
+temp3 <- fusions2 %>% filter((gene_start == "ETV1" | gene_end == "ETV1"), SVTYPE == "BND") %>% pull(MATEID)
+fusions2 %>% filter(ID %in% temp3)
 
 
+#### ETV4 rearrangements 
 
+# All ETV4 
+fusions2 %>% filter((gene_start == "ETV4" | gene_end == "ETV4"), Application == "Manta")  # None
+
+
+#### ETV5 rearrangements 
+
+# All ETV5
+fusions2 %>% filter((gene_start == "ETV5" | gene_end == "ETV5"), Application == "Manta")  # None
 
 
 
