@@ -359,7 +359,7 @@ getSVsInTranscripts <- function(vcf_path, transcripts){
   ### Read from Ensembl database
   
   # Read the transcript database
-  txdb_pth <- './Homo_sapiens.GRCh38.84.sqlite'
+  txdb_pth <- '/home/mmijuskovic/Fusions/Homo_sapiens.GRCh38.84.sqlite'
   if (!file.exists(txdb_pth)) {
     #txdb_pth <- ensDbFromGtf(gtf="../Ensembl_db/Homo_sapiens.GRCh38.84.gtf.gz")
     print("No Homo_sapiens.GRCh38.84.sqlite found. See https://blog.liang2.tw/posts/2016/05/biocondutor-ensembl-reference/ for installation")
