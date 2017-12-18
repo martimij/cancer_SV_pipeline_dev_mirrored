@@ -408,14 +408,19 @@ domain1_SVs$KEY <- sapply(1:dim(domain1_SVs)[1], function(x){
 unique_keys <- unique(domain1_SVs$KEY)
 length(unique_keys)  # 93
 recurrent_SVs <- data.frame(
+  KEY = unique_keys,
   NUM_OBS = sapply(unique_keys, function(x){ sum(domain1_SVs$KEY == x)}),
   NUM_PATIENTS = sapply(unique_keys, function(x){ length(unique(domain1_SVs %>% filter(KEY == x) %>% .$SAMPLE_WELL_ID)) })
   )
+rownames(recurrent_SVs) <- NULL
 
 # Add variant frequency info to the main table
+recurr_keys <- recurrent_SVs %>% filter(NUM_OBS >1) %>% pull(KEY)
+domain1_SVs$recurrent <- 0  # 3 total
+domain1_SVs[!domain1_SVs$KEY %in% recurr_keys,] <- 1
+domain1_SVs$recurrent_num_obs <- 
 
-
-
+  
 ### Annotation function adding repeat overlaps
 ### Works on SV VCF info table
 ### Overlaps with simpleRepeats and windowMasker
