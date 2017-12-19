@@ -37,30 +37,40 @@ write.table(FF_list, file = "FF_PCRfree_wClinical_forSVtiering_wPaths.tsv", quot
 #######  Prepare the GO list of Domain 1 transcripts ####### 
 
 # Read Alona's file
-actionable_SVs <- read.table("/Users/MartinaMijuskovic/cancer_SV_pipeline_dev/Data/GO/GENOMONCOLOGY_SOLID_TUMOUR.SV.v1.6.tsv", sep = "\t", header = T)
+#actionable_SVs <- read.table("/Users/MartinaMijuskovic/cancer_SV_pipeline_dev/Data/GO/GENOMONCOLOGY_SOLID_TUMOUR.SV.v1.6.tsv", sep = "\t", header = T)  # old corrupt file
+actionable_SVs <- read.table("/Users/MartinaMijuskovic/cancer_SV_pipeline_dev/Data/GO/GENOMONCOLOGY_SOLID_TUMOUR.SV.fixed.v1.6.tsv", sep = "\t", header = T)
+
 head(actionable_SVs)  # looks ok
 length(unique(actionable_SVs$gene_name))  # 106 genes (!?)
-length(unique(actionable_SVs$transcript_ID))  # 103 unique transcripts
-length(unique(actionable_SVs$gene_ID))  # 103 unique gene IDs
-dim(actionable_SVs) # 1421 
-sum(duplicated(actionable_SVs))  # 38 duplicate rows
-actionable_SVs[duplicated(actionable_SVs),]
+length(unique(actionable_SVs$transcript_ID))  # 105 unique transcripts
+length(unique(actionable_SVs$gene_ID))  # 105 unique gene IDs
+dim(actionable_SVs) # 1383 
+sum(duplicated(actionable_SVs))  # 0 duplicate rows
+#actionable_SVs[duplicated(actionable_SVs),]
 # Deduplicate
-actionable_SVs <- actionable_SVs[!duplicated(actionable_SVs),]
-dim(actionable_SVs)  # 1383
-# Write out
-write.table(actionable_SVs, file = "./Data/GO/GENOMONCOLOGY_SOLID_TUMOUR.dedup.SV.v1.6.tsv", quote = F, row.names = F, col.names = T, sep = "\t")
+#actionable_SVs <- actionable_SVs[!duplicated(actionable_SVs),]
+#dim(actionable_SVs)
 
+# Remove non-genes
+actionable_SVs <- actionable_SVs %>% filter(transcript_ID != "")
+dim(actionable_SVs)  # 1380
+length(unique(actionable_SVs$gene_name))  # 104
+length(unique(actionable_SVs$transcript_ID))  # 104
+length(unique(actionable_SVs$gene_ID))  # 104
 
-# Remove missing fields
-actionable_SVs <- actionable_SVs %>% filter(transcript_ID == "")
+# Write out the file without non-genes
+write.table(actionable_SVs, file = "./Data/GO/GENOMONCOLOGY_SOLID_TUMOUR.SV.fixed.noNonGenes.v1.6.tsv", quote = F, row.names = F, col.names = T, sep = "\t")
+
+# Get list of unique transcripts for annotation to Domain 1
 GO_transcr <- unique(actionable_SVs$transcript_ID)
-GO_transcr <- GO_transcr[GO_transcr != ""]
-length(GO_transcr)  # 102
+length(GO_transcr)  # 104
 
 
 
-####### Annotate SVs #######
+
+
+
+####### Transcript annotation functions #######
 
 ### Annotation function returning VCF info field from Domain 1 variants
 ### Also returns SAMPLE_WELL_ID, overlapping transript from the list for start and end breaksite, and all related mates/events even if not overlapping a transcript from the list
@@ -241,7 +251,7 @@ getSVsInTranscripts_v2 <- function(vcf_path, transcripts, filters = "PASS"){
   
   filters_keep <- filters
   
-  vcf_info <- vcf_info %>% filter(FILTER %in% filters_keep, SOMATIC == "TRUE")
+  vcf_info <- vcf_info %>% filter(FILTER %in% filters_keep, SOMATIC == "TRUE")  # NOTE that this removes all Canvas calls bc they don't have "SOMATIC" in the INFO
   
   
   
@@ -336,7 +346,7 @@ getSVsInTranscripts_v2 <- function(vcf_path, transcripts, filters = "PASS"){
 
 
 # Read the list of transcripts (HPC)
-actionable_SVs <- read.table("/home/mmijuskovic/SV_dev/SV_tiering/GENOMONCOLOGY_SOLID_TUMOUR.SV.v1.6.tsv", sep = "\t", header = T)
+actionable_SVs <- read.table("/home/mmijuskovic/SV_dev/SV_tiering/GENOMONCOLOGY_SOLID_TUMOUR.SV.fixed.noNonGenes.v1.6.tsv", sep = "\t", header = T)
 
 # Get unique list of transcripts
 GO_transcr <- unique(actionable_SVs$transcript_ID)
@@ -353,6 +363,7 @@ FF_list$SV_vcf_path <- as.character(FF_list$SV_vcf_path)
 # proc.time() - ptm
 
 
+##### Test annotation ##### 
 
 # Run (HPC) --- test
 setwd("/home/mmijuskovic/SV_dev/SV_tiering/tiered_results/test")
@@ -420,6 +431,151 @@ domain1_SVs$recurrent <- 0  # 3 total
 domain1_SVs[!domain1_SVs$KEY %in% recurr_keys,] <- 1
 domain1_SVs$recurrent_num_obs <- 
 
+
+  
+#### Annotate Domain 1 SVs #### 
+  
+# 4 interactive jobs (190 samples each) on HPC
+
+setwd("/home/mmijuskovic/SV_dev/SV_tiering/tiered_results")
+
+library(dplyr)
+library(VariantAnnotation)
+library(ensembldb)
+
+# Read the list of samples with paths to SV VCF
+FF_list <- read.table("/home/mmijuskovic/SV_dev/SV_tiering/FF_PCRfree_wClinical_forSVtiering_wPaths.tsv", sep = "\t", header = T)
+FF_list$SV_vcf_path <- as.character(FF_list$SV_vcf_path)
+
+
+# Read the list of transcripts (HPC)
+actionable_SVs <- read.table("/home/mmijuskovic/SV_dev/SV_tiering/GENOMONCOLOGY_SOLID_TUMOUR.SV.fixed.noNonGenes.v1.6.tsv", sep = "\t", header = T)
+# Get unique list of transcripts
+GO_transcr <- unique(actionable_SVs$transcript_ID)
+
+
+domain1_SVs <- lapply(FF_list$SV_vcf_path[1:190], getSVsInTranscripts_v2, GO_transcr)  # job 1
+domain1_SVs <- bind_rows(domain1_SVs)
+domain1_SVs <- domain1_SVs %>% dplyr::select(-(CSQR), -(CSQT), -(phyloP), -(EVS), -(clinvar), -(cosmic), -(AA), -(GMAF), -(AF1000G))
+save.image("domain1_SVs_job1.RData")
+
+domain1_SVs <- lapply(FF_list$SV_vcf_path[191:380], getSVsInTranscripts_v2, GO_transcr)  # job 2
+domain1_SVs <- bind_rows(domain1_SVs)
+domain1_SVs <- domain1_SVs %>% dplyr::select(-(CSQR), -(CSQT), -(phyloP), -(EVS), -(clinvar), -(cosmic), -(AA), -(GMAF), -(AF1000G))
+save.image("domain1_SVs_job2.RData")
+
+domain1_SVs <- lapply(FF_list$SV_vcf_path[381:570], getSVsInTranscripts_v2, GO_transcr)  # job 3
+domain1_SVs <- bind_rows(domain1_SVs)
+domain1_SVs <- domain1_SVs %>% dplyr::select(-(CSQR), -(CSQT), -(phyloP), -(EVS), -(clinvar), -(cosmic), -(AA), -(GMAF), -(AF1000G))
+save.image("domain1_SVs_job3.RData")
+
+domain1_SVs <- lapply(FF_list$SV_vcf_path[571:759], getSVsInTranscripts_v2, GO_transcr)  # job 4
+domain1_SVs <- bind_rows(domain1_SVs)
+domain1_SVs <- domain1_SVs %>% dplyr::select(-(CSQR), -(CSQT), -(phyloP), -(EVS), -(clinvar), -(cosmic), -(AA), -(GMAF), -(AF1000G))
+save.image("domain1_SVs_job4.RData")   
+
+
+
+#### Summary analysis of Domain1 SVs #### 
+
+load("./Data/domain1_SVs_job1.RData")
+domain1_SVs_1 <- domain1_SVs
+load("./Data/domain1_SVs_job2.RData")
+domain1_SVs_2 <- domain1_SVs
+load("./Data/domain1_SVs_job3.RData")
+domain1_SVs_3 <- domain1_SVs
+load("./Data/domain1_SVs_job4.RData")
+domain1_SVs_4 <- domain1_SVs
+
+# Merge
+domain1_SVs <- rbind(domain1_SVs_1, domain1_SVs_2, domain1_SVs_3, domain1_SVs_4)
+rm(domain1_SVs_1, domain1_SVs_2, domain1_SVs_3, domain1_SVs_4)
+
+# Summary ((NOTE that any DEL >10kb is automatically filtered out and not included here)
+dim(domain1_SVs)  # 1022 total (TRs listed as 2 BNDs)
+table(domain1_SVs$SVTYPE)  # 719 Domain 1 SVs (~1 per patient)
+# BND DEL DUP INS INV 
+# 606 128  27  18 243
+
+# Proportion of different SV types
+table(domain1_SVs$SVTYPE)/719
+# BND        DEL        DUP        INS        INV 
+# 0.84283727 0.17802503 0.03755216 0.02503477 0.33796940  # transl are 0.4214186
+
+# Median SV per patient
+median(as.numeric(table(domain1_SVs$SAMPLE_WELL_ID)))  # 2
+
+
+# Number of patients with Domain 1 SVs
+length(unique(domain1_SVs$SAMPLE_WELL_ID))  # 311/759 (41% patients have Domain 1 SVs)
+table(domain1_SVs$SVTYPE, domain1_SVs$Application)  # No Canvas
+table(domain1_SVs$FILTER, domain1_SVs$SOMATIC)
+table(domain1_SVs$SVTYPE, domain1_SVs$IMPRECISE)
+# FALSE TRUE
+# BND   464  142
+# DEL   127    1
+# DUP    27    0
+# INS    18    0
+# INV   201   42
+domain1_SVs %>% dplyr::select(SAMPLE_WELL_ID, ID, IMPRECISE, SVTYPE, SVLEN, CHR, START, END, ColocalizedCanvas, PR_ALT, SR_ALT, start_ann, end_ann)
+
+
+# Add KEY, calculate recurrent variants, add VAF and variant frequency info to the table
+domain1_SVs$KEY <- sapply(1:dim(domain1_SVs)[1], function(x){
+  paste(domain1_SVs$CHR[x], domain1_SVs$START[x], domain1_SVs$END[x], domain1_SVs$SVTYPE[x], sep = "-")
+})
+
+unique_keys <- unique(domain1_SVs$KEY)
+length(unique_keys)  # 1004
+recurrent_SVs <- data.frame(
+  KEY = unique_keys,
+  NUM_OBS = sapply(unique_keys, function(x){ sum(domain1_SVs$KEY == x)})
+)
+rownames(recurrent_SVs) <- NULL
+# Look at recurrent SVs
+recurrent_SVs %>% filter(NUM_OBS > 1) %>% arrange(desc(NUM_OBS))
+
+# Add variant frequency info to the main table
+recurr_keys <- as.character(recurrent_SVs %>% filter(NUM_OBS >1) %>% pull(KEY))
+domain1_SVs$recurrent <- 0  
+domain1_SVs[domain1_SVs$KEY %in% recurr_keys,]$recurrent <- 1  # 9 total (3 deletions, 3 transl)
+table(domain1_SVs$recurrent, domain1_SVs$SVTYPE)
+domain1_SVs %>% filter(recurrent == 1, SVTYPE == "DEL")
+domain1_SVs %>% filter(recurrent == 1, KEY == "4-54688371-54688815-DEL")
+domain1_SVs %>% filter(recurrent == 1, KEY == "12-68810707-68811111-DEL")
+domain1_SVs %>% filter(recurrent == 1, KEY == "5-142596308-142596582-DEL")
+domain1_SVs %>% filter(recurrent == 1, SVTYPE == "BND")
+domain1_SVs %>% filter(recurrent == 1, KEY == "10-43115587-NA-BND")
+domain1_SVs %>% filter(recurrent == 1, ID == "MantaBND:114898:0:1:0:0:0:0") # 2 SVs in same EVENT, sharing one breakopoint, but mate not recurrent
+domain1_SVs %>% filter(recurrent == 1, ID == "MantaBND:114898:0:1:1:3:0:1") # 2 SVs in same EVENT, sharing one breakopoint, but mate not recurrent
+
+### Remove BND with missing mates and recalculate summaries
+domain1_SVs$missing_mate <- 0
+missing_mates <- sapply(unique(domain1_SVs$SAMPLE_WELL_ID), function(x){
+                      mates <- domain1_SVs %>% filter(SAMPLE_WELL_ID == x, SVTYPE == "BND") %>% pull(MATEID)
+                      # List missing mates
+                      mates[!mates %in% (domain1_SVs %>% filter(SAMPLE_WELL_ID == x, SVTYPE == "BND") %>% pull(ID))]
+                      })
+table(as.character(missing_mates))  # none missing
+
+
+### Calculate VAF
+domain1_SVs$VAF <- sapply(1:dim(domain1_SVs)[1], function(x){
+  sum(domain1_SVs$PR_ALT[x], domain1_SVs$SR_ALT[x], na.rm = T)/sum(domain1_SVs$PR_REF[x], domain1_SVs$SR_REF[x], domain1_SVs$PR_ALT[x], domain1_SVs$SR_ALT[x], na.rm = T)
+})
+
+# Mean VAF by SV type
+domain1_SVs %>% group_by(SVTYPE) %>% summarise(mean(VAF))
+
+
+
+
+
+
+
+
+
+#### Repeat annotation #### 
   
 ### Annotation function adding repeat overlaps
 ### Works on SV VCF info table
