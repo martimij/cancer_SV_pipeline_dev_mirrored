@@ -1,0 +1,1381 @@
+gene_name	gene_ID	transcript_ID	alteration	chromosome_37	start_37	end_37	action	link	role_in_cancer
+ALK	ENSG00000171094	ENST00000389048	Fusion	NA	NA	NA	Therapeutic (IMT)	https://www.mycancergenome.org/content/disease/inflammatory-myofibroblastic-tumor/alk/66/	oncogene
+ALK	ENSG00000171094	ENST00000389048	Fusion	NA	NA	NA	Therapeutic (NSC lung ca)	https://www.mycancergenome.org/content/disease/lung-cancer/alk/66/	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Therapeutic (GEJ ca)		oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Therapeutic (breast ca)	https://www.mycancergenome.org/content/disease/breast-cancer/erbb2/119/	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Therapeutic (gastric ca)	https://www.mycancergenome.org/content/disease/gastric-cancer/erbb2/119/	oncogene
+KIT	ENSG00000157404	ENST00000288135	Amplification	NA	NA	NA	Therapeutic (melanoma)	https://www.mycancergenome.org/content/disease/melanoma/kit/338/	oncogene
+MET	ENSG00000105976	ENST00000318493	Amplification	NA	NA	NA	Therapeutic (NSC lung ca)	https://www.mycancergenome.org/content/disease/lung-cancer/met/59/	oncogene
+RET	ENSG00000165731	ENST00000355710	Fusion	NA	NA	NA	Therapeutic (NSC lung ca)	https://www.mycancergenome.org/content/disease/lung-cancer/ret/127/	oncogene
+RET	ENSG00000165731	ENST00000355710	Fusion	NA	NA	NA	Therapeutic (thyroid medullary ca)	https://www.mycancergenome.org/content/disease/thyroid-cancer/ret/127/	oncogene
+ROS1	ENSG00000047936	ENST00000368508	Fusion	NA	NA	NA	Therapeutic (NSC lung ca)	https://www.mycancergenome.org/content/disease/lung-cancer/ros1/67/	oncogene
+AFDN	ENSG00000130396	ENST00000392112	Fusion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02508467	
+AFDN	ENSG00000130396	ENST00000392112	Fusion	NA	NA	NA	Trial (hepatocellular ca)	https://clinicaltrials.gov/ct2/show/NCT02508467	
+AFF1	ENSG00000172493	ENST00000395146	Fusion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02508467	
+AFF1	ENSG00000172493	ENST00000395146	Fusion	NA	NA	NA	Trial (hepatocellular ca)	https://clinicaltrials.gov/ct2/show/NCT02508467	
+AKT1	ENSG00000142208	ENST00000555528	Amplification	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+AKT1	ENSG00000142208	ENST00000555528	Amplification	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02664935	oncogene
+AKT1	ENSG00000142208	ENST00000555528	Amplification	NA	NA	NA	Trial (RCC)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+AKT1	ENSG00000142208	ENST00000555528	Amplification	NA	NA	NA	Trial (SCC Lung)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+AKT1	ENSG00000142208	ENST00000555528	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+AKT1	ENSG00000142208	ENST00000555528	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02338622	oncogene
+AKT1	ENSG00000142208	ENST00000555528	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02483858	oncogene
+AKT1	ENSG00000142208	ENST00000555528	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+AKT1	ENSG00000142208	ENST00000555528	Amplification	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+AKT1	ENSG00000142208	ENST00000555528	Amplification	NA	NA	NA	Trial (endometrial ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+AKT1	ENSG00000142208	ENST00000555528	Amplification	NA	NA	NA	Trial (melanoma)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+AKT1	ENSG00000142208	ENST00000555528	Amplification	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+AKT1	ENSG00000142208	ENST00000555528	Amplification	NA	NA	NA	Trial (pancreatic ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+AKT1	ENSG00000142208	ENST00000555528	Amplification	NA	NA	NA	Trial (thyroid ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+AKT2	ENSG00000105221	ENST00000392038	Amplification	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+AKT2	ENSG00000105221	ENST00000392038	Amplification	NA	NA	NA	Trial (RCC)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+AKT2	ENSG00000105221	ENST00000392038	Amplification	NA	NA	NA	Trial (SCC Lung)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+AKT2	ENSG00000105221	ENST00000392038	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+AKT2	ENSG00000105221	ENST00000392038	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02338622	oncogene
+AKT2	ENSG00000105221	ENST00000392038	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02483858	oncogene
+AKT2	ENSG00000105221	ENST00000392038	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+AKT2	ENSG00000105221	ENST00000392038	Amplification	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+AKT2	ENSG00000105221	ENST00000392038	Amplification	NA	NA	NA	Trial (endometrial ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+AKT2	ENSG00000105221	ENST00000392038	Amplification	NA	NA	NA	Trial (melanoma)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+AKT2	ENSG00000105221	ENST00000392038	Amplification	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+AKT2	ENSG00000105221	ENST00000392038	Amplification	NA	NA	NA	Trial (pancreatic ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+AKT2	ENSG00000105221	ENST00000392038	Amplification	NA	NA	NA	Trial (thyroid ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+AKT3	ENSG00000117020	ENST00000336199	Amplification	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	
+AKT3	ENSG00000117020	ENST00000336199	Amplification	NA	NA	NA	Trial (RCC)	https://clinicaltrials.gov/ct2/show/NCT02583542	
+AKT3	ENSG00000117020	ENST00000336199	Amplification	NA	NA	NA	Trial (SCC Lung)	https://clinicaltrials.gov/ct2/show/NCT02583542	
+AKT3	ENSG00000117020	ENST00000336199	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	
+AKT3	ENSG00000117020	ENST00000336199	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02338622	
+AKT3	ENSG00000117020	ENST00000336199	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02483858	
+AKT3	ENSG00000117020	ENST00000336199	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	
+AKT3	ENSG00000117020	ENST00000336199	Amplification	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	
+AKT3	ENSG00000117020	ENST00000336199	Amplification	NA	NA	NA	Trial (endometrial ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	
+AKT3	ENSG00000117020	ENST00000336199	Amplification	NA	NA	NA	Trial (melanoma)	https://clinicaltrials.gov/ct2/show/NCT02583542	
+AKT3	ENSG00000117020	ENST00000336199	Amplification	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	
+AKT3	ENSG00000117020	ENST00000336199	Amplification	NA	NA	NA	Trial (pancreatic ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	
+AKT3	ENSG00000117020	ENST00000336199	Amplification	NA	NA	NA	Trial (thyroid ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	
+ALK	ENSG00000171094	ENST00000389048	Amplification	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT01828099	oncogene
+ALK	ENSG00000171094	ENST00000389048	Amplification	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02041533	oncogene
+ALK	ENSG00000171094	ENST00000389048	Amplification	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02075840	oncogene
+ALK	ENSG00000171094	ENST00000389048	Amplification	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02299505	oncogene
+ALK	ENSG00000171094	ENST00000389048	Amplification	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02767804	oncogene
+ALK	ENSG00000171094	ENST00000389048	Amplification	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT03052608	oncogene
+ALK	ENSG00000171094	ENST00000389048	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02048488	oncogene
+ALK	ENSG00000171094	ENST00000389048	Amplification	NA	NA	NA	Trial (cancer)	https://clinicaltrials.gov/ct2/show/NCT01742286	oncogene
+ALK	ENSG00000171094	ENST00000389048	Amplification	NA	NA	NA	Trial (neuroblastoma)	https://clinicaltrials.gov/ct2/show/NCT03107988	oncogene
+ALK	ENSG00000171094	ENST00000389048	Fusion	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT01828099	oncogene
+ALK	ENSG00000171094	ENST00000389048	Fusion	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT01828112	oncogene
+ALK	ENSG00000171094	ENST00000389048	Fusion	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02041533	oncogene
+ALK	ENSG00000171094	ENST00000389048	Fusion	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02075840	oncogene
+ALK	ENSG00000171094	ENST00000389048	Fusion	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02129699	oncogene
+ALK	ENSG00000171094	ENST00000389048	Fusion	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02134015	oncogene
+ALK	ENSG00000171094	ENST00000389048	Fusion	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02264990	oncogene
+ALK	ENSG00000171094	ENST00000389048	Fusion	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02299505	oncogene
+ALK	ENSG00000171094	ENST00000389048	Fusion	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02314481	oncogene
+ALK	ENSG00000171094	ENST00000389048	Fusion	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02336451	oncogene
+ALK	ENSG00000171094	ENST00000389048	Fusion	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02395172	oncogene
+ALK	ENSG00000171094	ENST00000389048	Fusion	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02414139	oncogene
+ALK	ENSG00000171094	ENST00000389048	Fusion	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02544633	oncogene
+ALK	ENSG00000171094	ENST00000389048	Fusion	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02654587	oncogene
+ALK	ENSG00000171094	ENST00000389048	Fusion	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02657434	oncogene
+ALK	ENSG00000171094	ENST00000389048	Fusion	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02737501	oncogene
+ALK	ENSG00000171094	ENST00000389048	Fusion	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02767804	oncogene
+ALK	ENSG00000171094	ENST00000389048	Fusion	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02983045	oncogene
+ALK	ENSG00000171094	ENST00000389048	Fusion	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT03052608	oncogene
+ALK	ENSG00000171094	ENST00000389048	Fusion	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT03164616	oncogene
+ALK	ENSG00000171094	ENST00000389048	Fusion	NA	NA	NA	Trial (RCC)	https://clinicaltrials.gov/ct2/show/NCT02983045	oncogene
+ALK	ENSG00000171094	ENST00000389048	Fusion	NA	NA	NA	Trial (SCC Lung)	https://clinicaltrials.gov/ct2/show/NCT02106546	oncogene
+ALK	ENSG00000171094	ENST00000389048	Fusion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02048488	oncogene
+ALK	ENSG00000171094	ENST00000389048	Fusion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02568267	oncogene
+ALK	ENSG00000171094	ENST00000389048	Fusion	NA	NA	NA	Trial (cancer)	https://clinicaltrials.gov/ct2/show/NCT01742286	oncogene
+ALK	ENSG00000171094	ENST00000389048	Fusion	NA	NA	NA	Trial (melanoma)	https://clinicaltrials.gov/ct2/show/NCT02983045	oncogene
+ALK	ENSG00000171094	ENST00000389048	Fusion	NA	NA	NA	Trial (neuroblastoma)	https://clinicaltrials.gov/ct2/show/NCT03107988	oncogene
+ATM	ENSG00000149311	ENST00000278616	Loss	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+ATM	ENSG00000149311	ENST00000278616	Loss	NA	NA	NA	Trial (SCC Lung)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+ATM	ENSG00000149311	ENST00000278616	Loss	NA	NA	NA	Trial (SCLC)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+ATM	ENSG00000149311	ENST00000278616	Loss	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+ATM	ENSG00000149311	ENST00000278616	Loss	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+ATM	ENSG00000149311	ENST00000278616	Loss	NA	NA	NA	Trial (cervical ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+ATM	ENSG00000149311	ENST00000278616	Loss	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+ATM	ENSG00000149311	ENST00000278616	Loss	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+ATM	ENSG00000149311	ENST00000278616	Loss	NA	NA	NA	Trial (endometrial ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+ATM	ENSG00000149311	ENST00000278616	Loss	NA	NA	NA	Trial (head neck SCC)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+ATM	ENSG00000149311	ENST00000278616	Loss	NA	NA	NA	Trial (lung ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+ATM	ENSG00000149311	ENST00000278616	Loss	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+ATM	ENSG00000149311	ENST00000278616	Loss	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+ATM	ENSG00000149311	ENST00000278616	Loss	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+ATM	ENSG00000149311	ENST00000278616	Loss	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+ATR	ENSG00000175054	ENST00000350721	Amplification	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+ATR	ENSG00000175054	ENST00000350721	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+ATR	ENSG00000175054	ENST00000350721	Amplification	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+ATR	ENSG00000175054	ENST00000350721	Amplification	NA	NA	NA	Trial (head neck SCC)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+ATR	ENSG00000175054	ENST00000350721	Amplification	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+ATR	ENSG00000175054	ENST00000350721	Amplification	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+ATR	ENSG00000175054	ENST00000350721	Loss	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+ATR	ENSG00000175054	ENST00000350721	Loss	NA	NA	NA	Trial (SCC Lung)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+ATR	ENSG00000175054	ENST00000350721	Loss	NA	NA	NA	Trial (SCLC)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+ATR	ENSG00000175054	ENST00000350721	Loss	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+ATR	ENSG00000175054	ENST00000350721	Loss	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+ATR	ENSG00000175054	ENST00000350721	Loss	NA	NA	NA	Trial (cervical ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+ATR	ENSG00000175054	ENST00000350721	Loss	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+ATR	ENSG00000175054	ENST00000350721	Loss	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+ATR	ENSG00000175054	ENST00000350721	Loss	NA	NA	NA	Trial (endometrial ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+ATR	ENSG00000175054	ENST00000350721	Loss	NA	NA	NA	Trial (head neck SCC)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+ATR	ENSG00000175054	ENST00000350721	Loss	NA	NA	NA	Trial (lung ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+ATR	ENSG00000175054	ENST00000350721	Loss	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+ATR	ENSG00000175054	ENST00000350721	Loss	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+ATR	ENSG00000175054	ENST00000350721	Loss	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+ATR	ENSG00000175054	ENST00000350721	Loss	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+ATRX	ENSG00000085224	ENST00000373344	Loss	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+ATRX	ENSG00000085224	ENST00000373344	Loss	NA	NA	NA	Trial (SCC Lung)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+ATRX	ENSG00000085224	ENST00000373344	Loss	NA	NA	NA	Trial (SCLC)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+ATRX	ENSG00000085224	ENST00000373344	Loss	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+ATRX	ENSG00000085224	ENST00000373344	Loss	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+ATRX	ENSG00000085224	ENST00000373344	Loss	NA	NA	NA	Trial (cervical ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+ATRX	ENSG00000085224	ENST00000373344	Loss	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+ATRX	ENSG00000085224	ENST00000373344	Loss	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+ATRX	ENSG00000085224	ENST00000373344	Loss	NA	NA	NA	Trial (endometrial ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+ATRX	ENSG00000085224	ENST00000373344	Loss	NA	NA	NA	Trial (head neck SCC)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+ATRX	ENSG00000085224	ENST00000373344	Loss	NA	NA	NA	Trial (lung ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+ATRX	ENSG00000085224	ENST00000373344	Loss	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+ATRX	ENSG00000085224	ENST00000373344	Loss	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+ATRX	ENSG00000085224	ENST00000373344	Loss	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+ATRX	ENSG00000085224	ENST00000373344	Loss	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+BAP1	ENSG00000163930	ENST00000460680	Loss	NA	NA	NA	Trial (mesot)	https://clinicaltrials.gov/ct2/show/NCT02860286	tumour suppressor
+BRAF	ENSG00000157764	ENST00000288602	Fusion	NA	NA	NA	Trial (glioma)	https://clinicaltrials.gov/ct2/show/NCT02124772	oncogene
+BRAF	ENSG00000157764	ENST00000288602	Fusion	NA	NA	NA	Trial (neurofibroma)	https://clinicaltrials.gov/ct2/show/NCT02124772	oncogene
+BRAF	ENSG00000157764	ENST00000288602	Fusion	NA	NA	NA	Trial (solid neoplasm)	https://clinicaltrials.gov/ct2/show/NCT02124772	oncogene
+BRCA1	ENSG00000012048	ENST00000357654	Large Deletion	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02157792	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Large Deletion	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Large Deletion	NA	NA	NA	Trial (SCC Lung)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Large Deletion	NA	NA	NA	Trial (SCLC)	https://clinicaltrials.gov/ct2/show/NCT02157792	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Large Deletion	NA	NA	NA	Trial (SCLC)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Large Deletion	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT00966888	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Large Deletion	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02157792	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Large Deletion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT01482715	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Large Deletion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02157792	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Large Deletion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02338622	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Large Deletion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Large Deletion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02988817	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Large Deletion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Large Deletion	NA	NA	NA	Trial (cervical ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Large Deletion	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Large Deletion	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Large Deletion	NA	NA	NA	Trial (endometrial ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Large Deletion	NA	NA	NA	Trial (fallopian tube ca)	https://clinicaltrials.gov/ct2/show/NCT02476968	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Large Deletion	NA	NA	NA	Trial (fallopian tube ca)	https://clinicaltrials.gov/ct2/show/NCT02855944	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Large Deletion	NA	NA	NA	Trial (fallopian tube ca)	https://clinicaltrials.gov/ct2/show/NCT03117933	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Large Deletion	NA	NA	NA	Trial (head neck SCC)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Large Deletion	NA	NA	NA	Trial (lung ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Large Deletion	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02476968	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Large Deletion	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Large Deletion	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02855944	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Large Deletion	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02988817	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Large Deletion	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT03117933	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Large Deletion	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Large Deletion	NA	NA	NA	Trial (prim peritoneal ca)	https://clinicaltrials.gov/ct2/show/NCT02476968	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Large Deletion	NA	NA	NA	Trial (prim peritoneal ca)	https://clinicaltrials.gov/ct2/show/NCT02855944	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Large Deletion	NA	NA	NA	Trial (prim peritoneal ca)	https://clinicaltrials.gov/ct2/show/NCT03117933	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Large Deletion	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Large Deletion	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Loss	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02157792	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Loss	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Loss	NA	NA	NA	Trial (SCC Lung)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Loss	NA	NA	NA	Trial (SCLC)	https://clinicaltrials.gov/ct2/show/NCT02157792	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Loss	NA	NA	NA	Trial (SCLC)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Loss	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT00966888	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Loss	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02157792	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Loss	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT01482715	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Loss	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02157792	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Loss	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02338622	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Loss	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Loss	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02988817	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Loss	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Loss	NA	NA	NA	Trial (cervical ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Loss	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Loss	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Loss	NA	NA	NA	Trial (endometrial ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Loss	NA	NA	NA	Trial (fallopian tube ca)	https://clinicaltrials.gov/ct2/show/NCT02476968	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Loss	NA	NA	NA	Trial (fallopian tube ca)	https://clinicaltrials.gov/ct2/show/NCT02855944	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Loss	NA	NA	NA	Trial (fallopian tube ca)	https://clinicaltrials.gov/ct2/show/NCT03117933	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Loss	NA	NA	NA	Trial (head neck SCC)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Loss	NA	NA	NA	Trial (lung ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Loss	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02476968	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Loss	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Loss	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02855944	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Loss	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02988817	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Loss	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT03117933	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Loss	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Loss	NA	NA	NA	Trial (prim peritoneal ca)	https://clinicaltrials.gov/ct2/show/NCT02476968	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Loss	NA	NA	NA	Trial (prim peritoneal ca)	https://clinicaltrials.gov/ct2/show/NCT02855944	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Loss	NA	NA	NA	Trial (prim peritoneal ca)	https://clinicaltrials.gov/ct2/show/NCT03117933	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Loss	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+BRCA1	ENSG00000012048	ENST00000357654	Loss	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Large Deletion	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02157792	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Large Deletion	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Large Deletion	NA	NA	NA	Trial (SCC Lung)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Large Deletion	NA	NA	NA	Trial (SCLC)	https://clinicaltrials.gov/ct2/show/NCT02157792	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Large Deletion	NA	NA	NA	Trial (SCLC)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Large Deletion	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT00966888	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Large Deletion	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02157792	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Large Deletion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT01482715	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Large Deletion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02157792	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Large Deletion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02338622	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Large Deletion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Large Deletion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02988817	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Large Deletion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Large Deletion	NA	NA	NA	Trial (cervical ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Large Deletion	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Large Deletion	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Large Deletion	NA	NA	NA	Trial (endometrial ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Large Deletion	NA	NA	NA	Trial (fallopian tube ca)	https://clinicaltrials.gov/ct2/show/NCT02476968	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Large Deletion	NA	NA	NA	Trial (fallopian tube ca)	https://clinicaltrials.gov/ct2/show/NCT02855944	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Large Deletion	NA	NA	NA	Trial (fallopian tube ca)	https://clinicaltrials.gov/ct2/show/NCT03117933	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Large Deletion	NA	NA	NA	Trial (head neck SCC)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Large Deletion	NA	NA	NA	Trial (lung ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Large Deletion	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02476968	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Large Deletion	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Large Deletion	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02855944	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Large Deletion	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02988817	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Large Deletion	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT03117933	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Large Deletion	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Large Deletion	NA	NA	NA	Trial (prim peritoneal ca)	https://clinicaltrials.gov/ct2/show/NCT02476968	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Large Deletion	NA	NA	NA	Trial (prim peritoneal ca)	https://clinicaltrials.gov/ct2/show/NCT02855944	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Large Deletion	NA	NA	NA	Trial (prim peritoneal ca)	https://clinicaltrials.gov/ct2/show/NCT03117933	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Large Deletion	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Large Deletion	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Loss	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02157792	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Loss	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Loss	NA	NA	NA	Trial (SCC Lung)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Loss	NA	NA	NA	Trial (SCLC)	https://clinicaltrials.gov/ct2/show/NCT02157792	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Loss	NA	NA	NA	Trial (SCLC)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Loss	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT00966888	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Loss	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02157792	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Loss	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT01482715	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Loss	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02157792	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Loss	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02338622	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Loss	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Loss	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02988817	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Loss	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Loss	NA	NA	NA	Trial (cervical ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Loss	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Loss	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Loss	NA	NA	NA	Trial (endometrial ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Loss	NA	NA	NA	Trial (fallopian tube ca)	https://clinicaltrials.gov/ct2/show/NCT02476968	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Loss	NA	NA	NA	Trial (fallopian tube ca)	https://clinicaltrials.gov/ct2/show/NCT02855944	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Loss	NA	NA	NA	Trial (fallopian tube ca)	https://clinicaltrials.gov/ct2/show/NCT03117933	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Loss	NA	NA	NA	Trial (head neck SCC)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Loss	NA	NA	NA	Trial (lung ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Loss	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02476968	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Loss	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Loss	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02855944	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Loss	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02988817	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Loss	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT03117933	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Loss	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Loss	NA	NA	NA	Trial (prim peritoneal ca)	https://clinicaltrials.gov/ct2/show/NCT02476968	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Loss	NA	NA	NA	Trial (prim peritoneal ca)	https://clinicaltrials.gov/ct2/show/NCT02855944	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Loss	NA	NA	NA	Trial (prim peritoneal ca)	https://clinicaltrials.gov/ct2/show/NCT03117933	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Loss	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+BRCA2	ENSG00000139618	ENST00000544455	Loss	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+CCND1	ENSG00000110092	ENST00000227507	Amplification	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02664935	oncogene
+CCND1	ENSG00000110092	ENST00000227507	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02508467	oncogene
+CCND1	ENSG00000110092	ENST00000227507	Amplification	NA	NA	NA	Trial (hepatocellular ca)	https://clinicaltrials.gov/ct2/show/NCT02508467	oncogene
+CDK4	ENSG00000135446	ENST00000257904	Amplification	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02664935	
+CHEK1	ENSG00000149554	ENST00000428830	Amplification	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+CHEK1	ENSG00000149554	ENST00000428830	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+CHEK1	ENSG00000149554	ENST00000428830	Amplification	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+CHEK1	ENSG00000149554	ENST00000428830	Amplification	NA	NA	NA	Trial (head neck SCC)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+CHEK1	ENSG00000149554	ENST00000428830	Amplification	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+CHEK1	ENSG00000149554	ENST00000428830	Amplification	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+EGFR	ENSG00000146648	ENST00000275493	Amplification	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+EGFR	ENSG00000146648	ENST00000275493	Amplification	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02664935	oncogene
+EGFR	ENSG00000146648	ENST00000275493	Amplification	NA	NA	NA	Trial (RCC)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+EGFR	ENSG00000146648	ENST00000275493	Amplification	NA	NA	NA	Trial (SCC Lung)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+EGFR	ENSG00000146648	ENST00000275493	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+EGFR	ENSG00000146648	ENST00000275493	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02338622	oncogene
+EGFR	ENSG00000146648	ENST00000275493	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02483858	oncogene
+EGFR	ENSG00000146648	ENST00000275493	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+EGFR	ENSG00000146648	ENST00000275493	Amplification	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+EGFR	ENSG00000146648	ENST00000275493	Amplification	NA	NA	NA	Trial (endometrial ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+EGFR	ENSG00000146648	ENST00000275493	Amplification	NA	NA	NA	Trial (glioblastoma)	https://clinicaltrials.gov/ct2/show/NCT02343406	oncogene
+EGFR	ENSG00000146648	ENST00000275493	Amplification	NA	NA	NA	Trial (glioblastoma)	https://clinicaltrials.gov/ct2/show/NCT02573324	oncogene
+EGFR	ENSG00000146648	ENST00000275493	Amplification	NA	NA	NA	Trial (melanoma)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+EGFR	ENSG00000146648	ENST00000275493	Amplification	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+EGFR	ENSG00000146648	ENST00000275493	Amplification	NA	NA	NA	Trial (pancreatic ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+EGFR	ENSG00000146648	ENST00000275493	Amplification	NA	NA	NA	Trial (thyroid ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+ELL	ENSG00000105656	ENST00000262809	Fusion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02508467	
+ELL	ENSG00000105656	ENST00000262809	Fusion	NA	NA	NA	Trial (hepatocellular ca)	https://clinicaltrials.gov/ct2/show/NCT02508467	
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (ACC)	https://clinicaltrials.gov/ct2/show/NCT01695005	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (GEJ ca)	https://clinicaltrials.gov/ct2/show/NCT01397929	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (GEJ ca)	https://clinicaltrials.gov/ct2/show/NCT01795768	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (GEJ ca)	https://clinicaltrials.gov/ct2/show/NCT01920061	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (GEJ ca)	https://clinicaltrials.gov/ct2/show/NCT02205047	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (GEJ ca)	https://clinicaltrials.gov/ct2/show/NCT02314117	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (GEJ ca)	https://clinicaltrials.gov/ct2/show/NCT02545504	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (GEJ ca)	https://clinicaltrials.gov/ct2/show/NCT02678182	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (GEJ ca)	https://clinicaltrials.gov/ct2/show/NCT02884453	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (GM)	https://clinicaltrials.gov/ct2/show/NCT01458067	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (LMS)	https://clinicaltrials.gov/ct2/show/NCT01695005	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT01397929	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT01458067	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT01795768	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT01920061	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02157792	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02314481	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02554812	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02664935	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02890069	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT03096054	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (RCC)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (SCC Lung)	https://clinicaltrials.gov/ct2/show/NCT01884285	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (SCC Lung)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (SCLC)	https://clinicaltrials.gov/ct2/show/NCT01928394	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (SCLC)	https://clinicaltrials.gov/ct2/show/NCT02157792	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (SCLC)	https://clinicaltrials.gov/ct2/show/NCT02554812	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (bladder ca)	https://clinicaltrials.gov/ct2/show/NCT01920061	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (bladder ca)	https://clinicaltrials.gov/ct2/show/NCT01928394	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT00470249	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT00712140	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT01093235	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT01104571	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT01160211	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT01362374	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT01397929	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT01458067	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT01491737	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT01548677	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT01566721	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT01572038	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT01610284	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT01625286	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT01633060	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT01695005	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT01698918	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT01702571	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT01772472	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT01795768	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT01808573	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT01864746	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT01872260	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT01884285	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT01920061	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT01928394	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT01958021	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT01966471	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT01997333	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02007512	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02032277	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02088684	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02091960	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02120417	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02123823	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02132949	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02157792	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02216786	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02246621	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02248090	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02258451	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02258464	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02260661	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02273973	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02277717	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02294786	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02296801	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02322814	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02389842	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02402712	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02419417	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02422615	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02423603	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02425891	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02437318	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02447003	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02491983	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02492711	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02499328	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02530411	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02536742	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02554812	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02569801	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02599714	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02614794	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02622074	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02675231	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02676986	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02681523	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02723877	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02819518	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02890069	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02924883	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02941926	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02964507	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02970682	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02983071	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT03006172	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT03036488	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT03048942	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT03096054	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT03125902	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT03145961	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT03155997	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT03161353	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT03184558	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT03197935	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT01362374	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT01695005	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT01884285	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02157792	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02260661	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02277717	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02338622	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02389842	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02419417	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02483858	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02499328	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02554812	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT03006172	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (cholangioca)	https://clinicaltrials.gov/ct2/show/NCT01695005	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT01397929	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT01458067	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02554812	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02890069	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT03096054	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (endometrial ca)	https://clinicaltrials.gov/ct2/show/NCT01458067	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (endometrial ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (esophageal SCC)	https://clinicaltrials.gov/ct2/show/NCT03096054	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (esophageal ca)	https://clinicaltrials.gov/ct2/show/NCT01795768	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (esophageal ca)	https://clinicaltrials.gov/ct2/show/NCT01920061	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (esophageal ca)	https://clinicaltrials.gov/ct2/show/NCT02678182	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (esophageal ca)	https://clinicaltrials.gov/ct2/show/NCT02884453	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (gastric SCC)	https://clinicaltrials.gov/ct2/show/NCT02884453	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (gastric ca)	https://clinicaltrials.gov/ct2/show/NCT01397929	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (gastric ca)	https://clinicaltrials.gov/ct2/show/NCT01450696	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (gastric ca)	https://clinicaltrials.gov/ct2/show/NCT01458067	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (gastric ca)	https://clinicaltrials.gov/ct2/show/NCT01641939	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (gastric ca)	https://clinicaltrials.gov/ct2/show/NCT01795768	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (gastric ca)	https://clinicaltrials.gov/ct2/show/NCT01920061	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (gastric ca)	https://clinicaltrials.gov/ct2/show/NCT01928394	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (gastric ca)	https://clinicaltrials.gov/ct2/show/NCT02205047	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (gastric ca)	https://clinicaltrials.gov/ct2/show/NCT02277717	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (gastric ca)	https://clinicaltrials.gov/ct2/show/NCT02314117	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (gastric ca)	https://clinicaltrials.gov/ct2/show/NCT02545504	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (gastric ca)	https://clinicaltrials.gov/ct2/show/NCT02554812	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (gastric ca)	https://clinicaltrials.gov/ct2/show/NCT02678182	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (gastric ca)	https://clinicaltrials.gov/ct2/show/NCT02884453	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (head neck SCC)	https://clinicaltrials.gov/ct2/show/NCT01458067	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (head neck SCC)	https://clinicaltrials.gov/ct2/show/NCT01920061	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (head neck SCC)	https://clinicaltrials.gov/ct2/show/NCT02554812	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (head neck SCC)	https://clinicaltrials.gov/ct2/show/NCT03096054	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (hepatocellular ca)	https://clinicaltrials.gov/ct2/show/NCT01695005	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (hypopharyngeal SCC)	https://clinicaltrials.gov/ct2/show/NCT02499328	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (laryngeal SCC)	https://clinicaltrials.gov/ct2/show/NCT02499328	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (melanoma)	https://clinicaltrials.gov/ct2/show/NCT01458067	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (melanoma)	https://clinicaltrials.gov/ct2/show/NCT02554812	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (melanoma)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (oral cavity SCC)	https://clinicaltrials.gov/ct2/show/NCT02499328	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (oropharyngeal cell ca)	https://clinicaltrials.gov/ct2/show/NCT02499328	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT01397929	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT01458067	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT01920061	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02554812	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT03096054	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (pancreatic ca)	https://clinicaltrials.gov/ct2/show/NCT01397929	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (pancreatic ca)	https://clinicaltrials.gov/ct2/show/NCT01928394	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (pancreatic ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (pancreatic ca)	https://clinicaltrials.gov/ct2/show/NCT03096054	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT01362374	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT01458067	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT01884285	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT01920061	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT02499328	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (thyroid ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (urothelial ca)	https://clinicaltrials.gov/ct2/show/NCT01920061	oncogene
+ERBB2	ENSG00000141736	ENST00000269571	Amplification	NA	NA	NA	Trial (urothelial ca)	https://clinicaltrials.gov/ct2/show/NCT03096054	oncogene
+FANCA	ENSG00000187741	ENST00000389301	Amplification	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+FANCA	ENSG00000187741	ENST00000389301	Amplification	NA	NA	NA	Trial (SCC Lung)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCA	ENSG00000187741	ENST00000389301	Amplification	NA	NA	NA	Trial (SCLC)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCA	ENSG00000187741	ENST00000389301	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+FANCA	ENSG00000187741	ENST00000389301	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCA	ENSG00000187741	ENST00000389301	Amplification	NA	NA	NA	Trial (cervical ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCA	ENSG00000187741	ENST00000389301	Amplification	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+FANCA	ENSG00000187741	ENST00000389301	Amplification	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCA	ENSG00000187741	ENST00000389301	Amplification	NA	NA	NA	Trial (endometrial ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCA	ENSG00000187741	ENST00000389301	Amplification	NA	NA	NA	Trial (head neck SCC)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+FANCA	ENSG00000187741	ENST00000389301	Amplification	NA	NA	NA	Trial (lung ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCA	ENSG00000187741	ENST00000389301	Amplification	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+FANCA	ENSG00000187741	ENST00000389301	Amplification	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCA	ENSG00000187741	ENST00000389301	Amplification	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+FANCA	ENSG00000187741	ENST00000389301	Amplification	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCB	ENSG00000181544	ENST00000398334	Amplification	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+FANCB	ENSG00000181544	ENST00000398334	Amplification	NA	NA	NA	Trial (SCC Lung)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCB	ENSG00000181544	ENST00000398334	Amplification	NA	NA	NA	Trial (SCLC)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCB	ENSG00000181544	ENST00000398334	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+FANCB	ENSG00000181544	ENST00000398334	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCB	ENSG00000181544	ENST00000398334	Amplification	NA	NA	NA	Trial (cervical ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCB	ENSG00000181544	ENST00000398334	Amplification	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+FANCB	ENSG00000181544	ENST00000398334	Amplification	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCB	ENSG00000181544	ENST00000398334	Amplification	NA	NA	NA	Trial (endometrial ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCB	ENSG00000181544	ENST00000398334	Amplification	NA	NA	NA	Trial (head neck SCC)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+FANCB	ENSG00000181544	ENST00000398334	Amplification	NA	NA	NA	Trial (lung ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCB	ENSG00000181544	ENST00000398334	Amplification	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+FANCB	ENSG00000181544	ENST00000398334	Amplification	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCB	ENSG00000181544	ENST00000398334	Amplification	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+FANCB	ENSG00000181544	ENST00000398334	Amplification	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCC	ENSG00000158169	ENST00000289081	Amplification	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+FANCC	ENSG00000158169	ENST00000289081	Amplification	NA	NA	NA	Trial (SCC Lung)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCC	ENSG00000158169	ENST00000289081	Amplification	NA	NA	NA	Trial (SCLC)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCC	ENSG00000158169	ENST00000289081	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+FANCC	ENSG00000158169	ENST00000289081	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCC	ENSG00000158169	ENST00000289081	Amplification	NA	NA	NA	Trial (cervical ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCC	ENSG00000158169	ENST00000289081	Amplification	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+FANCC	ENSG00000158169	ENST00000289081	Amplification	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCC	ENSG00000158169	ENST00000289081	Amplification	NA	NA	NA	Trial (endometrial ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCC	ENSG00000158169	ENST00000289081	Amplification	NA	NA	NA	Trial (head neck SCC)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+FANCC	ENSG00000158169	ENST00000289081	Amplification	NA	NA	NA	Trial (lung ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCC	ENSG00000158169	ENST00000289081	Amplification	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+FANCC	ENSG00000158169	ENST00000289081	Amplification	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCC	ENSG00000158169	ENST00000289081	Amplification	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+FANCC	ENSG00000158169	ENST00000289081	Amplification	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCD2	ENSG00000144554	ENST00000287647	Amplification	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+FANCD2	ENSG00000144554	ENST00000287647	Amplification	NA	NA	NA	Trial (SCC Lung)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCD2	ENSG00000144554	ENST00000287647	Amplification	NA	NA	NA	Trial (SCLC)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCD2	ENSG00000144554	ENST00000287647	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+FANCD2	ENSG00000144554	ENST00000287647	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCD2	ENSG00000144554	ENST00000287647	Amplification	NA	NA	NA	Trial (cervical ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCD2	ENSG00000144554	ENST00000287647	Amplification	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+FANCD2	ENSG00000144554	ENST00000287647	Amplification	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCD2	ENSG00000144554	ENST00000287647	Amplification	NA	NA	NA	Trial (endometrial ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCD2	ENSG00000144554	ENST00000287647	Amplification	NA	NA	NA	Trial (head neck SCC)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+FANCD2	ENSG00000144554	ENST00000287647	Amplification	NA	NA	NA	Trial (lung ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCD2	ENSG00000144554	ENST00000287647	Amplification	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+FANCD2	ENSG00000144554	ENST00000287647	Amplification	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCD2	ENSG00000144554	ENST00000287647	Amplification	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+FANCD2	ENSG00000144554	ENST00000287647	Amplification	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCE	ENSG00000112039	ENST00000229769	Amplification	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+FANCE	ENSG00000112039	ENST00000229769	Amplification	NA	NA	NA	Trial (SCC Lung)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCE	ENSG00000112039	ENST00000229769	Amplification	NA	NA	NA	Trial (SCLC)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCE	ENSG00000112039	ENST00000229769	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+FANCE	ENSG00000112039	ENST00000229769	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCE	ENSG00000112039	ENST00000229769	Amplification	NA	NA	NA	Trial (cervical ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCE	ENSG00000112039	ENST00000229769	Amplification	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+FANCE	ENSG00000112039	ENST00000229769	Amplification	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCE	ENSG00000112039	ENST00000229769	Amplification	NA	NA	NA	Trial (endometrial ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCE	ENSG00000112039	ENST00000229769	Amplification	NA	NA	NA	Trial (head neck SCC)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+FANCE	ENSG00000112039	ENST00000229769	Amplification	NA	NA	NA	Trial (lung ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCE	ENSG00000112039	ENST00000229769	Amplification	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+FANCE	ENSG00000112039	ENST00000229769	Amplification	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCE	ENSG00000112039	ENST00000229769	Amplification	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+FANCE	ENSG00000112039	ENST00000229769	Amplification	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCF	ENSG00000183161	ENST00000327470	Amplification	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+FANCF	ENSG00000183161	ENST00000327470	Amplification	NA	NA	NA	Trial (SCC Lung)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCF	ENSG00000183161	ENST00000327470	Amplification	NA	NA	NA	Trial (SCLC)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCF	ENSG00000183161	ENST00000327470	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+FANCF	ENSG00000183161	ENST00000327470	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCF	ENSG00000183161	ENST00000327470	Amplification	NA	NA	NA	Trial (cervical ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCF	ENSG00000183161	ENST00000327470	Amplification	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+FANCF	ENSG00000183161	ENST00000327470	Amplification	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCF	ENSG00000183161	ENST00000327470	Amplification	NA	NA	NA	Trial (endometrial ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCF	ENSG00000183161	ENST00000327470	Amplification	NA	NA	NA	Trial (head neck SCC)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+FANCF	ENSG00000183161	ENST00000327470	Amplification	NA	NA	NA	Trial (lung ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCF	ENSG00000183161	ENST00000327470	Amplification	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+FANCF	ENSG00000183161	ENST00000327470	Amplification	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCF	ENSG00000183161	ENST00000327470	Amplification	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+FANCF	ENSG00000183161	ENST00000327470	Amplification	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCG	ENSG00000221829	ENST00000378643	Amplification	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+FANCG	ENSG00000221829	ENST00000378643	Amplification	NA	NA	NA	Trial (SCC Lung)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCG	ENSG00000221829	ENST00000378643	Amplification	NA	NA	NA	Trial (SCLC)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCG	ENSG00000221829	ENST00000378643	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+FANCG	ENSG00000221829	ENST00000378643	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCG	ENSG00000221829	ENST00000378643	Amplification	NA	NA	NA	Trial (cervical ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCG	ENSG00000221829	ENST00000378643	Amplification	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+FANCG	ENSG00000221829	ENST00000378643	Amplification	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCG	ENSG00000221829	ENST00000378643	Amplification	NA	NA	NA	Trial (endometrial ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCG	ENSG00000221829	ENST00000378643	Amplification	NA	NA	NA	Trial (head neck SCC)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+FANCG	ENSG00000221829	ENST00000378643	Amplification	NA	NA	NA	Trial (lung ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCG	ENSG00000221829	ENST00000378643	Amplification	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+FANCG	ENSG00000221829	ENST00000378643	Amplification	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCG	ENSG00000221829	ENST00000378643	Amplification	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+FANCG	ENSG00000221829	ENST00000378643	Amplification	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCI	ENSG00000140525	ENST00000310775	Amplification	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+FANCI	ENSG00000140525	ENST00000310775	Amplification	NA	NA	NA	Trial (SCC Lung)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCI	ENSG00000140525	ENST00000310775	Amplification	NA	NA	NA	Trial (SCLC)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCI	ENSG00000140525	ENST00000310775	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+FANCI	ENSG00000140525	ENST00000310775	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCI	ENSG00000140525	ENST00000310775	Amplification	NA	NA	NA	Trial (cervical ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCI	ENSG00000140525	ENST00000310775	Amplification	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+FANCI	ENSG00000140525	ENST00000310775	Amplification	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCI	ENSG00000140525	ENST00000310775	Amplification	NA	NA	NA	Trial (endometrial ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCI	ENSG00000140525	ENST00000310775	Amplification	NA	NA	NA	Trial (head neck SCC)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+FANCI	ENSG00000140525	ENST00000310775	Amplification	NA	NA	NA	Trial (lung ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCI	ENSG00000140525	ENST00000310775	Amplification	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+FANCI	ENSG00000140525	ENST00000310775	Amplification	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCI	ENSG00000140525	ENST00000310775	Amplification	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+FANCI	ENSG00000140525	ENST00000310775	Amplification	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCL	ENSG00000115392	ENST00000402135	Amplification	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+FANCL	ENSG00000115392	ENST00000402135	Amplification	NA	NA	NA	Trial (SCC Lung)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCL	ENSG00000115392	ENST00000402135	Amplification	NA	NA	NA	Trial (SCLC)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCL	ENSG00000115392	ENST00000402135	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+FANCL	ENSG00000115392	ENST00000402135	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCL	ENSG00000115392	ENST00000402135	Amplification	NA	NA	NA	Trial (cervical ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCL	ENSG00000115392	ENST00000402135	Amplification	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+FANCL	ENSG00000115392	ENST00000402135	Amplification	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCL	ENSG00000115392	ENST00000402135	Amplification	NA	NA	NA	Trial (endometrial ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCL	ENSG00000115392	ENST00000402135	Amplification	NA	NA	NA	Trial (head neck SCC)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+FANCL	ENSG00000115392	ENST00000402135	Amplification	NA	NA	NA	Trial (lung ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCL	ENSG00000115392	ENST00000402135	Amplification	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+FANCL	ENSG00000115392	ENST00000402135	Amplification	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCL	ENSG00000115392	ENST00000402135	Amplification	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+FANCL	ENSG00000115392	ENST00000402135	Amplification	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCM	ENSG00000187790	ENST00000267430	Amplification	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+FANCM	ENSG00000187790	ENST00000267430	Amplification	NA	NA	NA	Trial (SCC Lung)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCM	ENSG00000187790	ENST00000267430	Amplification	NA	NA	NA	Trial (SCLC)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCM	ENSG00000187790	ENST00000267430	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+FANCM	ENSG00000187790	ENST00000267430	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCM	ENSG00000187790	ENST00000267430	Amplification	NA	NA	NA	Trial (cervical ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCM	ENSG00000187790	ENST00000267430	Amplification	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+FANCM	ENSG00000187790	ENST00000267430	Amplification	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCM	ENSG00000187790	ENST00000267430	Amplification	NA	NA	NA	Trial (endometrial ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCM	ENSG00000187790	ENST00000267430	Amplification	NA	NA	NA	Trial (head neck SCC)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+FANCM	ENSG00000187790	ENST00000267430	Amplification	NA	NA	NA	Trial (lung ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCM	ENSG00000187790	ENST00000267430	Amplification	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+FANCM	ENSG00000187790	ENST00000267430	Amplification	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FANCM	ENSG00000187790	ENST00000267430	Amplification	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+FANCM	ENSG00000187790	ENST00000267430	Amplification	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+FGF1	ENSG00000113578	ENST00000621536	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02052778	
+FGF1	ENSG00000113578	ENST00000621536	Amplification	NA	NA	NA	Trial (urothelial ca)	https://clinicaltrials.gov/ct2/show/NCT02872714	
+FGF10	ENSG00000070193	ENST00000264664	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02052778	
+FGF10	ENSG00000070193	ENST00000264664	Amplification	NA	NA	NA	Trial (urothelial ca)	https://clinicaltrials.gov/ct2/show/NCT02872714	
+FGF11	ENSG00000161958	ENST00000293829	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02052778	
+FGF11	ENSG00000161958	ENST00000293829	Amplification	NA	NA	NA	Trial (urothelial ca)	https://clinicaltrials.gov/ct2/show/NCT02872714	
+FGF12	ENSG00000114279	ENST00000454309	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02052778	
+FGF12	ENSG00000114279	ENST00000454309	Amplification	NA	NA	NA	Trial (urothelial ca)	https://clinicaltrials.gov/ct2/show/NCT02872714	
+FGF13	ENSG00000129682	ENST00000436198	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02052778	
+FGF13	ENSG00000129682	ENST00000436198	Amplification	NA	NA	NA	Trial (urothelial ca)	https://clinicaltrials.gov/ct2/show/NCT02872714	
+FGF14	ENSG00000102466	ENST00000376131	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02052778	
+FGF14	ENSG00000102466	ENST00000376131	Amplification	NA	NA	NA	Trial (urothelial ca)	https://clinicaltrials.gov/ct2/show/NCT02872714	
+FGF16	ENSG00000196468	ENST00000439435	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02052778	
+FGF16	ENSG00000196468	ENST00000439435	Amplification	NA	NA	NA	Trial (urothelial ca)	https://clinicaltrials.gov/ct2/show/NCT02872714	
+FGF17	ENSG00000158815	ENST00000359441	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02052778	
+FGF17	ENSG00000158815	ENST00000359441	Amplification	NA	NA	NA	Trial (urothelial ca)	https://clinicaltrials.gov/ct2/show/NCT02872714	
+FGF18	ENSG00000156427	ENST00000274625	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02052778	
+FGF18	ENSG00000156427	ENST00000274625	Amplification	NA	NA	NA	Trial (urothelial ca)	https://clinicaltrials.gov/ct2/show/NCT02872714	
+FGF19	ENSG00000162344	ENST00000294312	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02052778	
+FGF19	ENSG00000162344	ENST00000294312	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02508467	
+FGF19	ENSG00000162344	ENST00000294312	Amplification	NA	NA	NA	Trial (hepatocellular ca)	https://clinicaltrials.gov/ct2/show/NCT02508467	
+FGF19	ENSG00000162344	ENST00000294312	Amplification	NA	NA	NA	Trial (urothelial ca)	https://clinicaltrials.gov/ct2/show/NCT02872714	
+FGF2	ENSG00000138685	ENST00000614010	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02052778	
+FGF2	ENSG00000138685	ENST00000614010	Amplification	NA	NA	NA	Trial (urothelial ca)	https://clinicaltrials.gov/ct2/show/NCT02872714	
+FGF20	ENSG00000078579	ENST00000180166	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02052778	
+FGF20	ENSG00000078579	ENST00000180166	Amplification	NA	NA	NA	Trial (urothelial ca)	https://clinicaltrials.gov/ct2/show/NCT02872714	
+FGF21	ENSG00000105550	ENST00000222157	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02052778	
+FGF21	ENSG00000105550	ENST00000222157	Amplification	NA	NA	NA	Trial (urothelial ca)	https://clinicaltrials.gov/ct2/show/NCT02872714	
+FGF22	ENSG00000070388	ENST00000215530	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02052778	
+FGF22	ENSG00000070388	ENST00000215530	Amplification	NA	NA	NA	Trial (urothelial ca)	https://clinicaltrials.gov/ct2/show/NCT02872714	
+FGF23	ENSG00000118972	ENST00000237837	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02052778	
+FGF23	ENSG00000118972	ENST00000237837	Amplification	NA	NA	NA	Trial (urothelial ca)	https://clinicaltrials.gov/ct2/show/NCT02872714	
+FGF3	ENSG00000186895	ENST00000334134	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02052778	
+FGF3	ENSG00000186895	ENST00000334134	Amplification	NA	NA	NA	Trial (urothelial ca)	https://clinicaltrials.gov/ct2/show/NCT02872714	
+FGF4	ENSG00000075388	ENST00000168712	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02052778	
+FGF4	ENSG00000075388	ENST00000168712	Amplification	NA	NA	NA	Trial (urothelial ca)	https://clinicaltrials.gov/ct2/show/NCT02872714	
+FGF5	ENSG00000138675	ENST00000312465	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02052778	
+FGF5	ENSG00000138675	ENST00000312465	Amplification	NA	NA	NA	Trial (urothelial ca)	https://clinicaltrials.gov/ct2/show/NCT02872714	
+FGF6	ENSG00000111241	ENST00000228837	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02052778	
+FGF6	ENSG00000111241	ENST00000228837	Amplification	NA	NA	NA	Trial (urothelial ca)	https://clinicaltrials.gov/ct2/show/NCT02872714	
+FGF7	ENSG00000140285	ENST00000614567	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02052778	
+FGF7	ENSG00000140285	ENST00000614567	Amplification	NA	NA	NA	Trial (urothelial ca)	https://clinicaltrials.gov/ct2/show/NCT02872714	
+FGF8	ENSG00000107831	ENST00000320185	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02052778	
+FGF8	ENSG00000107831	ENST00000320185	Amplification	NA	NA	NA	Trial (urothelial ca)	https://clinicaltrials.gov/ct2/show/NCT02872714	
+FGF9	ENSG00000102678	ENST00000382353	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02052778	
+FGF9	ENSG00000102678	ENST00000382353	Amplification	NA	NA	NA	Trial (urothelial ca)	https://clinicaltrials.gov/ct2/show/NCT02872714	
+FGFR1	ENSG00000077782	ENST00000447712	Amplification	NA	NA	NA	Trial (GEJ ca)	https://clinicaltrials.gov/ct2/show/NCT01795768	oncogene
+FGFR1	ENSG00000077782	ENST00000447712	Amplification	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT01795768	oncogene
+FGFR1	ENSG00000077782	ENST00000447712	Amplification	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT01868022	oncogene
+FGFR1	ENSG00000077782	ENST00000447712	Amplification	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02664935	oncogene
+FGFR1	ENSG00000077782	ENST00000447712	Amplification	NA	NA	NA	Trial (SCC Lung)	https://clinicaltrials.gov/ct2/show/NCT01868022	oncogene
+FGFR1	ENSG00000077782	ENST00000447712	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT01795768	oncogene
+FGFR1	ENSG00000077782	ENST00000447712	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02052778	oncogene
+FGFR1	ENSG00000077782	ENST00000447712	Amplification	NA	NA	NA	Trial (esophageal ca)	https://clinicaltrials.gov/ct2/show/NCT01795768	oncogene
+FGFR1	ENSG00000077782	ENST00000447712	Amplification	NA	NA	NA	Trial (gastric ca)	https://clinicaltrials.gov/ct2/show/NCT01795768	oncogene
+FGFR1	ENSG00000077782	ENST00000447712	Amplification	NA	NA	NA	Trial (urothelial ca)	https://clinicaltrials.gov/ct2/show/NCT02365597	oncogene
+FGFR1	ENSG00000077782	ENST00000447712	Amplification	NA	NA	NA	Trial (urothelial ca)	https://clinicaltrials.gov/ct2/show/NCT02872714	oncogene
+FGFR1	ENSG00000077782	ENST00000447712	Fusion	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02664935	oncogene
+FGFR1	ENSG00000077782	ENST00000447712	Fusion	NA	NA	NA	Trial (bladder ca)	https://clinicaltrials.gov/ct2/show/NCT02546661	oncogene
+FGFR1	ENSG00000077782	ENST00000447712	Fusion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02052778	oncogene
+FGFR1	ENSG00000077782	ENST00000447712	Fusion	NA	NA	NA	Trial (urothelial ca)	https://clinicaltrials.gov/ct2/show/NCT02365597	oncogene
+FGFR1	ENSG00000077782	ENST00000447712	Fusion	NA	NA	NA	Trial (urothelial ca)	https://clinicaltrials.gov/ct2/show/NCT02546661	oncogene
+FGFR1	ENSG00000077782	ENST00000447712	Fusion	NA	NA	NA	Trial (urothelial ca)	https://clinicaltrials.gov/ct2/show/NCT02872714	oncogene
+FGFR2	ENSG00000066468	ENST00000457416	Amplification	NA	NA	NA	Trial (GEJ ca)	https://clinicaltrials.gov/ct2/show/NCT01795768	oncogene
+FGFR2	ENSG00000066468	ENST00000457416	Amplification	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT01795768	oncogene
+FGFR2	ENSG00000066468	ENST00000457416	Amplification	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02664935	oncogene
+FGFR2	ENSG00000066468	ENST00000457416	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT01795768	oncogene
+FGFR2	ENSG00000066468	ENST00000457416	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02052778	oncogene
+FGFR2	ENSG00000066468	ENST00000457416	Amplification	NA	NA	NA	Trial (esophageal ca)	https://clinicaltrials.gov/ct2/show/NCT01795768	oncogene
+FGFR2	ENSG00000066468	ENST00000457416	Amplification	NA	NA	NA	Trial (gastric ca)	https://clinicaltrials.gov/ct2/show/NCT01795768	oncogene
+FGFR2	ENSG00000066468	ENST00000457416	Amplification	NA	NA	NA	Trial (urothelial ca)	https://clinicaltrials.gov/ct2/show/NCT02365597	oncogene
+FGFR2	ENSG00000066468	ENST00000457416	Amplification	NA	NA	NA	Trial (urothelial ca)	https://clinicaltrials.gov/ct2/show/NCT02872714	oncogene
+FGFR2	ENSG00000066468	ENST00000457416	Fusion	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02664935	oncogene
+FGFR2	ENSG00000066468	ENST00000457416	Fusion	NA	NA	NA	Trial (bladder ca)	https://clinicaltrials.gov/ct2/show/NCT02546661	oncogene
+FGFR2	ENSG00000066468	ENST00000457416	Fusion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02052778	oncogene
+FGFR2	ENSG00000066468	ENST00000457416	Fusion	NA	NA	NA	Trial (urothelial ca)	https://clinicaltrials.gov/ct2/show/NCT02365597	oncogene
+FGFR2	ENSG00000066468	ENST00000457416	Fusion	NA	NA	NA	Trial (urothelial ca)	https://clinicaltrials.gov/ct2/show/NCT02546661	oncogene
+FGFR2	ENSG00000066468	ENST00000457416	Fusion	NA	NA	NA	Trial (urothelial ca)	https://clinicaltrials.gov/ct2/show/NCT02872714	oncogene
+FGFR3	ENSG00000068078	ENST00000440486	Amplification	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02664935	oncogene
+FGFR3	ENSG00000068078	ENST00000440486	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02052778	oncogene
+FGFR3	ENSG00000068078	ENST00000440486	Amplification	NA	NA	NA	Trial (urothelial ca)	https://clinicaltrials.gov/ct2/show/NCT02365597	oncogene
+FGFR3	ENSG00000068078	ENST00000440486	Amplification	NA	NA	NA	Trial (urothelial ca)	https://clinicaltrials.gov/ct2/show/NCT02872714	oncogene
+FGFR3	ENSG00000068078	ENST00000440486	Fusion	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02664935	oncogene
+FGFR3	ENSG00000068078	ENST00000440486	Fusion	NA	NA	NA	Trial (bladder ca)	https://clinicaltrials.gov/ct2/show/NCT02546661	oncogene
+FGFR3	ENSG00000068078	ENST00000440486	Fusion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02052778	oncogene
+FGFR3	ENSG00000068078	ENST00000440486	Fusion	NA	NA	NA	Trial (urothelial ca)	https://clinicaltrials.gov/ct2/show/NCT02365597	oncogene
+FGFR3	ENSG00000068078	ENST00000440486	Fusion	NA	NA	NA	Trial (urothelial ca)	https://clinicaltrials.gov/ct2/show/NCT02546661	oncogene
+FGFR3	ENSG00000068078	ENST00000440486	Fusion	NA	NA	NA	Trial (urothelial ca)	https://clinicaltrials.gov/ct2/show/NCT02872714	oncogene
+FGFR4	ENSG00000160867	ENST00000292408	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02052778	oncogene
+FGFR4	ENSG00000160867	ENST00000292408	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02508467	oncogene
+FGFR4	ENSG00000160867	ENST00000292408	Amplification	NA	NA	NA	Trial (hepatocellular ca)	https://clinicaltrials.gov/ct2/show/NCT02508467	oncogene
+FGFR4	ENSG00000160867	ENST00000292408	Amplification	NA	NA	NA	Trial (urothelial ca)	https://clinicaltrials.gov/ct2/show/NCT02365597	oncogene
+FGFR4	ENSG00000160867	ENST00000292408	Amplification	NA	NA	NA	Trial (urothelial ca)	https://clinicaltrials.gov/ct2/show/NCT02872714	oncogene
+FGFR4	ENSG00000160867	ENST00000292408	Fusion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02052778	oncogene
+FGFR4	ENSG00000160867	ENST00000292408	Fusion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02508467	oncogene
+FGFR4	ENSG00000160867	ENST00000292408	Fusion	NA	NA	NA	Trial (hepatocellular ca)	https://clinicaltrials.gov/ct2/show/NCT02508467	oncogene
+FGFR4	ENSG00000160867	ENST00000292408	Fusion	NA	NA	NA	Trial (urothelial ca)	https://clinicaltrials.gov/ct2/show/NCT02365597	oncogene
+FGFR4	ENSG00000160867	ENST00000292408	Fusion	NA	NA	NA	Trial (urothelial ca)	https://clinicaltrials.gov/ct2/show/NCT02872714	oncogene
+FRS2	ENSG00000166225	ENST00000549921	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02508467	
+FRS2	ENSG00000166225	ENST00000549921	Amplification	NA	NA	NA	Trial (hepatocellular ca)	https://clinicaltrials.gov/ct2/show/NCT02508467	
+GRB2	ENSG00000177885	ENST00000316615	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02508467	
+GRB2	ENSG00000177885	ENST00000316615	Amplification	NA	NA	NA	Trial (hepatocellular ca)	https://clinicaltrials.gov/ct2/show/NCT02508467	
+HRAS	ENSG00000174775	ENST00000451590	Amplification	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	oncogene
+HRAS	ENSG00000174775	ENST00000451590	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	oncogene
+HRAS	ENSG00000174775	ENST00000451590	Amplification	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	oncogene
+HRAS	ENSG00000174775	ENST00000451590	Amplification	NA	NA	NA	Trial (head neck SCC)	https://clinicaltrials.gov/ct2/show/NCT02797964	oncogene
+HRAS	ENSG00000174775	ENST00000451590	Amplification	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	oncogene
+HRAS	ENSG00000174775	ENST00000451590	Amplification	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	oncogene
+KIT	ENSG00000157404	ENST00000288135	Amplification	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+KIT	ENSG00000157404	ENST00000288135	Amplification	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02664935	oncogene
+KIT	ENSG00000157404	ENST00000288135	Amplification	NA	NA	NA	Trial (RCC)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+KIT	ENSG00000157404	ENST00000288135	Amplification	NA	NA	NA	Trial (SCC Lung)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+KIT	ENSG00000157404	ENST00000288135	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+KIT	ENSG00000157404	ENST00000288135	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02338622	oncogene
+KIT	ENSG00000157404	ENST00000288135	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02483858	oncogene
+KIT	ENSG00000157404	ENST00000288135	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+KIT	ENSG00000157404	ENST00000288135	Amplification	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+KIT	ENSG00000157404	ENST00000288135	Amplification	NA	NA	NA	Trial (endometrial ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+KIT	ENSG00000157404	ENST00000288135	Amplification	NA	NA	NA	Trial (melanoma)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+KIT	ENSG00000157404	ENST00000288135	Amplification	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+KIT	ENSG00000157404	ENST00000288135	Amplification	NA	NA	NA	Trial (pancreatic ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+KIT	ENSG00000157404	ENST00000288135	Amplification	NA	NA	NA	Trial (thyroid ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+KIT	ENSG00000157404	ENST00000288135	Fusion	NA	NA	NA	Trial (melanoma)	https://clinicaltrials.gov/ct2/show/NCT02071940	oncogene
+KLB	ENSG00000134962	ENST00000257408	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02508467	
+KLB	ENSG00000134962	ENST00000257408	Amplification	NA	NA	NA	Trial (hepatocellular ca)	https://clinicaltrials.gov/ct2/show/NCT02508467	
+KMT2A	ENSG00000118058	ENST00000534358	Fusion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02508467	
+KMT2A	ENSG00000118058	ENST00000534358	Fusion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02508467	oncogene
+KMT2A	ENSG00000118058	ENST00000534358	Fusion	NA	NA	NA	Trial (hepatocellular ca)	https://clinicaltrials.gov/ct2/show/NCT02508467	
+KMT2A	ENSG00000118058	ENST00000534358	Fusion	NA	NA	NA	Trial (hepatocellular ca)	https://clinicaltrials.gov/ct2/show/NCT02508467	oncogene
+KRAS	ENSG00000133703	ENST00000256078	Amplification	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	oncogene
+KRAS	ENSG00000133703	ENST00000256078	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	oncogene
+KRAS	ENSG00000133703	ENST00000256078	Amplification	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	oncogene
+KRAS	ENSG00000133703	ENST00000256078	Amplification	NA	NA	NA	Trial (head neck SCC)	https://clinicaltrials.gov/ct2/show/NCT02797964	oncogene
+KRAS	ENSG00000133703	ENST00000256078	Amplification	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	oncogene
+KRAS	ENSG00000133703	ENST00000256078	Amplification	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	oncogene
+MDM2	ENSG00000135679	ENST00000258149	Amplification	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	oncogene
+MDM2	ENSG00000135679	ENST00000258149	Amplification	NA	NA	NA	Trial (SCC Lung)	https://clinicaltrials.gov/ct2/show/NCT03188965	oncogene
+MDM2	ENSG00000135679	ENST00000258149	Amplification	NA	NA	NA	Trial (SCLC)	https://clinicaltrials.gov/ct2/show/NCT03188965	oncogene
+MDM2	ENSG00000135679	ENST00000258149	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	oncogene
+MDM2	ENSG00000135679	ENST00000258149	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	oncogene
+MDM2	ENSG00000135679	ENST00000258149	Amplification	NA	NA	NA	Trial (cervical ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	oncogene
+MDM2	ENSG00000135679	ENST00000258149	Amplification	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	oncogene
+MDM2	ENSG00000135679	ENST00000258149	Amplification	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	oncogene
+MDM2	ENSG00000135679	ENST00000258149	Amplification	NA	NA	NA	Trial (endometrial ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	oncogene
+MDM2	ENSG00000135679	ENST00000258149	Amplification	NA	NA	NA	Trial (head neck SCC)	https://clinicaltrials.gov/ct2/show/NCT02797964	oncogene
+MDM2	ENSG00000135679	ENST00000258149	Amplification	NA	NA	NA	Trial (lung ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	oncogene
+MDM2	ENSG00000135679	ENST00000258149	Amplification	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	oncogene
+MDM2	ENSG00000135679	ENST00000258149	Amplification	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	oncogene
+MDM2	ENSG00000135679	ENST00000258149	Amplification	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	oncogene
+MDM2	ENSG00000135679	ENST00000258149	Amplification	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	oncogene
+MET	ENSG00000105976	ENST00000318493	Amplification	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02414139	oncogene
+MET	ENSG00000105976	ENST00000318493	Amplification	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02544633	oncogene
+MET	ENSG00000105976	ENST00000318493	Amplification	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+MET	ENSG00000105976	ENST00000318493	Amplification	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02664935	oncogene
+MET	ENSG00000105976	ENST00000318493	Amplification	NA	NA	NA	Trial (RCC)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+MET	ENSG00000105976	ENST00000318493	Amplification	NA	NA	NA	Trial (SCC Lung)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+MET	ENSG00000105976	ENST00000318493	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+MET	ENSG00000105976	ENST00000318493	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02338622	oncogene
+MET	ENSG00000105976	ENST00000318493	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02483858	oncogene
+MET	ENSG00000105976	ENST00000318493	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02520752	oncogene
+MET	ENSG00000105976	ENST00000318493	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+MET	ENSG00000105976	ENST00000318493	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02626234	oncogene
+MET	ENSG00000105976	ENST00000318493	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02925104	oncogene
+MET	ENSG00000105976	ENST00000318493	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT03138083	oncogene
+MET	ENSG00000105976	ENST00000318493	Amplification	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02510001	oncogene
+MET	ENSG00000105976	ENST00000318493	Amplification	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+MET	ENSG00000105976	ENST00000318493	Amplification	NA	NA	NA	Trial (endometrial ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+MET	ENSG00000105976	ENST00000318493	Amplification	NA	NA	NA	Trial (melanoma)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+MET	ENSG00000105976	ENST00000318493	Amplification	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+MET	ENSG00000105976	ENST00000318493	Amplification	NA	NA	NA	Trial (pancreatic ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+MET	ENSG00000105976	ENST00000318493	Amplification	NA	NA	NA	Trial (thyroid ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+MET	ENSG00000105976	ENST00000318493	Fusion	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+MET	ENSG00000105976	ENST00000318493	Fusion	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02664935	oncogene
+MET	ENSG00000105976	ENST00000318493	Fusion	NA	NA	NA	Trial (RCC)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+MET	ENSG00000105976	ENST00000318493	Fusion	NA	NA	NA	Trial (SCC Lung)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+MET	ENSG00000105976	ENST00000318493	Fusion	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+MET	ENSG00000105976	ENST00000318493	Fusion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02338622	oncogene
+MET	ENSG00000105976	ENST00000318493	Fusion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02483858	oncogene
+MET	ENSG00000105976	ENST00000318493	Fusion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02520752	oncogene
+MET	ENSG00000105976	ENST00000318493	Fusion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+MET	ENSG00000105976	ENST00000318493	Fusion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02626234	oncogene
+MET	ENSG00000105976	ENST00000318493	Fusion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02925104	oncogene
+MET	ENSG00000105976	ENST00000318493	Fusion	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02510001	oncogene
+MET	ENSG00000105976	ENST00000318493	Fusion	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+MET	ENSG00000105976	ENST00000318493	Fusion	NA	NA	NA	Trial (endometrial ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+MET	ENSG00000105976	ENST00000318493	Fusion	NA	NA	NA	Trial (melanoma)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+MET	ENSG00000105976	ENST00000318493	Fusion	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+MET	ENSG00000105976	ENST00000318493	Fusion	NA	NA	NA	Trial (pancreatic ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+MET	ENSG00000105976	ENST00000318493	Fusion	NA	NA	NA	Trial (thyroid ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+MLF1	ENSG00000178053	ENST00000392822	Fusion	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+MLF1	ENSG00000178053	ENST00000392822	Fusion	NA	NA	NA	Trial (SCC Lung)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+MLF1	ENSG00000178053	ENST00000392822	Fusion	NA	NA	NA	Trial (SCLC)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+MLF1	ENSG00000178053	ENST00000392822	Fusion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+MLF1	ENSG00000178053	ENST00000392822	Fusion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+MLF1	ENSG00000178053	ENST00000392822	Fusion	NA	NA	NA	Trial (cervical ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+MLF1	ENSG00000178053	ENST00000392822	Fusion	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+MLF1	ENSG00000178053	ENST00000392822	Fusion	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+MLF1	ENSG00000178053	ENST00000392822	Fusion	NA	NA	NA	Trial (endometrial ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+MLF1	ENSG00000178053	ENST00000392822	Fusion	NA	NA	NA	Trial (head neck SCC)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+MLF1	ENSG00000178053	ENST00000392822	Fusion	NA	NA	NA	Trial (lung ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+MLF1	ENSG00000178053	ENST00000392822	Fusion	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+MLF1	ENSG00000178053	ENST00000392822	Fusion	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+MLF1	ENSG00000178053	ENST00000392822	Fusion	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+MLF1	ENSG00000178053	ENST00000392822	Fusion	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+MLH1	ENSG00000076242	ENST00000231790	Large Deletion (Exon -1)	NA	NA	NA	Trial (SCC Lung)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+MLH1	ENSG00000076242	ENST00000231790	Large Deletion (Exon -1)	NA	NA	NA	Trial (SCLC)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+MLH1	ENSG00000076242	ENST00000231790	Large Deletion (Exon -1)	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+MLH1	ENSG00000076242	ENST00000231790	Large Deletion (Exon -1)	NA	NA	NA	Trial (cervical ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+MLH1	ENSG00000076242	ENST00000231790	Large Deletion (Exon -1)	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+MLH1	ENSG00000076242	ENST00000231790	Large Deletion (Exon -1)	NA	NA	NA	Trial (endometrial ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+MLH1	ENSG00000076242	ENST00000231790	Large Deletion (Exon -1)	NA	NA	NA	Trial (lung ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+MLH1	ENSG00000076242	ENST00000231790	Large Deletion (Exon -1)	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+MLH1	ENSG00000076242	ENST00000231790	Large Deletion (Exon -1)	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+MLH1	ENSG00000076242	ENST00000231790	Loss	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+MLH1	ENSG00000076242	ENST00000231790	Loss	NA	NA	NA	Trial (SCC Lung)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+MLH1	ENSG00000076242	ENST00000231790	Loss	NA	NA	NA	Trial (SCLC)	https://clinicaltrials.gov/ct2/show/NCT02628067	tumour suppressor
+MLH1	ENSG00000076242	ENST00000231790	Loss	NA	NA	NA	Trial (SCLC)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+MLH1	ENSG00000076242	ENST00000231790	Loss	NA	NA	NA	Trial (anal ca)	https://clinicaltrials.gov/ct2/show/NCT02628067	tumour suppressor
+MLH1	ENSG00000076242	ENST00000231790	Loss	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02628067	tumour suppressor
+MLH1	ENSG00000076242	ENST00000231790	Loss	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+MLH1	ENSG00000076242	ENST00000231790	Loss	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+MLH1	ENSG00000076242	ENST00000231790	Loss	NA	NA	NA	Trial (cervical ca)	https://clinicaltrials.gov/ct2/show/NCT02628067	tumour suppressor
+MLH1	ENSG00000076242	ENST00000231790	Loss	NA	NA	NA	Trial (cervical ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+MLH1	ENSG00000076242	ENST00000231790	Loss	NA	NA	NA	Trial (cholangioca)	https://clinicaltrials.gov/ct2/show/NCT02628067	tumour suppressor
+MLH1	ENSG00000076242	ENST00000231790	Loss	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02563002	tumour suppressor
+MLH1	ENSG00000076242	ENST00000231790	Loss	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02628067	tumour suppressor
+MLH1	ENSG00000076242	ENST00000231790	Loss	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+MLH1	ENSG00000076242	ENST00000231790	Loss	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+MLH1	ENSG00000076242	ENST00000231790	Loss	NA	NA	NA	Trial (endometrial ca)	https://clinicaltrials.gov/ct2/show/NCT02628067	tumour suppressor
+MLH1	ENSG00000076242	ENST00000231790	Loss	NA	NA	NA	Trial (endometrial ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+MLH1	ENSG00000076242	ENST00000231790	Loss	NA	NA	NA	Trial (gallbladder ca)	https://clinicaltrials.gov/ct2/show/NCT02628067	tumour suppressor
+MLH1	ENSG00000076242	ENST00000231790	Loss	NA	NA	NA	Trial (head neck SCC)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+MLH1	ENSG00000076242	ENST00000231790	Loss	NA	NA	NA	Trial (lung ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+MLH1	ENSG00000076242	ENST00000231790	Loss	NA	NA	NA	Trial (mesot)	https://clinicaltrials.gov/ct2/show/NCT02628067	tumour suppressor
+MLH1	ENSG00000076242	ENST00000231790	Loss	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+MLH1	ENSG00000076242	ENST00000231790	Loss	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+MLH1	ENSG00000076242	ENST00000231790	Loss	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+MLH1	ENSG00000076242	ENST00000231790	Loss	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+MLH1	ENSG00000076242	ENST00000231790	Loss	NA	NA	NA	Trial (salivary ca)	https://clinicaltrials.gov/ct2/show/NCT02628067	tumour suppressor
+MLH1	ENSG00000076242	ENST00000231790	Loss	NA	NA	NA	Trial (thyroid ca)	https://clinicaltrials.gov/ct2/show/NCT02628067	tumour suppressor
+MLH1	ENSG00000076242	ENST00000231790	Loss	NA	NA	NA	Trial (vulvar ca)	https://clinicaltrials.gov/ct2/show/NCT02628067	tumour suppressor
+MLH3	ENSG00000119684	ENST00000355774	Large Deletion (Exon -1)	NA	NA	NA	Trial (SCC Lung)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+MLH3	ENSG00000119684	ENST00000355774	Large Deletion (Exon -1)	NA	NA	NA	Trial (SCLC)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+MLH3	ENSG00000119684	ENST00000355774	Large Deletion (Exon -1)	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+MLH3	ENSG00000119684	ENST00000355774	Large Deletion (Exon -1)	NA	NA	NA	Trial (cervical ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+MLH3	ENSG00000119684	ENST00000355774	Large Deletion (Exon -1)	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+MLH3	ENSG00000119684	ENST00000355774	Large Deletion (Exon -1)	NA	NA	NA	Trial (endometrial ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+MLH3	ENSG00000119684	ENST00000355774	Large Deletion (Exon -1)	NA	NA	NA	Trial (lung ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+MLH3	ENSG00000119684	ENST00000355774	Large Deletion (Exon -1)	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+MLH3	ENSG00000119684	ENST00000355774	Large Deletion (Exon -1)	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+MLH3	ENSG00000119684	ENST00000355774	Loss	NA	NA	NA	Trial (SCC Lung)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+MLH3	ENSG00000119684	ENST00000355774	Loss	NA	NA	NA	Trial (SCLC)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+MLH3	ENSG00000119684	ENST00000355774	Loss	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+MLH3	ENSG00000119684	ENST00000355774	Loss	NA	NA	NA	Trial (cervical ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+MLH3	ENSG00000119684	ENST00000355774	Loss	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+MLH3	ENSG00000119684	ENST00000355774	Loss	NA	NA	NA	Trial (endometrial ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+MLH3	ENSG00000119684	ENST00000355774	Loss	NA	NA	NA	Trial (lung ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+MLH3	ENSG00000119684	ENST00000355774	Loss	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+MLH3	ENSG00000119684	ENST00000355774	Loss	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+MLLT1	ENSG00000130382	ENST00000252674	Fusion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02508467	
+MLLT1	ENSG00000130382	ENST00000252674	Fusion	NA	NA	NA	Trial (hepatocellular ca)	https://clinicaltrials.gov/ct2/show/NCT02508467	
+MLLT10	ENSG00000078403	ENST00000377072	Fusion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02508467	
+MLLT10	ENSG00000078403	ENST00000377072	Fusion	NA	NA	NA	Trial (hepatocellular ca)	https://clinicaltrials.gov/ct2/show/NCT02508467	
+MLLT3	ENSG00000171843	ENST00000380338	Fusion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02508467	
+MLLT3	ENSG00000171843	ENST00000380338	Fusion	NA	NA	NA	Trial (hepatocellular ca)	https://clinicaltrials.gov/ct2/show/NCT02508467	
+MRE11	ENSG00000020922	ENST00000323929	Loss	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+MRE11	ENSG00000020922	ENST00000323929	Loss	NA	NA	NA	Trial (SCC Lung)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+MRE11	ENSG00000020922	ENST00000323929	Loss	NA	NA	NA	Trial (SCLC)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+MRE11	ENSG00000020922	ENST00000323929	Loss	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+MRE11	ENSG00000020922	ENST00000323929	Loss	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+MRE11	ENSG00000020922	ENST00000323929	Loss	NA	NA	NA	Trial (cervical ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+MRE11	ENSG00000020922	ENST00000323929	Loss	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+MRE11	ENSG00000020922	ENST00000323929	Loss	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+MRE11	ENSG00000020922	ENST00000323929	Loss	NA	NA	NA	Trial (endometrial ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+MRE11	ENSG00000020922	ENST00000323929	Loss	NA	NA	NA	Trial (head neck SCC)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+MRE11	ENSG00000020922	ENST00000323929	Loss	NA	NA	NA	Trial (lung ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+MRE11	ENSG00000020922	ENST00000323929	Loss	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+MRE11	ENSG00000020922	ENST00000323929	Loss	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+MRE11	ENSG00000020922	ENST00000323929	Loss	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+MRE11	ENSG00000020922	ENST00000323929	Loss	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+MSH2	ENSG00000095002	ENST00000233146	Large Deletion	NA	NA	NA	Trial (SCC Lung)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+MSH2	ENSG00000095002	ENST00000233146	Large Deletion	NA	NA	NA	Trial (SCLC)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+MSH2	ENSG00000095002	ENST00000233146	Large Deletion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+MSH2	ENSG00000095002	ENST00000233146	Large Deletion	NA	NA	NA	Trial (cervical ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+MSH2	ENSG00000095002	ENST00000233146	Large Deletion	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT00952016	tumour suppressor
+MSH2	ENSG00000095002	ENST00000233146	Large Deletion	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+MSH2	ENSG00000095002	ENST00000233146	Large Deletion	NA	NA	NA	Trial (endometrial ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+MSH2	ENSG00000095002	ENST00000233146	Large Deletion	NA	NA	NA	Trial (lung ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+MSH2	ENSG00000095002	ENST00000233146	Large Deletion	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+MSH2	ENSG00000095002	ENST00000233146	Large Deletion	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+MSH2	ENSG00000095002	ENST00000233146	Loss	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+MSH2	ENSG00000095002	ENST00000233146	Loss	NA	NA	NA	Trial (SCC Lung)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+MSH2	ENSG00000095002	ENST00000233146	Loss	NA	NA	NA	Trial (SCLC)	https://clinicaltrials.gov/ct2/show/NCT02628067	tumour suppressor
+MSH2	ENSG00000095002	ENST00000233146	Loss	NA	NA	NA	Trial (SCLC)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+MSH2	ENSG00000095002	ENST00000233146	Loss	NA	NA	NA	Trial (anal ca)	https://clinicaltrials.gov/ct2/show/NCT02628067	tumour suppressor
+MSH2	ENSG00000095002	ENST00000233146	Loss	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02628067	tumour suppressor
+MSH2	ENSG00000095002	ENST00000233146	Loss	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+MSH2	ENSG00000095002	ENST00000233146	Loss	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+MSH2	ENSG00000095002	ENST00000233146	Loss	NA	NA	NA	Trial (cervical ca)	https://clinicaltrials.gov/ct2/show/NCT02628067	tumour suppressor
+MSH2	ENSG00000095002	ENST00000233146	Loss	NA	NA	NA	Trial (cervical ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+MSH2	ENSG00000095002	ENST00000233146	Loss	NA	NA	NA	Trial (cholangioca)	https://clinicaltrials.gov/ct2/show/NCT02628067	tumour suppressor
+MSH2	ENSG00000095002	ENST00000233146	Loss	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT00952016	tumour suppressor
+MSH2	ENSG00000095002	ENST00000233146	Loss	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02563002	tumour suppressor
+MSH2	ENSG00000095002	ENST00000233146	Loss	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02628067	tumour suppressor
+MSH2	ENSG00000095002	ENST00000233146	Loss	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+MSH2	ENSG00000095002	ENST00000233146	Loss	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+MSH2	ENSG00000095002	ENST00000233146	Loss	NA	NA	NA	Trial (endometrial ca)	https://clinicaltrials.gov/ct2/show/NCT02628067	tumour suppressor
+MSH2	ENSG00000095002	ENST00000233146	Loss	NA	NA	NA	Trial (endometrial ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+MSH2	ENSG00000095002	ENST00000233146	Loss	NA	NA	NA	Trial (gallbladder ca)	https://clinicaltrials.gov/ct2/show/NCT02628067	tumour suppressor
+MSH2	ENSG00000095002	ENST00000233146	Loss	NA	NA	NA	Trial (head neck SCC)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+MSH2	ENSG00000095002	ENST00000233146	Loss	NA	NA	NA	Trial (lung ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+MSH2	ENSG00000095002	ENST00000233146	Loss	NA	NA	NA	Trial (mesot)	https://clinicaltrials.gov/ct2/show/NCT02628067	tumour suppressor
+MSH2	ENSG00000095002	ENST00000233146	Loss	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+MSH2	ENSG00000095002	ENST00000233146	Loss	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+MSH2	ENSG00000095002	ENST00000233146	Loss	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+MSH2	ENSG00000095002	ENST00000233146	Loss	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+MSH2	ENSG00000095002	ENST00000233146	Loss	NA	NA	NA	Trial (salivary ca)	https://clinicaltrials.gov/ct2/show/NCT02628067	tumour suppressor
+MSH2	ENSG00000095002	ENST00000233146	Loss	NA	NA	NA	Trial (thyroid ca)	https://clinicaltrials.gov/ct2/show/NCT02628067	tumour suppressor
+MSH2	ENSG00000095002	ENST00000233146	Loss	NA	NA	NA	Trial (vulvar ca)	https://clinicaltrials.gov/ct2/show/NCT02628067	tumour suppressor
+MSH3	ENSG00000113318	ENST00000265081	Large Deletion (Exon -1)	NA	NA	NA	Trial (SCC Lung)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+MSH3	ENSG00000113318	ENST00000265081	Large Deletion (Exon -1)	NA	NA	NA	Trial (SCLC)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+MSH3	ENSG00000113318	ENST00000265081	Large Deletion (Exon -1)	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+MSH3	ENSG00000113318	ENST00000265081	Large Deletion (Exon -1)	NA	NA	NA	Trial (cervical ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+MSH3	ENSG00000113318	ENST00000265081	Large Deletion (Exon -1)	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+MSH3	ENSG00000113318	ENST00000265081	Large Deletion (Exon -1)	NA	NA	NA	Trial (endometrial ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+MSH3	ENSG00000113318	ENST00000265081	Large Deletion (Exon -1)	NA	NA	NA	Trial (lung ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+MSH3	ENSG00000113318	ENST00000265081	Large Deletion (Exon -1)	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+MSH3	ENSG00000113318	ENST00000265081	Large Deletion (Exon -1)	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+MSH3	ENSG00000113318	ENST00000265081	Loss	NA	NA	NA	Trial (SCC Lung)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+MSH3	ENSG00000113318	ENST00000265081	Loss	NA	NA	NA	Trial (SCLC)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+MSH3	ENSG00000113318	ENST00000265081	Loss	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+MSH3	ENSG00000113318	ENST00000265081	Loss	NA	NA	NA	Trial (cervical ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+MSH3	ENSG00000113318	ENST00000265081	Loss	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+MSH3	ENSG00000113318	ENST00000265081	Loss	NA	NA	NA	Trial (endometrial ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+MSH3	ENSG00000113318	ENST00000265081	Loss	NA	NA	NA	Trial (lung ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+MSH3	ENSG00000113318	ENST00000265081	Loss	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+MSH3	ENSG00000113318	ENST00000265081	Loss	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+MSH6	ENSG00000116062	ENST00000234420	Large Deletion (Exon -1)	NA	NA	NA	Trial (SCC Lung)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+MSH6	ENSG00000116062	ENST00000234420	Large Deletion (Exon -1)	NA	NA	NA	Trial (SCLC)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+MSH6	ENSG00000116062	ENST00000234420	Large Deletion (Exon -1)	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+MSH6	ENSG00000116062	ENST00000234420	Large Deletion (Exon -1)	NA	NA	NA	Trial (cervical ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+MSH6	ENSG00000116062	ENST00000234420	Large Deletion (Exon -1)	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+MSH6	ENSG00000116062	ENST00000234420	Large Deletion (Exon -1)	NA	NA	NA	Trial (endometrial ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+MSH6	ENSG00000116062	ENST00000234420	Large Deletion (Exon -1)	NA	NA	NA	Trial (lung ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+MSH6	ENSG00000116062	ENST00000234420	Large Deletion (Exon -1)	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+MSH6	ENSG00000116062	ENST00000234420	Large Deletion (Exon -1)	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+MSH6	ENSG00000116062	ENST00000234420	Loss	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+MSH6	ENSG00000116062	ENST00000234420	Loss	NA	NA	NA	Trial (SCC Lung)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+MSH6	ENSG00000116062	ENST00000234420	Loss	NA	NA	NA	Trial (SCLC)	https://clinicaltrials.gov/ct2/show/NCT02628067	tumour suppressor
+MSH6	ENSG00000116062	ENST00000234420	Loss	NA	NA	NA	Trial (SCLC)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+MSH6	ENSG00000116062	ENST00000234420	Loss	NA	NA	NA	Trial (anal ca)	https://clinicaltrials.gov/ct2/show/NCT02628067	tumour suppressor
+MSH6	ENSG00000116062	ENST00000234420	Loss	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02628067	tumour suppressor
+MSH6	ENSG00000116062	ENST00000234420	Loss	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+MSH6	ENSG00000116062	ENST00000234420	Loss	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+MSH6	ENSG00000116062	ENST00000234420	Loss	NA	NA	NA	Trial (cervical ca)	https://clinicaltrials.gov/ct2/show/NCT02628067	tumour suppressor
+MSH6	ENSG00000116062	ENST00000234420	Loss	NA	NA	NA	Trial (cervical ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+MSH6	ENSG00000116062	ENST00000234420	Loss	NA	NA	NA	Trial (cholangioca)	https://clinicaltrials.gov/ct2/show/NCT02628067	tumour suppressor
+MSH6	ENSG00000116062	ENST00000234420	Loss	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02563002	tumour suppressor
+MSH6	ENSG00000116062	ENST00000234420	Loss	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02628067	tumour suppressor
+MSH6	ENSG00000116062	ENST00000234420	Loss	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+MSH6	ENSG00000116062	ENST00000234420	Loss	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+MSH6	ENSG00000116062	ENST00000234420	Loss	NA	NA	NA	Trial (endometrial ca)	https://clinicaltrials.gov/ct2/show/NCT02628067	tumour suppressor
+MSH6	ENSG00000116062	ENST00000234420	Loss	NA	NA	NA	Trial (endometrial ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+MSH6	ENSG00000116062	ENST00000234420	Loss	NA	NA	NA	Trial (gallbladder ca)	https://clinicaltrials.gov/ct2/show/NCT02628067	tumour suppressor
+MSH6	ENSG00000116062	ENST00000234420	Loss	NA	NA	NA	Trial (head neck SCC)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+MSH6	ENSG00000116062	ENST00000234420	Loss	NA	NA	NA	Trial (lung ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+MSH6	ENSG00000116062	ENST00000234420	Loss	NA	NA	NA	Trial (mesot)	https://clinicaltrials.gov/ct2/show/NCT02628067	tumour suppressor
+MSH6	ENSG00000116062	ENST00000234420	Loss	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+MSH6	ENSG00000116062	ENST00000234420	Loss	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+MSH6	ENSG00000116062	ENST00000234420	Loss	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+MSH6	ENSG00000116062	ENST00000234420	Loss	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	tumour suppressor
+MSH6	ENSG00000116062	ENST00000234420	Loss	NA	NA	NA	Trial (salivary ca)	https://clinicaltrials.gov/ct2/show/NCT02628067	tumour suppressor
+MSH6	ENSG00000116062	ENST00000234420	Loss	NA	NA	NA	Trial (thyroid ca)	https://clinicaltrials.gov/ct2/show/NCT02628067	tumour suppressor
+MSH6	ENSG00000116062	ENST00000234420	Loss	NA	NA	NA	Trial (vulvar ca)	https://clinicaltrials.gov/ct2/show/NCT02628067	tumour suppressor
+MYC	ENSG00000136997	ENST00000613283	Amplification	NA	NA	NA	Trial (GEJ ca)	https://clinicaltrials.gov/ct2/show/NCT02884453	oncogene
+MYC	ENSG00000136997	ENST00000613283	Amplification	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	oncogene
+MYC	ENSG00000136997	ENST00000613283	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	oncogene
+MYC	ENSG00000136997	ENST00000613283	Amplification	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	oncogene
+MYC	ENSG00000136997	ENST00000613283	Amplification	NA	NA	NA	Trial (esophageal ca)	https://clinicaltrials.gov/ct2/show/NCT02884453	oncogene
+MYC	ENSG00000136997	ENST00000613283	Amplification	NA	NA	NA	Trial (gastric SCC)	https://clinicaltrials.gov/ct2/show/NCT02884453	oncogene
+MYC	ENSG00000136997	ENST00000613283	Amplification	NA	NA	NA	Trial (gastric ca)	https://clinicaltrials.gov/ct2/show/NCT02884453	oncogene
+MYC	ENSG00000136997	ENST00000613283	Amplification	NA	NA	NA	Trial (head neck SCC)	https://clinicaltrials.gov/ct2/show/NCT02797964	oncogene
+MYC	ENSG00000136997	ENST00000613283	Amplification	NA	NA	NA	Trial (medulloblastoma)	https://clinicaltrials.gov/ct2/show/NCT02066220	oncogene
+MYC	ENSG00000136997	ENST00000613283	Amplification	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	oncogene
+MYC	ENSG00000136997	ENST00000613283	Amplification	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	oncogene
+MYCN	ENSG00000134323	ENST00000281043	Amplification	NA	NA	NA	Trial (NUT midline ca)	https://clinicaltrials.gov/ct2/show/NCT01587703	oncogene
+MYCN	ENSG00000134323	ENST00000281043	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT01587703	oncogene
+MYCN	ENSG00000134323	ENST00000281043	Amplification	NA	NA	NA	Trial (medulloblastoma)	https://clinicaltrials.gov/ct2/show/NCT02066220	oncogene
+MYCN	ENSG00000134323	ENST00000281043	Amplification	NA	NA	NA	Trial (neuroblastoma)	https://clinicaltrials.gov/ct2/show/NCT00003122	oncogene
+MYCN	ENSG00000134323	ENST00000281043	Amplification	NA	NA	NA	Trial (neuroblastoma)	https://clinicaltrials.gov/ct2/show/NCT00030719	oncogene
+MYCN	ENSG00000134323	ENST00000281043	Amplification	NA	NA	NA	Trial (neuroblastoma)	https://clinicaltrials.gov/ct2/show/NCT01704716	oncogene
+NBN	ENSG00000104320	ENST00000265433	Loss	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+NBN	ENSG00000104320	ENST00000265433	Loss	NA	NA	NA	Trial (SCC Lung)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+NBN	ENSG00000104320	ENST00000265433	Loss	NA	NA	NA	Trial (SCLC)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+NBN	ENSG00000104320	ENST00000265433	Loss	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+NBN	ENSG00000104320	ENST00000265433	Loss	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+NBN	ENSG00000104320	ENST00000265433	Loss	NA	NA	NA	Trial (cervical ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+NBN	ENSG00000104320	ENST00000265433	Loss	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+NBN	ENSG00000104320	ENST00000265433	Loss	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+NBN	ENSG00000104320	ENST00000265433	Loss	NA	NA	NA	Trial (endometrial ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+NBN	ENSG00000104320	ENST00000265433	Loss	NA	NA	NA	Trial (head neck SCC)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+NBN	ENSG00000104320	ENST00000265433	Loss	NA	NA	NA	Trial (lung ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+NBN	ENSG00000104320	ENST00000265433	Loss	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+NBN	ENSG00000104320	ENST00000265433	Loss	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+NBN	ENSG00000104320	ENST00000265433	Loss	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+NBN	ENSG00000104320	ENST00000265433	Loss	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+NF1	ENSG00000196712	ENST00000358273	Large Deletion	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	tumour suppressor
+NF1	ENSG00000196712	ENST00000358273	Large Deletion	NA	NA	NA	Trial (RCC)	https://clinicaltrials.gov/ct2/show/NCT02583542	tumour suppressor
+NF1	ENSG00000196712	ENST00000358273	Large Deletion	NA	NA	NA	Trial (SCC Lung)	https://clinicaltrials.gov/ct2/show/NCT02583542	tumour suppressor
+NF1	ENSG00000196712	ENST00000358273	Large Deletion	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	tumour suppressor
+NF1	ENSG00000196712	ENST00000358273	Large Deletion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	tumour suppressor
+NF1	ENSG00000196712	ENST00000358273	Large Deletion	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	tumour suppressor
+NF1	ENSG00000196712	ENST00000358273	Large Deletion	NA	NA	NA	Trial (endometrial ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	tumour suppressor
+NF1	ENSG00000196712	ENST00000358273	Large Deletion	NA	NA	NA	Trial (melanoma)	https://clinicaltrials.gov/ct2/show/NCT02583542	tumour suppressor
+NF1	ENSG00000196712	ENST00000358273	Large Deletion	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	tumour suppressor
+NF1	ENSG00000196712	ENST00000358273	Large Deletion	NA	NA	NA	Trial (pancreatic ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	tumour suppressor
+NF1	ENSG00000196712	ENST00000358273	Large Deletion	NA	NA	NA	Trial (thyroid ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	tumour suppressor
+NF1	ENSG00000196712	ENST00000358273	Loss	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	tumour suppressor
+NF1	ENSG00000196712	ENST00000358273	Loss	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02664935	tumour suppressor
+NF1	ENSG00000196712	ENST00000358273	Loss	NA	NA	NA	Trial (RCC)	https://clinicaltrials.gov/ct2/show/NCT02583542	tumour suppressor
+NF1	ENSG00000196712	ENST00000358273	Loss	NA	NA	NA	Trial (SCC Lung)	https://clinicaltrials.gov/ct2/show/NCT02583542	tumour suppressor
+NF1	ENSG00000196712	ENST00000358273	Loss	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	tumour suppressor
+NF1	ENSG00000196712	ENST00000358273	Loss	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	tumour suppressor
+NF1	ENSG00000196712	ENST00000358273	Loss	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	tumour suppressor
+NF1	ENSG00000196712	ENST00000358273	Loss	NA	NA	NA	Trial (endometrial ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	tumour suppressor
+NF1	ENSG00000196712	ENST00000358273	Loss	NA	NA	NA	Trial (melanoma)	https://clinicaltrials.gov/ct2/show/NCT02583542	tumour suppressor
+NF1	ENSG00000196712	ENST00000358273	Loss	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	tumour suppressor
+NF1	ENSG00000196712	ENST00000358273	Loss	NA	NA	NA	Trial (pancreatic ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	tumour suppressor
+NF1	ENSG00000196712	ENST00000358273	Loss	NA	NA	NA	Trial (thyroid ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	tumour suppressor
+NPM1	ENSG00000181163	ENST00000296930	Fusion	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+NPM1	ENSG00000181163	ENST00000296930	Fusion	NA	NA	NA	Trial (SCC Lung)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+NPM1	ENSG00000181163	ENST00000296930	Fusion	NA	NA	NA	Trial (SCLC)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+NPM1	ENSG00000181163	ENST00000296930	Fusion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+NPM1	ENSG00000181163	ENST00000296930	Fusion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+NPM1	ENSG00000181163	ENST00000296930	Fusion	NA	NA	NA	Trial (cervical ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+NPM1	ENSG00000181163	ENST00000296930	Fusion	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+NPM1	ENSG00000181163	ENST00000296930	Fusion	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+NPM1	ENSG00000181163	ENST00000296930	Fusion	NA	NA	NA	Trial (endometrial ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+NPM1	ENSG00000181163	ENST00000296930	Fusion	NA	NA	NA	Trial (head neck SCC)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+NPM1	ENSG00000181163	ENST00000296930	Fusion	NA	NA	NA	Trial (lung ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+NPM1	ENSG00000181163	ENST00000296930	Fusion	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+NPM1	ENSG00000181163	ENST00000296930	Fusion	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+NPM1	ENSG00000181163	ENST00000296930	Fusion	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+NPM1	ENSG00000181163	ENST00000296930	Fusion	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+NRAS	ENSG00000213281	ENST00000369535	Amplification	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	oncogene
+NRAS	ENSG00000213281	ENST00000369535	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	oncogene
+NRAS	ENSG00000213281	ENST00000369535	Amplification	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	oncogene
+NRAS	ENSG00000213281	ENST00000369535	Amplification	NA	NA	NA	Trial (head neck SCC)	https://clinicaltrials.gov/ct2/show/NCT02797964	oncogene
+NRAS	ENSG00000213281	ENST00000369535	Amplification	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	oncogene
+NRAS	ENSG00000213281	ENST00000369535	Amplification	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	oncogene
+NTRK1	ENSG00000198400	ENST00000524377	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02048488	
+NTRK1	ENSG00000198400	ENST00000524377	Fusion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02048488	
+NTRK1	ENSG00000198400	ENST00000524377	Fusion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02568267	
+NTRK1	ENSG00000198400	ENST00000524377	Fusion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02576431	
+NTRK1	ENSG00000198400	ENST00000524377	Fusion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT03182257	
+NTRK2	ENSG00000148053	ENST00000376214	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02048488	
+NTRK2	ENSG00000148053	ENST00000376214	Fusion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02048488	
+NTRK2	ENSG00000148053	ENST00000376214	Fusion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02568267	
+NTRK2	ENSG00000148053	ENST00000376214	Fusion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02576431	
+NTRK2	ENSG00000148053	ENST00000376214	Fusion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT03182257	
+NTRK3	ENSG00000140538	ENST00000360948	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02048488	oncogene
+NTRK3	ENSG00000140538	ENST00000360948	Fusion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02048488	oncogene
+NTRK3	ENSG00000140538	ENST00000360948	Fusion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02568267	oncogene
+NTRK3	ENSG00000140538	ENST00000360948	Fusion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02576431	oncogene
+NTRK3	ENSG00000140538	ENST00000360948	Fusion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT03182257	oncogene
+NUTM1	ENSG00000184507	ENST00000614490	Fusion	NA	NA	NA	Trial (NUT midline ca)	https://clinicaltrials.gov/ct2/show/NCT01587703	oncogene
+NUTM1	ENSG00000184507	ENST00000614490	Fusion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT01587703	oncogene
+PALB2	ENSG00000083093	ENST00000261584	Loss	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+PALB2	ENSG00000083093	ENST00000261584	Loss	NA	NA	NA	Trial (SCC Lung)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+PALB2	ENSG00000083093	ENST00000261584	Loss	NA	NA	NA	Trial (SCLC)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+PALB2	ENSG00000083093	ENST00000261584	Loss	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+PALB2	ENSG00000083093	ENST00000261584	Loss	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+PALB2	ENSG00000083093	ENST00000261584	Loss	NA	NA	NA	Trial (cervical ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+PALB2	ENSG00000083093	ENST00000261584	Loss	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+PALB2	ENSG00000083093	ENST00000261584	Loss	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+PALB2	ENSG00000083093	ENST00000261584	Loss	NA	NA	NA	Trial (endometrial ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+PALB2	ENSG00000083093	ENST00000261584	Loss	NA	NA	NA	Trial (head neck SCC)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+PALB2	ENSG00000083093	ENST00000261584	Loss	NA	NA	NA	Trial (lung ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+PALB2	ENSG00000083093	ENST00000261584	Loss	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+PALB2	ENSG00000083093	ENST00000261584	Loss	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+PALB2	ENSG00000083093	ENST00000261584	Loss	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+PALB2	ENSG00000083093	ENST00000261584	Loss	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+PDGFRA	ENSG00000134853	ENST00000257290	Amplification	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+PDGFRA	ENSG00000134853	ENST00000257290	Amplification	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02664935	oncogene
+PDGFRA	ENSG00000134853	ENST00000257290	Amplification	NA	NA	NA	Trial (RCC)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+PDGFRA	ENSG00000134853	ENST00000257290	Amplification	NA	NA	NA	Trial (SCC Lung)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+PDGFRA	ENSG00000134853	ENST00000257290	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+PDGFRA	ENSG00000134853	ENST00000257290	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02338622	oncogene
+PDGFRA	ENSG00000134853	ENST00000257290	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02483858	oncogene
+PDGFRA	ENSG00000134853	ENST00000257290	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+PDGFRA	ENSG00000134853	ENST00000257290	Amplification	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+PDGFRA	ENSG00000134853	ENST00000257290	Amplification	NA	NA	NA	Trial (endometrial ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+PDGFRA	ENSG00000134853	ENST00000257290	Amplification	NA	NA	NA	Trial (melanoma)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+PDGFRA	ENSG00000134853	ENST00000257290	Amplification	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+PDGFRA	ENSG00000134853	ENST00000257290	Amplification	NA	NA	NA	Trial (pancreatic ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+PDGFRA	ENSG00000134853	ENST00000257290	Amplification	NA	NA	NA	Trial (thyroid ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+PIK3CA	ENSG00000121879	ENST00000263967	Amplification	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+PIK3CA	ENSG00000121879	ENST00000263967	Amplification	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02664935	oncogene
+PIK3CA	ENSG00000121879	ENST00000263967	Amplification	NA	NA	NA	Trial (RCC)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+PIK3CA	ENSG00000121879	ENST00000263967	Amplification	NA	NA	NA	Trial (SCC Lung)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+PIK3CA	ENSG00000121879	ENST00000263967	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+PIK3CA	ENSG00000121879	ENST00000263967	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02338622	oncogene
+PIK3CA	ENSG00000121879	ENST00000263967	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02483858	oncogene
+PIK3CA	ENSG00000121879	ENST00000263967	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+PIK3CA	ENSG00000121879	ENST00000263967	Amplification	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+PIK3CA	ENSG00000121879	ENST00000263967	Amplification	NA	NA	NA	Trial (endometrial ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+PIK3CA	ENSG00000121879	ENST00000263967	Amplification	NA	NA	NA	Trial (melanoma)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+PIK3CA	ENSG00000121879	ENST00000263967	Amplification	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+PIK3CA	ENSG00000121879	ENST00000263967	Amplification	NA	NA	NA	Trial (pancreatic ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+PIK3CA	ENSG00000121879	ENST00000263967	Amplification	NA	NA	NA	Trial (thyroid ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+PIK3CB	ENSG00000051382	ENST00000289153	Amplification	NA	NA	NA	Trial (SCC Lung)	https://clinicaltrials.gov/ct2/show/NCT01884285	
+PIK3CB	ENSG00000051382	ENST00000289153	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT01884285	
+PIK3CB	ENSG00000051382	ENST00000289153	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT01884285	
+PIK3CB	ENSG00000051382	ENST00000289153	Amplification	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT01884285	
+PMS1	ENSG00000064933	ENST00000441310	Large Deletion (Exon -1)	NA	NA	NA	Trial (SCC Lung)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+PMS1	ENSG00000064933	ENST00000441310	Large Deletion (Exon -1)	NA	NA	NA	Trial (SCLC)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+PMS1	ENSG00000064933	ENST00000441310	Large Deletion (Exon -1)	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+PMS1	ENSG00000064933	ENST00000441310	Large Deletion (Exon -1)	NA	NA	NA	Trial (cervical ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+PMS1	ENSG00000064933	ENST00000441310	Large Deletion (Exon -1)	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+PMS1	ENSG00000064933	ENST00000441310	Large Deletion (Exon -1)	NA	NA	NA	Trial (endometrial ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+PMS1	ENSG00000064933	ENST00000441310	Large Deletion (Exon -1)	NA	NA	NA	Trial (lung ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+PMS1	ENSG00000064933	ENST00000441310	Large Deletion (Exon -1)	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+PMS1	ENSG00000064933	ENST00000441310	Large Deletion (Exon -1)	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+PMS1	ENSG00000064933	ENST00000441310	Loss	NA	NA	NA	Trial (SCC Lung)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+PMS1	ENSG00000064933	ENST00000441310	Loss	NA	NA	NA	Trial (SCLC)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+PMS1	ENSG00000064933	ENST00000441310	Loss	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+PMS1	ENSG00000064933	ENST00000441310	Loss	NA	NA	NA	Trial (cervical ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+PMS1	ENSG00000064933	ENST00000441310	Loss	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+PMS1	ENSG00000064933	ENST00000441310	Loss	NA	NA	NA	Trial (endometrial ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+PMS1	ENSG00000064933	ENST00000441310	Loss	NA	NA	NA	Trial (lung ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+PMS1	ENSG00000064933	ENST00000441310	Loss	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+PMS1	ENSG00000064933	ENST00000441310	Loss	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+PMS2	ENSG00000122512	ENST00000265849	Large Deletion (Exon -1)	NA	NA	NA	Trial (SCC Lung)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+PMS2	ENSG00000122512	ENST00000265849	Large Deletion (Exon -1)	NA	NA	NA	Trial (SCLC)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+PMS2	ENSG00000122512	ENST00000265849	Large Deletion (Exon -1)	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+PMS2	ENSG00000122512	ENST00000265849	Large Deletion (Exon -1)	NA	NA	NA	Trial (cervical ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+PMS2	ENSG00000122512	ENST00000265849	Large Deletion (Exon -1)	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+PMS2	ENSG00000122512	ENST00000265849	Large Deletion (Exon -1)	NA	NA	NA	Trial (endometrial ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+PMS2	ENSG00000122512	ENST00000265849	Large Deletion (Exon -1)	NA	NA	NA	Trial (lung ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+PMS2	ENSG00000122512	ENST00000265849	Large Deletion (Exon -1)	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+PMS2	ENSG00000122512	ENST00000265849	Large Deletion (Exon -1)	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+PMS2	ENSG00000122512	ENST00000265849	Loss	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+PMS2	ENSG00000122512	ENST00000265849	Loss	NA	NA	NA	Trial (SCC Lung)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+PMS2	ENSG00000122512	ENST00000265849	Loss	NA	NA	NA	Trial (SCLC)	https://clinicaltrials.gov/ct2/show/NCT02628067	
+PMS2	ENSG00000122512	ENST00000265849	Loss	NA	NA	NA	Trial (SCLC)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+PMS2	ENSG00000122512	ENST00000265849	Loss	NA	NA	NA	Trial (anal ca)	https://clinicaltrials.gov/ct2/show/NCT02628067	
+PMS2	ENSG00000122512	ENST00000265849	Loss	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02628067	
+PMS2	ENSG00000122512	ENST00000265849	Loss	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+PMS2	ENSG00000122512	ENST00000265849	Loss	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+PMS2	ENSG00000122512	ENST00000265849	Loss	NA	NA	NA	Trial (cervical ca)	https://clinicaltrials.gov/ct2/show/NCT02628067	
+PMS2	ENSG00000122512	ENST00000265849	Loss	NA	NA	NA	Trial (cervical ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+PMS2	ENSG00000122512	ENST00000265849	Loss	NA	NA	NA	Trial (cholangioca)	https://clinicaltrials.gov/ct2/show/NCT02628067	
+PMS2	ENSG00000122512	ENST00000265849	Loss	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02563002	
+PMS2	ENSG00000122512	ENST00000265849	Loss	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02628067	
+PMS2	ENSG00000122512	ENST00000265849	Loss	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+PMS2	ENSG00000122512	ENST00000265849	Loss	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+PMS2	ENSG00000122512	ENST00000265849	Loss	NA	NA	NA	Trial (endometrial ca)	https://clinicaltrials.gov/ct2/show/NCT02628067	
+PMS2	ENSG00000122512	ENST00000265849	Loss	NA	NA	NA	Trial (endometrial ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+PMS2	ENSG00000122512	ENST00000265849	Loss	NA	NA	NA	Trial (gallbladder ca)	https://clinicaltrials.gov/ct2/show/NCT02628067	
+PMS2	ENSG00000122512	ENST00000265849	Loss	NA	NA	NA	Trial (head neck SCC)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+PMS2	ENSG00000122512	ENST00000265849	Loss	NA	NA	NA	Trial (lung ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+PMS2	ENSG00000122512	ENST00000265849	Loss	NA	NA	NA	Trial (mesot)	https://clinicaltrials.gov/ct2/show/NCT02628067	
+PMS2	ENSG00000122512	ENST00000265849	Loss	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+PMS2	ENSG00000122512	ENST00000265849	Loss	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+PMS2	ENSG00000122512	ENST00000265849	Loss	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+PMS2	ENSG00000122512	ENST00000265849	Loss	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+PMS2	ENSG00000122512	ENST00000265849	Loss	NA	NA	NA	Trial (salivary ca)	https://clinicaltrials.gov/ct2/show/NCT02628067	
+PMS2	ENSG00000122512	ENST00000265849	Loss	NA	NA	NA	Trial (thyroid ca)	https://clinicaltrials.gov/ct2/show/NCT02628067	
+PMS2	ENSG00000122512	ENST00000265849	Loss	NA	NA	NA	Trial (vulvar ca)	https://clinicaltrials.gov/ct2/show/NCT02628067	
+PTEN	ENSG00000171862	ENST00000371953	Large Deletion	NA	NA	NA	Trial (GM)	https://clinicaltrials.gov/ct2/show/NCT01458067	tumour suppressor
+PTEN	ENSG00000171862	ENST00000371953	Large Deletion	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT01458067	tumour suppressor
+PTEN	ENSG00000171862	ENST00000371953	Large Deletion	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	tumour suppressor
+PTEN	ENSG00000171862	ENST00000371953	Large Deletion	NA	NA	NA	Trial (RCC)	https://clinicaltrials.gov/ct2/show/NCT02583542	tumour suppressor
+PTEN	ENSG00000171862	ENST00000371953	Large Deletion	NA	NA	NA	Trial (SCC Lung)	https://clinicaltrials.gov/ct2/show/NCT02583542	tumour suppressor
+PTEN	ENSG00000171862	ENST00000371953	Large Deletion	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT01458067	tumour suppressor
+PTEN	ENSG00000171862	ENST00000371953	Large Deletion	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	tumour suppressor
+PTEN	ENSG00000171862	ENST00000371953	Large Deletion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02338622	tumour suppressor
+PTEN	ENSG00000171862	ENST00000371953	Large Deletion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02483858	tumour suppressor
+PTEN	ENSG00000171862	ENST00000371953	Large Deletion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	tumour suppressor
+PTEN	ENSG00000171862	ENST00000371953	Large Deletion	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT01458067	tumour suppressor
+PTEN	ENSG00000171862	ENST00000371953	Large Deletion	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	tumour suppressor
+PTEN	ENSG00000171862	ENST00000371953	Large Deletion	NA	NA	NA	Trial (endometrial ca)	https://clinicaltrials.gov/ct2/show/NCT01458067	tumour suppressor
+PTEN	ENSG00000171862	ENST00000371953	Large Deletion	NA	NA	NA	Trial (endometrial ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	tumour suppressor
+PTEN	ENSG00000171862	ENST00000371953	Large Deletion	NA	NA	NA	Trial (gastric ca)	https://clinicaltrials.gov/ct2/show/NCT01458067	tumour suppressor
+PTEN	ENSG00000171862	ENST00000371953	Large Deletion	NA	NA	NA	Trial (head neck SCC)	https://clinicaltrials.gov/ct2/show/NCT01458067	tumour suppressor
+PTEN	ENSG00000171862	ENST00000371953	Large Deletion	NA	NA	NA	Trial (melanoma)	https://clinicaltrials.gov/ct2/show/NCT01458067	tumour suppressor
+PTEN	ENSG00000171862	ENST00000371953	Large Deletion	NA	NA	NA	Trial (melanoma)	https://clinicaltrials.gov/ct2/show/NCT02583542	tumour suppressor
+PTEN	ENSG00000171862	ENST00000371953	Large Deletion	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT01458067	tumour suppressor
+PTEN	ENSG00000171862	ENST00000371953	Large Deletion	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	tumour suppressor
+PTEN	ENSG00000171862	ENST00000371953	Large Deletion	NA	NA	NA	Trial (pancreatic ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	tumour suppressor
+PTEN	ENSG00000171862	ENST00000371953	Large Deletion	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT01458067	tumour suppressor
+PTEN	ENSG00000171862	ENST00000371953	Large Deletion	NA	NA	NA	Trial (thyroid ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	tumour suppressor
+PTEN	ENSG00000171862	ENST00000371953	Loss	NA	NA	NA	Trial (GM)	https://clinicaltrials.gov/ct2/show/NCT01458067	tumour suppressor
+PTEN	ENSG00000171862	ENST00000371953	Loss	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT01458067	tumour suppressor
+PTEN	ENSG00000171862	ENST00000371953	Loss	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	tumour suppressor
+PTEN	ENSG00000171862	ENST00000371953	Loss	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02664935	tumour suppressor
+PTEN	ENSG00000171862	ENST00000371953	Loss	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+PTEN	ENSG00000171862	ENST00000371953	Loss	NA	NA	NA	Trial (RCC)	https://clinicaltrials.gov/ct2/show/NCT02583542	tumour suppressor
+PTEN	ENSG00000171862	ENST00000371953	Loss	NA	NA	NA	Trial (SCC Lung)	https://clinicaltrials.gov/ct2/show/NCT01884285	tumour suppressor
+PTEN	ENSG00000171862	ENST00000371953	Loss	NA	NA	NA	Trial (SCC Lung)	https://clinicaltrials.gov/ct2/show/NCT02583542	tumour suppressor
+PTEN	ENSG00000171862	ENST00000371953	Loss	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT01458067	tumour suppressor
+PTEN	ENSG00000171862	ENST00000371953	Loss	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT01884285	tumour suppressor
+PTEN	ENSG00000171862	ENST00000371953	Loss	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	tumour suppressor
+PTEN	ENSG00000171862	ENST00000371953	Loss	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT01884285	tumour suppressor
+PTEN	ENSG00000171862	ENST00000371953	Loss	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02338622	tumour suppressor
+PTEN	ENSG00000171862	ENST00000371953	Loss	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02483858	tumour suppressor
+PTEN	ENSG00000171862	ENST00000371953	Loss	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	tumour suppressor
+PTEN	ENSG00000171862	ENST00000371953	Loss	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+PTEN	ENSG00000171862	ENST00000371953	Loss	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT01458067	tumour suppressor
+PTEN	ENSG00000171862	ENST00000371953	Loss	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	tumour suppressor
+PTEN	ENSG00000171862	ENST00000371953	Loss	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+PTEN	ENSG00000171862	ENST00000371953	Loss	NA	NA	NA	Trial (endometrial ca)	https://clinicaltrials.gov/ct2/show/NCT01458067	tumour suppressor
+PTEN	ENSG00000171862	ENST00000371953	Loss	NA	NA	NA	Trial (endometrial ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	tumour suppressor
+PTEN	ENSG00000171862	ENST00000371953	Loss	NA	NA	NA	Trial (fallopian tube ca)	https://clinicaltrials.gov/ct2/show/NCT02392676	tumour suppressor
+PTEN	ENSG00000171862	ENST00000371953	Loss	NA	NA	NA	Trial (gastric ca)	https://clinicaltrials.gov/ct2/show/NCT01458067	tumour suppressor
+PTEN	ENSG00000171862	ENST00000371953	Loss	NA	NA	NA	Trial (head neck SCC)	https://clinicaltrials.gov/ct2/show/NCT01458067	tumour suppressor
+PTEN	ENSG00000171862	ENST00000371953	Loss	NA	NA	NA	Trial (head neck SCC)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+PTEN	ENSG00000171862	ENST00000371953	Loss	NA	NA	NA	Trial (melanoma)	https://clinicaltrials.gov/ct2/show/NCT01458067	tumour suppressor
+PTEN	ENSG00000171862	ENST00000371953	Loss	NA	NA	NA	Trial (melanoma)	https://clinicaltrials.gov/ct2/show/NCT02583542	tumour suppressor
+PTEN	ENSG00000171862	ENST00000371953	Loss	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT01458067	tumour suppressor
+PTEN	ENSG00000171862	ENST00000371953	Loss	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02392676	tumour suppressor
+PTEN	ENSG00000171862	ENST00000371953	Loss	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	tumour suppressor
+PTEN	ENSG00000171862	ENST00000371953	Loss	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+PTEN	ENSG00000171862	ENST00000371953	Loss	NA	NA	NA	Trial (pancreatic ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	tumour suppressor
+PTEN	ENSG00000171862	ENST00000371953	Loss	NA	NA	NA	Trial (prim peritoneal ca)	https://clinicaltrials.gov/ct2/show/NCT02392676	tumour suppressor
+PTEN	ENSG00000171862	ENST00000371953	Loss	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT01458067	tumour suppressor
+PTEN	ENSG00000171862	ENST00000371953	Loss	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT01884285	tumour suppressor
+PTEN	ENSG00000171862	ENST00000371953	Loss	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT02215096	tumour suppressor
+PTEN	ENSG00000171862	ENST00000371953	Loss	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	tumour suppressor
+PTEN	ENSG00000171862	ENST00000371953	Loss	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT02952534	tumour suppressor
+PTEN	ENSG00000171862	ENST00000371953	Loss	NA	NA	NA	Trial (thyroid ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	tumour suppressor
+RAD50	ENSG00000113522	ENST00000378823	Loss	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+RAD50	ENSG00000113522	ENST00000378823	Loss	NA	NA	NA	Trial (SCC Lung)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+RAD50	ENSG00000113522	ENST00000378823	Loss	NA	NA	NA	Trial (SCLC)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+RAD50	ENSG00000113522	ENST00000378823	Loss	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+RAD50	ENSG00000113522	ENST00000378823	Loss	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+RAD50	ENSG00000113522	ENST00000378823	Loss	NA	NA	NA	Trial (cervical ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+RAD50	ENSG00000113522	ENST00000378823	Loss	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+RAD50	ENSG00000113522	ENST00000378823	Loss	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+RAD50	ENSG00000113522	ENST00000378823	Loss	NA	NA	NA	Trial (endometrial ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+RAD50	ENSG00000113522	ENST00000378823	Loss	NA	NA	NA	Trial (head neck SCC)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+RAD50	ENSG00000113522	ENST00000378823	Loss	NA	NA	NA	Trial (lung ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+RAD50	ENSG00000113522	ENST00000378823	Loss	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+RAD50	ENSG00000113522	ENST00000378823	Loss	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+RAD50	ENSG00000113522	ENST00000378823	Loss	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	
+RAD50	ENSG00000113522	ENST00000378823	Loss	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT03188965	
+RB1	ENSG00000139687	ENST00000267163	Loss	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02664935	tumour suppressor
+RET	ENSG00000165731	ENST00000355710	Amplification	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02314481	oncogene
+RET	ENSG00000165731	ENST00000355710	Amplification	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+RET	ENSG00000165731	ENST00000355710	Amplification	NA	NA	NA	Trial (RCC)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+RET	ENSG00000165731	ENST00000355710	Amplification	NA	NA	NA	Trial (SCC Lung)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+RET	ENSG00000165731	ENST00000355710	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+RET	ENSG00000165731	ENST00000355710	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+RET	ENSG00000165731	ENST00000355710	Amplification	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+RET	ENSG00000165731	ENST00000355710	Amplification	NA	NA	NA	Trial (endometrial ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+RET	ENSG00000165731	ENST00000355710	Amplification	NA	NA	NA	Trial (melanoma)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+RET	ENSG00000165731	ENST00000355710	Amplification	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+RET	ENSG00000165731	ENST00000355710	Amplification	NA	NA	NA	Trial (pancreatic ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+RET	ENSG00000165731	ENST00000355710	Amplification	NA	NA	NA	Trial (thyroid ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	oncogene
+RET	ENSG00000165731	ENST00000355710	Fusion	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02314481	oncogene
+RICTOR	ENSG00000164327	ENST00000357387	Amplification	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	
+RICTOR	ENSG00000164327	ENST00000357387	Amplification	NA	NA	NA	Trial (RCC)	https://clinicaltrials.gov/ct2/show/NCT02583542	
+RICTOR	ENSG00000164327	ENST00000357387	Amplification	NA	NA	NA	Trial (SCC Lung)	https://clinicaltrials.gov/ct2/show/NCT02583542	
+RICTOR	ENSG00000164327	ENST00000357387	Amplification	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	
+RICTOR	ENSG00000164327	ENST00000357387	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02338622	
+RICTOR	ENSG00000164327	ENST00000357387	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02483858	
+RICTOR	ENSG00000164327	ENST00000357387	Amplification	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	
+RICTOR	ENSG00000164327	ENST00000357387	Amplification	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	
+RICTOR	ENSG00000164327	ENST00000357387	Amplification	NA	NA	NA	Trial (endometrial ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	
+RICTOR	ENSG00000164327	ENST00000357387	Amplification	NA	NA	NA	Trial (melanoma)	https://clinicaltrials.gov/ct2/show/NCT02583542	
+RICTOR	ENSG00000164327	ENST00000357387	Amplification	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	
+RICTOR	ENSG00000164327	ENST00000357387	Amplification	NA	NA	NA	Trial (pancreatic ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	
+RICTOR	ENSG00000164327	ENST00000357387	Amplification	NA	NA	NA	Trial (thyroid ca)	https://clinicaltrials.gov/ct2/show/NCT02583542	
+ROS1	ENSG00000047936	ENST00000368508	Fusion	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02664935	oncogene
+ROS1	ENSG00000047936	ENST00000368508	Fusion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02568267	oncogene
+SMARCA4	ENSG00000127616	ENST00000450717	Loss	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02601950	
+SMARCA4	ENSG00000127616	ENST00000450717	Loss	NA	NA	NA	Trial (rhabdoid tu)	https://clinicaltrials.gov/ct2/show/NCT02601950	
+SMARCA4	ENSG00000127616	ENST00000450717	Loss	NA	NA	NA	Trial (sarcoma-synovial)	https://clinicaltrials.gov/ct2/show/NCT02601950	
+SMARCB1	ENSG00000099956	ENST00000263121	Loss	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02601937	
+SMARCB1	ENSG00000099956	ENST00000263121	Loss	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02601950	
+SMARCB1	ENSG00000099956	ENST00000263121	Loss	NA	NA	NA	Trial (rhabdoid tu)	https://clinicaltrials.gov/ct2/show/NCT02601950	
+SMARCB1	ENSG00000099956	ENST00000263121	Loss	NA	NA	NA	Trial (sarcoma-synovial)	https://clinicaltrials.gov/ct2/show/NCT02601937	
+SMARCB1	ENSG00000099956	ENST00000263121	Loss	NA	NA	NA	Trial (sarcoma-synovial)	https://clinicaltrials.gov/ct2/show/NCT02601950	
+SS18	ENSG00000141380	ENST00000415083	Fusion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02601937	
+SS18	ENSG00000141380	ENST00000415083	Fusion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02601950	
+SS18	ENSG00000141380	ENST00000415083	Fusion	NA	NA	NA	Trial (rhabdoid tu)	https://clinicaltrials.gov/ct2/show/NCT02601950	
+SS18	ENSG00000141380	ENST00000415083	Fusion	NA	NA	NA	Trial (sarcoma-synovial)	https://clinicaltrials.gov/ct2/show/NCT02601937	
+SS18	ENSG00000141380	ENST00000415083	Fusion	NA	NA	NA	Trial (sarcoma-synovial)	https://clinicaltrials.gov/ct2/show/NCT02601950	
+SSX1	ENSG00000126752	ENST00000376919	Fusion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02601937	
+SSX1	ENSG00000126752	ENST00000376919	Fusion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02601950	
+SSX1	ENSG00000126752	ENST00000376919	Fusion	NA	NA	NA	Trial (rhabdoid tu)	https://clinicaltrials.gov/ct2/show/NCT02601950	
+SSX1	ENSG00000126752	ENST00000376919	Fusion	NA	NA	NA	Trial (sarcoma-synovial)	https://clinicaltrials.gov/ct2/show/NCT02601937	
+SSX1	ENSG00000126752	ENST00000376919	Fusion	NA	NA	NA	Trial (sarcoma-synovial)	https://clinicaltrials.gov/ct2/show/NCT02601950	
+SSX2	ENSG00000241476	ENST00000336777	Fusion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02601937	
+SSX2	ENSG00000241476	ENST00000336777	Fusion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02601950	
+SSX2	ENSG00000241476	ENST00000336777	Fusion	NA	NA	NA	Trial (rhabdoid tu)	https://clinicaltrials.gov/ct2/show/NCT02601950	
+SSX2	ENSG00000241476	ENST00000336777	Fusion	NA	NA	NA	Trial (sarcoma-synovial)	https://clinicaltrials.gov/ct2/show/NCT02601937	
+SSX2	ENSG00000241476	ENST00000336777	Fusion	NA	NA	NA	Trial (sarcoma-synovial)	https://clinicaltrials.gov/ct2/show/NCT02601950	
+SSX4	ENSG00000268009	ENST00000595689	Fusion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02601937	
+SSX4	ENSG00000268009	ENST00000595689	Fusion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02601950	
+SSX4	ENSG00000268009	ENST00000595689	Fusion	NA	NA	NA	Trial (rhabdoid tu)	https://clinicaltrials.gov/ct2/show/NCT02601950	
+SSX4	ENSG00000268009	ENST00000595689	Fusion	NA	NA	NA	Trial (sarcoma-synovial)	https://clinicaltrials.gov/ct2/show/NCT02601937	
+SSX4	ENSG00000268009	ENST00000595689	Fusion	NA	NA	NA	Trial (sarcoma-synovial)	https://clinicaltrials.gov/ct2/show/NCT02601950	
+TP53	ENSG00000141510	ENST00000269305	Large Deletion	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	oncogene/tumour suppressor
+TP53	ENSG00000141510	ENST00000269305	Large Deletion	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT03096054	oncogene/tumour suppressor
+TP53	ENSG00000141510	ENST00000269305	Large Deletion	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT03096054	oncogene/tumour suppressor
+TP53	ENSG00000141510	ENST00000269305	Large Deletion	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	oncogene/tumour suppressor
+TP53	ENSG00000141510	ENST00000269305	Large Deletion	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	oncogene/tumour suppressor
+TP53	ENSG00000141510	ENST00000269305	Large Deletion	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT03096054	oncogene/tumour suppressor
+TP53	ENSG00000141510	ENST00000269305	Large Deletion	NA	NA	NA	Trial (esophageal SCC)	https://clinicaltrials.gov/ct2/show/NCT03096054	oncogene/tumour suppressor
+TP53	ENSG00000141510	ENST00000269305	Large Deletion	NA	NA	NA	Trial (head neck SCC)	https://clinicaltrials.gov/ct2/show/NCT02797964	oncogene/tumour suppressor
+TP53	ENSG00000141510	ENST00000269305	Large Deletion	NA	NA	NA	Trial (head neck SCC)	https://clinicaltrials.gov/ct2/show/NCT03096054	oncogene/tumour suppressor
+TP53	ENSG00000141510	ENST00000269305	Large Deletion	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	oncogene/tumour suppressor
+TP53	ENSG00000141510	ENST00000269305	Large Deletion	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT03096054	oncogene/tumour suppressor
+TP53	ENSG00000141510	ENST00000269305	Large Deletion	NA	NA	NA	Trial (pancreatic ca)	https://clinicaltrials.gov/ct2/show/NCT03096054	oncogene/tumour suppressor
+TP53	ENSG00000141510	ENST00000269305	Large Deletion	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	oncogene/tumour suppressor
+TP53	ENSG00000141510	ENST00000269305	Large Deletion	NA	NA	NA	Trial (urothelial ca)	https://clinicaltrials.gov/ct2/show/NCT03096054	oncogene/tumour suppressor
+TP53	ENSG00000141510	ENST00000269305	Loss	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	oncogene/tumour suppressor
+TP53	ENSG00000141510	ENST00000269305	Loss	NA	NA	NA	Trial (NSC lung ca)	https://clinicaltrials.gov/ct2/show/NCT03096054	oncogene/tumour suppressor
+TP53	ENSG00000141510	ENST00000269305	Loss	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT03096054	oncogene/tumour suppressor
+TP53	ENSG00000141510	ENST00000269305	Loss	NA	NA	NA	Trial (ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	oncogene/tumour suppressor
+TP53	ENSG00000141510	ENST00000269305	Loss	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	oncogene/tumour suppressor
+TP53	ENSG00000141510	ENST00000269305	Loss	NA	NA	NA	Trial (colorectal ca)	https://clinicaltrials.gov/ct2/show/NCT03096054	oncogene/tumour suppressor
+TP53	ENSG00000141510	ENST00000269305	Loss	NA	NA	NA	Trial (esophageal SCC)	https://clinicaltrials.gov/ct2/show/NCT03096054	oncogene/tumour suppressor
+TP53	ENSG00000141510	ENST00000269305	Loss	NA	NA	NA	Trial (head neck SCC)	https://clinicaltrials.gov/ct2/show/NCT02797964	oncogene/tumour suppressor
+TP53	ENSG00000141510	ENST00000269305	Loss	NA	NA	NA	Trial (head neck SCC)	https://clinicaltrials.gov/ct2/show/NCT03096054	oncogene/tumour suppressor
+TP53	ENSG00000141510	ENST00000269305	Loss	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	oncogene/tumour suppressor
+TP53	ENSG00000141510	ENST00000269305	Loss	NA	NA	NA	Trial (ovarian ca)	https://clinicaltrials.gov/ct2/show/NCT03096054	oncogene/tumour suppressor
+TP53	ENSG00000141510	ENST00000269305	Loss	NA	NA	NA	Trial (pancreatic ca)	https://clinicaltrials.gov/ct2/show/NCT03096054	oncogene/tumour suppressor
+TP53	ENSG00000141510	ENST00000269305	Loss	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT02797964	oncogene/tumour suppressor
+TP53	ENSG00000141510	ENST00000269305	Loss	NA	NA	NA	Trial (urothelial ca)	https://clinicaltrials.gov/ct2/show/NCT03096054	oncogene/tumour suppressor
+WNT5A	ENSG00000114251	ENST00000264634	Loss	NA	NA	NA	Trial (breast ca)	https://clinicaltrials.gov/ct2/show/NCT02655952	
+WNT5A	ENSG00000114251	ENST00000264634	Loss	NA	NA	NA	Trial (colorectal ca )	https://clinicaltrials.gov/ct2/show/NCT02655952	
+WNT5A	ENSG00000114251	ENST00000264634	Loss	NA	NA	NA	Trial (prostate ca)	https://clinicaltrials.gov/ct2/show/NCT02655952	

@@ -429,7 +429,6 @@ rownames(recurrent_SVs) <- NULL
 recurr_keys <- recurrent_SVs %>% filter(NUM_OBS >1) %>% pull(KEY)
 domain1_SVs$recurrent <- 0  # 3 total
 domain1_SVs[!domain1_SVs$KEY %in% recurr_keys,] <- 1
-domain1_SVs$recurrent_num_obs <- 
 
 
   
@@ -567,6 +566,7 @@ domain1_SVs$VAF <- sapply(1:dim(domain1_SVs)[1], function(x){
 # Mean VAF by SV type
 domain1_SVs %>% group_by(SVTYPE) %>% summarise(mean(VAF))
 
+# Add VF across the cohort (num observations of the variant / 759)
 
 
 
@@ -579,7 +579,7 @@ domain1_SVs %>% group_by(SVTYPE) %>% summarise(mean(VAF))
   
 ### Annotation function adding repeat overlaps
 ### Works on SV VCF info table
-### Overlaps with simpleRepeats and windowMasker
+### Overlaps with simpleRepeats, windowMasker, Umap, segDups
 
 
 
