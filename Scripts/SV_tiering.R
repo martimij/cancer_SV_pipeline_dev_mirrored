@@ -203,9 +203,9 @@ getSVsInTranscripts <- function(vcf_path, transcripts){
 
 ### Annotation function returning VCF info field from Domain 1 variants
 ### Also returns SAMPLE_WELL_ID, overlapping transript from the list for start and end breaksite, and all related mates/events even if not overlapping a transcript from the list
-### Keeps Canvas and Manta calls
-### Adds a list of VCF filters to include (default is only "PASS") - NOTE that some might have missing mates/events (if filtered out)
 ### Removes non-SOMATIC (Canvas REF)
+### Keeps only Manta calls (SOMATIC = TRUE flag is missing in Canvas calls)
+### Adds a list of VCF filters to include (default is only "PASS") - NOTE that some might have missing mates/events (if filtered out)
 
 getSVsInTranscripts_v2 <- function(vcf_path, transcripts, filters = "PASS"){
   
@@ -345,6 +345,294 @@ getSVsInTranscripts_v2 <- function(vcf_path, transcripts, filters = "PASS"){
 }
 
 
+### Improved function that also extracts REF and ALT (essetial for BND directionality)
+
+getSVsInTranscripts_v3 <- function(vcf_path, transcripts, filters = "PASS"){
+  
+  require(ensembldb)
+  require(VariantAnnotation)
+  require(dplyr)
+  
+  ### Read VCF
+  
+  vcf <- readVcf(vcf_path)
+  # Get VCF info fields
+  vcf_info <- as.data.frame(info(vcf))
+  
+  # Get REF and ALT --- added
+  vcf_info$REF <- as.data.frame(rowRanges(vcf)$REF)$x
+  vcf_info$ALT <- as.data.frame(rowRanges(vcf)$ALT)$value
+  
+  # Get other fields
+  vcf_info$FILTER <- rowRanges(vcf)$FILTER
+  vcf_info$Application <- ""
+  vcf_info[grepl("Canvas", rownames(vcf_info)),]$Application <- "Canvas"
+  vcf_info[grepl("Manta", rownames(vcf_info)),]$Application <- "Manta"
+  vcf_info$ID <- rownames(vcf_info)
+  # Add START, CHR (correct END already exists in the info table, note that for insertions - start/end are the same)
+  vcf_info$START <- as.data.frame(ranges(vcf))$start
+  vcf_info$CHR <- as.character(seqnames(vcf))
+  # Add number of supporting paired and reads -----fixed
+  vcf_info$PR_REF <- sapply(1:dim(vcf_info)[1], function(x){
+    geno(vcf)[[1]][,2][x][[1]][1]
+  })
+  vcf_info$PR_ALT <- sapply(1:dim(vcf_info)[1], function(x){
+    geno(vcf)[[1]][,2][x][[1]][2]
+  })
+  # Add number of supporting split reads  --------fixed
+  vcf_info$SR_REF <- sapply(1:dim(vcf_info)[1], function(x){
+    geno(vcf)[[2]][,2][x][[1]][1]
+  })
+  vcf_info$SR_ALT <- sapply(1:dim(vcf_info)[1], function(x){
+    geno(vcf)[[2]][,2][x][[1]][2]
+  })
+  # Change chr names in the VCF info table
+  vcf_info$CHR <- sub("chr", "", vcf_info$CHR)
+  vcf_info$MATEID <- as.character(vcf_info$MATEID)
+  
+  
+  
+  
+  ### Subset VCF for SVs with desired FILTER and remove non-SOMATIC
+  
+  filters_keep <- filters
+  
+  vcf_info <- vcf_info %>% filter(FILTER %in% filters_keep, SOMATIC == "TRUE")  # NOTE that this removes all Canvas calls bc they don't have "SOMATIC" in the INFO
+  
+  
+  
+  ### Read from Ensembl database
+  
+  # Read the transcript database
+  txdb_pth <- '/home/mmijuskovic/Fusions/Homo_sapiens.GRCh38.84.sqlite'
+  if (!file.exists(txdb_pth)) {
+    #txdb_pth <- ensDbFromGtf(gtf="../Ensembl_db/Homo_sapiens.GRCh38.84.gtf.gz")
+    print("No Homo_sapiens.GRCh38.84.sqlite found. See https://blog.liang2.tw/posts/2016/05/biocondutor-ensembl-reference/ for installation")
+  }
+  txdb <- EnsDb(txdb_pth)
+  
+  # Get transcript ranges from Ensembl transcript database
+  transcripts_gr <- transcripts(txdb, filter=TxidFilter(transcripts))
+  
+  
+  
+  
+  
+  ### Add transcript overlap annotations to SV breakpoints
+  
+  # Flag start
+  vcf_info$transcript_related_start <- as.numeric(overlapsAny(GRanges(seqnames=vcf_info$CHR, ranges=IRanges(start = vcf_info$START, width = 1)), transcripts_gr))
+  
+  # Flag end
+  vcf_info$transcript_related_end <- sapply(1:dim(vcf_info)[1], function(x){
+    if(is.na(vcf_info$END[x])){
+      return(NA)
+    } 
+    else {
+      if(overlapsAny(GRanges(seqnames=vcf_info$CHR[x], ranges=IRanges(start = vcf_info$END[x], width = 1)), transcripts_gr)) {
+        return(1)
+      }
+      else {
+        return(0)
+      }
+    }
+  })
+  
+  
+  # Add overlapping gene to breakpoints
+  
+  # Initiate fields
+  vcf_info$start_ann <- ""
+  vcf_info$end_ann <- ""
+  
+  # Find exact overlaps of start and end position with transcripts
+  #overlaps_start <- findOverlaps(GRanges(seqnames=vcf_info$CHR, ranges=IRanges(start = vcf_info$START, width = 100000)), transcripts_gr)  # testing
+  overlaps_start <- findOverlaps(GRanges(seqnames=vcf_info$CHR, ranges=IRanges(start = vcf_info$START, width = 1)), transcripts_gr)
+  #overlaps_end <- findOverlaps(GRanges(seqnames=vcf_info[!is.na(vcf_info$transcript_related_end),]$CHR[x], ranges=IRanges(start = vcf_info[!is.na(vcf_info$transcript_related_end),]$END[x], width = 1)), transcripts_gr)
+  overlaps_end <- findOverlaps(GRanges(seqnames=vcf_info[!is.na(vcf_info$transcript_related_end),]$CHR, ranges=IRanges(start = vcf_info[!is.na(vcf_info$transcript_related_end),]$END, width = 1)), transcripts_gr)
+  
+  # Add start position overlaps to table
+  if (dim(vcf_info[queryHits(overlaps_start),])[1] > 0) {
+    vcf_info[queryHits(overlaps_start),]$start_ann <- sapply(seq(length(overlaps_start)), function(x){
+      i <- queryHits(overlaps_start)[x]
+      j <- subjectHits(overlaps_start)[x]
+      vcf_info[i,]$start_ann <- transcripts_gr@elementMetadata$tx_name[j]
+    })
+  }
+  
+  # Add end position overlaps to table --- FIXED
+  if (dim(vcf_info[queryHits(overlaps_end),])[1] > 0) {
+    vcf_info[!is.na(vcf_info$transcript_related_end),][queryHits(overlaps_end),]$end_ann <- sapply(seq(length(overlaps_end)), function(x){
+      i <- queryHits(overlaps_end)[x]
+      j <- subjectHits(overlaps_end)[x]
+      vcf_info[!is.na(vcf_info$transcript_related_end),][i,]$end_ann <- transcripts_gr@elementMetadata$tx_name[j]
+    })
+  }
+  
+  
+  # Reduce VCF to annotated SVs, keeping all SVs within the same event
+  mates <- vcf_info %>% filter(start_ann != "" | end_ann != "") %>%  filter(Application == "Manta" & !is.na(MATEID)) %>% pull(MATEID)
+  events <- vcf_info %>% filter(start_ann != "" | end_ann != "") %>%  filter(Application == "Manta" & !is.na(EVENT)) %>% pull(EVENT)
+  extracted_SVs <- vcf_info %>% filter((start_ann != "" | end_ann != "") | ID %in% mates | EVENT %in% events)
+  # Deduplicate
+  extracted_SVs <- extracted_SVs[!duplicated(extracted_SVs),]
+  
+  
+  # Add sample ID and return table if any results
+  if (dim(extracted_SVs)[1] != 0){
+    ### Add sample ID
+    # Use on HPC
+    extracted_SVs$SAMPLE_WELL_ID <- strsplit(strsplit(vcf_path, split = "Cancer")[[1]][2], split = "_Normal")[[1]][1]  # works for HPC path, not local
+    # Use locally
+    #extracted_SVs$SAMPLE_WELL_ID <- paste0("LP", strsplit(strsplit(samples$local_VCF_path[1], ".somatic")[[1]][1], "_LP")[[1]][2])
+    
+    return(extracted_SVs)
+  }
+}
+
+getSVsInTranscripts_v3_local <- function(vcf_path, transcripts, filters = "PASS"){
+  
+  require(ensembldb)
+  require(VariantAnnotation)
+  require(dplyr)
+  
+  ### Read VCF
+  
+  vcf <- readVcf(vcf_path)
+  # Get VCF info fields
+  vcf_info <- as.data.frame(info(vcf))
+  
+  # Get REF and ALT --- added
+  vcf_info$REF <- as.data.frame(rowRanges(vcf)$REF)$x
+  vcf_info$ALT <- as.data.frame(rowRanges(vcf)$ALT)$value
+  
+  # Get other fields
+  vcf_info$FILTER <- rowRanges(vcf)$FILTER
+  vcf_info$Application <- ""
+  vcf_info[grepl("Canvas", rownames(vcf_info)),]$Application <- "Canvas"
+  vcf_info[grepl("Manta", rownames(vcf_info)),]$Application <- "Manta"
+  vcf_info$ID <- rownames(vcf_info)
+  # Add START, CHR (correct END already exists in the info table, note that for insertions - start/end are the same)
+  vcf_info$START <- as.data.frame(ranges(vcf))$start
+  vcf_info$CHR <- as.character(seqnames(vcf))
+  # Add number of supporting paired and reads -----fixed
+  vcf_info$PR_REF <- sapply(1:dim(vcf_info)[1], function(x){
+    geno(vcf)[[1]][,2][x][[1]][1]
+  })
+  vcf_info$PR_ALT <- sapply(1:dim(vcf_info)[1], function(x){
+    geno(vcf)[[1]][,2][x][[1]][2]
+  })
+  # Add number of supporting split reads  --------fixed
+  vcf_info$SR_REF <- sapply(1:dim(vcf_info)[1], function(x){
+    geno(vcf)[[2]][,2][x][[1]][1]
+  })
+  vcf_info$SR_ALT <- sapply(1:dim(vcf_info)[1], function(x){
+    geno(vcf)[[2]][,2][x][[1]][2]
+  })
+  # Change chr names in the VCF info table
+  vcf_info$CHR <- sub("chr", "", vcf_info$CHR)
+  vcf_info$MATEID <- as.character(vcf_info$MATEID)
+  
+  
+  
+  
+  ### Subset VCF for SVs with desired FILTER and remove non-SOMATIC
+  
+  filters_keep <- filters
+  
+  vcf_info <- vcf_info %>% filter(FILTER %in% filters_keep, SOMATIC == "TRUE")  # NOTE that this removes all Canvas calls bc they don't have "SOMATIC" in the INFO
+  
+  
+  
+  ### Read from Ensembl database
+  
+  # Read the transcript database
+  txdb_pth <- '/Users/MartinaMijuskovic/cancer_SV_pipeline_dev/Homo_sapiens.GRCh38.84.sqlite'
+  if (!file.exists(txdb_pth)) {
+    #txdb_pth <- ensDbFromGtf(gtf="../Ensembl_db/Homo_sapiens.GRCh38.84.gtf.gz")
+    print("No Homo_sapiens.GRCh38.84.sqlite found. See https://blog.liang2.tw/posts/2016/05/biocondutor-ensembl-reference/ for installation")
+  }
+  txdb <- EnsDb(txdb_pth)
+  
+  # Get transcript ranges from Ensembl transcript database
+  transcripts_gr <- transcripts(txdb, filter=TxidFilter(transcripts))
+  
+  
+  
+  
+  
+  ### Add transcript overlap annotations to SV breakpoints
+  
+  # Flag start
+  vcf_info$transcript_related_start <- as.numeric(overlapsAny(GRanges(seqnames=vcf_info$CHR, ranges=IRanges(start = vcf_info$START, width = 1)), transcripts_gr))
+  
+  # Flag end
+  vcf_info$transcript_related_end <- sapply(1:dim(vcf_info)[1], function(x){
+    if(is.na(vcf_info$END[x])){
+      return(NA)
+    } 
+    else {
+      if(overlapsAny(GRanges(seqnames=vcf_info$CHR[x], ranges=IRanges(start = vcf_info$END[x], width = 1)), transcripts_gr)) {
+        return(1)
+      }
+      else {
+        return(0)
+      }
+    }
+  })
+  
+  
+  # Add overlapping gene to breakpoints
+  
+  # Initiate fields
+  vcf_info$start_ann <- ""
+  vcf_info$end_ann <- ""
+  
+  # Find exact overlaps of start and end position with transcripts
+  #overlaps_start <- findOverlaps(GRanges(seqnames=vcf_info$CHR, ranges=IRanges(start = vcf_info$START, width = 100000)), transcripts_gr)  # testing
+  overlaps_start <- findOverlaps(GRanges(seqnames=vcf_info$CHR, ranges=IRanges(start = vcf_info$START, width = 1)), transcripts_gr)
+  #overlaps_end <- findOverlaps(GRanges(seqnames=vcf_info[!is.na(vcf_info$transcript_related_end),]$CHR[x], ranges=IRanges(start = vcf_info[!is.na(vcf_info$transcript_related_end),]$END[x], width = 1)), transcripts_gr)
+  overlaps_end <- findOverlaps(GRanges(seqnames=vcf_info[!is.na(vcf_info$transcript_related_end),]$CHR, ranges=IRanges(start = vcf_info[!is.na(vcf_info$transcript_related_end),]$END, width = 1)), transcripts_gr)
+  
+  # Add start position overlaps to table
+  if (dim(vcf_info[queryHits(overlaps_start),])[1] > 0) {
+    vcf_info[queryHits(overlaps_start),]$start_ann <- sapply(seq(length(overlaps_start)), function(x){
+      i <- queryHits(overlaps_start)[x]
+      j <- subjectHits(overlaps_start)[x]
+      vcf_info[i,]$start_ann <- transcripts_gr@elementMetadata$tx_name[j]
+    })
+  }
+  
+  # Add end position overlaps to table --- FIXED
+  if (dim(vcf_info[queryHits(overlaps_end),])[1] > 0) {
+    vcf_info[!is.na(vcf_info$transcript_related_end),][queryHits(overlaps_end),]$end_ann <- sapply(seq(length(overlaps_end)), function(x){
+      i <- queryHits(overlaps_end)[x]
+      j <- subjectHits(overlaps_end)[x]
+      vcf_info[!is.na(vcf_info$transcript_related_end),][i,]$end_ann <- transcripts_gr@elementMetadata$tx_name[j]
+    })
+  }
+  
+  
+  # Reduce VCF to annotated SVs, keeping all SVs within the same event
+  mates <- vcf_info %>% filter(start_ann != "" | end_ann != "") %>%  filter(Application == "Manta" & !is.na(MATEID)) %>% pull(MATEID)
+  events <- vcf_info %>% filter(start_ann != "" | end_ann != "") %>%  filter(Application == "Manta" & !is.na(EVENT)) %>% pull(EVENT)
+  extracted_SVs <- vcf_info %>% filter((start_ann != "" | end_ann != "") | ID %in% mates | EVENT %in% events)
+  # Deduplicate
+  extracted_SVs <- extracted_SVs[!duplicated(extracted_SVs),]
+  
+  
+  # Add sample ID and return table if any results
+  if (dim(extracted_SVs)[1] != 0){
+    ### Add sample ID
+    # Use on HPC
+    extracted_SVs$SAMPLE_WELL_ID <- strsplit(strsplit(vcf_path, split = "Cancer")[[1]][2], split = "_Normal")[[1]][1]  # works for HPC path, not local
+    # Use locally
+    #extracted_SVs$SAMPLE_WELL_ID <- paste0("LP", strsplit(strsplit(samples$local_VCF_path[1], ".somatic")[[1]][1], "_LP")[[1]][2])
+    
+    return(extracted_SVs)
+  }
+}
+
 # Read the list of transcripts (HPC)
 actionable_SVs <- read.table("/home/mmijuskovic/SV_dev/SV_tiering/GENOMONCOLOGY_SOLID_TUMOUR.SV.fixed.noNonGenes.v1.6.tsv", sep = "\t", header = T)
 
@@ -377,12 +665,15 @@ FF_list <- read.table("/home/mmijuskovic/SV_dev/SV_tiering/FF_PCRfree_wClinical_
 FF_list$SV_vcf_path <- as.character(FF_list$SV_vcf_path)
 
 # Read the list of transcripts (HPC)
-actionable_SVs <- read.table("/home/mmijuskovic/SV_dev/SV_tiering/GENOMONCOLOGY_SOLID_TUMOUR.SV.v1.6.tsv", sep = "\t", header = T)
+actionable_SVs <- read.table("/home/mmijuskovic/SV_dev/SV_tiering/GENOMONCOLOGY_SOLID_TUMOUR.SV.fixed.noNonGenes.v1.6.tsv", sep = "\t", header = T)
 # Get unique list of transcripts
 GO_transcr <- unique(actionable_SVs$transcript_ID)
 GO_transcr <- GO_transcr[GO_transcr != ""]
 
 domain1_SVs <- lapply(FF_list$SV_vcf_path[1:50], getSVsInTranscripts_v2, GO_transcr)  # job 1
+#domain1_SVs <- lapply(FF_list$SV_vcf_path[1:5], getSVsInTranscripts_v2, GO_transcr)
+#domain1_SVs <- lapply(FF_list$SV_vcf_path[1:5], getSVsInTranscripts_v3, GO_transcr)
+
 domain1_SVs <- bind_rows(domain1_SVs)
 domain1_SVs <- domain1_SVs %>% dplyr::select(-(CSQR), -(CSQT), -(phyloP), -(EVS), -(clinvar), -(cosmic), -(AA), -(GMAF), -(AF1000G))
 save.image("domain1_SVs_job1.RData")
@@ -436,7 +727,8 @@ domain1_SVs[!domain1_SVs$KEY %in% recurr_keys,] <- 1
   
 # 4 interactive jobs (190 samples each) on HPC
 
-setwd("/home/mmijuskovic/SV_dev/SV_tiering/tiered_results")
+#setwd("/home/mmijuskovic/SV_dev/SV_tiering/tiered_results")
+setwd("/home/mmijuskovic/SV_dev/SV_tiering/tiered_results_fixed")
 
 library(dplyr)
 library(VariantAnnotation)
@@ -472,6 +764,8 @@ domain1_SVs <- lapply(FF_list$SV_vcf_path[571:759], getSVsInTranscripts_v2, GO_t
 domain1_SVs <- bind_rows(domain1_SVs)
 domain1_SVs <- domain1_SVs %>% dplyr::select(-(CSQR), -(CSQT), -(phyloP), -(EVS), -(clinvar), -(cosmic), -(AA), -(GMAF), -(AF1000G))
 save.image("domain1_SVs_job4.RData")   
+
+
 
 
 
@@ -564,22 +858,75 @@ domain1_SVs$VAF <- sapply(1:dim(domain1_SVs)[1], function(x){
 })
 
 # Mean VAF by SV type
-domain1_SVs %>% group_by(SVTYPE) %>% summarise(mean(VAF))
-
-# Add VF across the cohort (num observations of the variant / 759)
+domain1_SVs %>% group_by(SVTYPE) %>% summarise(mean(VAF), median(VAF))
 
 
 
 
+#### Annotate Domain 1 SVs with REF/ALT #### 
 
+### Read SV.VCFs from the local mount, local annotation (not HPC)
+
+# Modify VCF paths to read from the local mount
+FF_list$SV_vcf_path_local <- paste0("/Users/MartinaMijuskovic", FF_list$SV_vcf_path)
+
+# Test annotation (ok!)
+#domain1_SVs_test <- lapply(FF_list$SV_vcf_path_local[1:2], getSVsInTranscripts_v3_local, GO_transcr)
+
+# Full annotation job
+domain1_SVs_fix1 <- lapply(FF_list$SV_vcf_path_local[1:10], getSVsInTranscripts_v3_local, GO_transcr)
+domain1_SVs_fix1 <- bind_rows(domain1_SVs_fix1)
+domain1_SVs_fix1 <- domain1_SVs_fix1 %>% dplyr::select(-(CSQR), -(CSQT), -(phyloP), -(EVS), -(clinvar), -(cosmic), -(AA), -(GMAF), -(AF1000G))
+
+domain1_SVs_fix2 <- lapply(FF_list$SV_vcf_path_local[11:100], getSVsInTranscripts_v3_local, GO_transcr)
+domain1_SVs_fix2 <- bind_rows(domain1_SVs_fix2)
+domain1_SVs_fix2 <- domain1_SVs_fix2 %>% dplyr::select(-(CSQR), -(CSQT), -(phyloP), -(EVS), -(clinvar), -(cosmic), -(AA), -(GMAF), -(AF1000G))
+
+domain1_SVs_fix3 <- lapply(FF_list$SV_vcf_path_local[101:400], getSVsInTranscripts_v3_local, GO_transcr)
+domain1_SVs_fix3 <- bind_rows(domain1_SVs_fix3)
+domain1_SVs_fix3 <- domain1_SVs_fix3 %>% dplyr::select(-(CSQR), -(CSQT), -(phyloP), -(EVS), -(clinvar), -(cosmic), -(AA), -(GMAF), -(AF1000G))
+
+
+domain1_SVs_fix4 <- lapply(FF_list$SV_vcf_path_local[401:759], getSVsInTranscripts_v3_local, GO_transcr)
+domain1_SVs_fix4 <- bind_rows(domain1_SVs_fix4)
+domain1_SVs_fix4 <- domain1_SVs_fix4 %>% dplyr::select(-(CSQR), -(CSQT), -(phyloP), -(EVS), -(clinvar), -(cosmic), -(AA), -(GMAF), -(AF1000G))
+
+
+dim(domain1_SVs_fix1)  # 10
+dim(domain1_SVs_fix2)  # 88
+dim(domain1_SVs_fix3)  # 422
+dim(domain1_SVs_fix4)
 
 
 
 #### Repeat annotation #### 
-  
-### Annotation function adding repeat overlaps
-### Works on SV VCF info table
-### Overlaps with simpleRepeats, windowMasker, Umap, segDups
+
+# Average fragment size for FF PCR-free
+mean((QC %>% filter(LIBRARY_TYPE == "TruSeq PCR-Free") %>% pull(AV_FRAGMENT_SIZE_BP)), na.rm = T) # 483.1857
+median((QC %>% filter(LIBRARY_TYPE == "TruSeq PCR-Free") %>% pull(AV_FRAGMENT_SIZE_BP)), na.rm = T)  # 482.3
+
+
+### Step 1: overlap SV breakpoints with Umap36
+
+# Load Umap M36 bedgraph, only 100% mappable regions (others filtered out)
+umap36 <- read.table("./Data/mappability_repeats/mappable_k36.umap.bedgraph", skip = 1, col.names = c("CHR", "START", "END", "umap36"))
+
+# Get overlap of pre- and post- START and END positions for all SVs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
