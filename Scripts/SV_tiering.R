@@ -1020,20 +1020,34 @@ table(domain1_SVs_fix$IMPRECISE, domain1_SVs_fix$SR_ALT == 0, exclude = NULL)  #
 # <NA>      0      0    0
 domain1_SVs_fix %>% filter(IMPRECISE == FALSE, SR_ALT == 0) %>% dplyr::select(IMPRECISE, SVTYPE, CIPOS, ID, MATEID, HOMLEN, ALT, KEY, PR_REF, PR_ALT, SR_REF, SR_ALT, SAMPLE_WELL_ID)
 
+# CIPOS, CIEND of precise and imprecise variants
+table(domain1_SVs_fix$SVTYPE, domain1_SVs_fix$IMPRECISE)
+# imprecise (mostly BND and INV, just 1 deletion)
+mean(abs(unlist(domain1_SVs_fix[domain1_SVs_fix$IMPRECISE == TRUE,]$CIPOS)))  # 343.6405
+# precise
+mean(abs(unlist(domain1_SVs_fix[domain1_SVs_fix$IMPRECISE == FALSE,]$CIPOS)), na.rm = T)  #  2.667535
+mean(abs(unlist(domain1_SVs_fix[domain1_SVs_fix$IMPRECISE == FALSE,]$CIEND)), na.rm = T)  #  2.18617
+
 
 # Create a bed file with SVs, start and end separately, remove NAs
 # Note that for BED format START has to be adjusted to 0-based (-1 bp) and END position is not included (stays same)
 # Add 240 bp to the breakpoint (region defined based on SV type and directionality)
 
+# Change START, END class to numeric
+domain1_SVs_fix$START <- as.numeric(domain1_SVs_fix$START)
+domain1_SVs_fix$END <- as.numeric(domain1_SVs_fix$END)
+
+
+# Bed file for START position
 start_bed <- domain1_SVs_fix %>% mutate(
   START_bed = case_when(
     SVTYPE == "DEL" ~ START-240,
-    SVTYPE == "INS" ~ START-240
+    SVTYPE == "INS" ~ START-240,
     SVTYPE == "DUP" ~ START,
-    SVTYPE == "INV" & INV3 == TRUE ~ START-240,
-    SVTYPE == "INV" & INV5 == TRUE ~ START,
-    SVTYPE == "BND" & BND3 == TRUE ~ START-240,
-    SVTYPE == "BND" & BND5 == TRUE ~ START
+    (SVTYPE == "INV" & INV3 == TRUE) ~ START-240,
+    (SVTYPE == "INV" & INV5 == TRUE) ~ START,
+    (SVTYPE == "BND" & BND3 == TRUE) ~ START-240,
+    (SVTYPE == "BND" & BND5 == TRUE) ~ START
     ),
   END_bed = case_when(
     SVTYPE == "DEL" ~ START,
@@ -1046,30 +1060,46 @@ start_bed <- domain1_SVs_fix %>% mutate(
   )
 ) %>% dplyr::select(CHR, START_bed, END_bed, KEY)
 
-# Extend regions for CIPOS and CIEND or replace with START+CIPOS[1] to START+CIPOS[2] (same for END) if IMPRECISE
+# Bed file for END position
+end_bed <- domain1_SVs_fix %>% mutate(
+  START_bed = case_when(
+    SVTYPE == "DEL" ~ END,
+    SVTYPE == "INS" ~ END,
+    SVTYPE == "DUP" ~ END-240,
+    SVTYPE == "INV" & INV3 == TRUE ~ END-240,
+    SVTYPE == "INV" & INV5 == TRUE ~ END,
+    SVTYPE == "BND" ~ 1000  # placeholder
+    ),
+  END_bed = case_when(
+    SVTYPE == "DEL" ~ END+240,
+    SVTYPE == "INS" ~ END+240,
+    SVTYPE == "DUP" ~ END,
+    SVTYPE == "INV" & INV3 == TRUE ~ END,
+    SVTYPE == "INV" & INV5 == TRUE ~ END+240,
+    SVTYPE == "BND" ~ 1300  # placeholder
+  )
+) %>% dplyr::select(CHR, START_bed, END_bed, KEY)
+
+# Add "chr" to chrom name
+start_bed$CHR <- paste0("chr", start_bed$CHR)
+end_bed$CHR <- paste0("chr", end_bed$CHR)
+
+# Write bed files
+write.table(start_bed, file = "./Data/mappability_repeats/start.bed", quote = F, row.names = F, col.names = F, sep = "\t")
+write.table(end_bed, file = "./Data/mappability_repeats/end.bed", quote = F, row.names = F, col.names = F, sep = "\t")
 
 
 
-start_bed <- cbind((ff_ffpe_merged %>% dplyr::select(CHR, START)), (ff_ffpe_merged %>% dplyr::select(START, KEY, Type2)))
-names(start_bed)[3] <- "end"
-start_bed$Score <- ""
-start_bed <- start_bed %>% dplyr::select(CHR, START, end, KEY, Score, Type2)
-start_bed <- start_bed %>% filter(!is.na(START))
-# Adjust window around breaksite
-start_bed$START <- start_bed$START - 151
-start_bed$end <- start_bed$end + 150
-write.table(start_bed, file = paste0(patientID, "_sv_start.bed"), quote = F, row.names = F, col.names = F, sep = "\t")
+### Call bedtools to find overlaps with Umap36 
 
-end_bed <- cbind((ff_ffpe_merged %>% dplyr::select(CHR, END)), (ff_ffpe_merged %>% dplyr::select(END, KEY, Type2)))
-names(end_bed)[2] <- "start"
-end_bed$Score <- ""
-end_bed <- end_bed %>% dplyr::select(CHR, start, END, KEY, Score, Type2)
-end_bed <- end_bed %>% filter(!is.na(END))
-# Adjust window around breaksite
-end_bed$start <- end_bed$start - 151
-end_bed$END <- end_bed$END + 150
-write.table(end_bed, file = paste0(patientID, "_sv_end.bed"), quote = F, row.names = F, col.names = F, sep = "\t")
-
+# start
+system(paste("/usr/local/bin/bedtools coverage -a", "./Data/mappability_repeats/start.bed", "-b ./Data/mappability_repeats/mappable_k36.umap.bedgraph > ./Data/mappability_repeats/Umap36_start_overlap.bed"), intern = T)
+Umap36_start <- read.table("./Data/mappability_repeats/Umap36_start_overlap.bed", sep = "\t")
+names(Umap36_start) <- c("CHR", "START", "END", "KEY", "NumOverlap", "BPoverlap", "BPTotal", "PCT")
+# end
+system(paste("/usr/local/bin/bedtools coverage -a", "./Data/mappability_repeats/end.bed", "-b ./Data/mappability_repeats/mappable_k36.umap.bedgraph > ./Data/mappability_repeats/Umap36_end_overlap.bed"), intern = T)
+Umap36_end <- read.table("./Data/mappability_repeats/Umap36_end_overlap.bed", sep = "\t")
+names(Umap36_end) <- c("CHR", "START", "END", "KEY", "NumOverlap", "BPoverlap", "BPTotal", "PCT")
 
 
 
@@ -1077,85 +1107,105 @@ write.table(end_bed, file = paste0(patientID, "_sv_end.bed"), quote = F, row.nam
 ### Call bedtools to find overlaps with WindowMasker 
 
 # start
-system(paste("/home/mmijuskovic/bedtools2/bin/bedtools coverage -a", paste0(patientID, "_sv_start.bed"), "-b /home/mmijuskovic/FFPE/windowmaskerSdust.hg38.bed >", paste0(patientID, "_sv_wMasker_start_overlap.bed")), intern = T)
-sv_wMasker_start <- read.table(paste0(patientID, "_sv_wMasker_start_overlap.bed"), sep = "\t")
-names(sv_wMasker_start) <- c("CHR", "START", "END", "KEY", "Score", "Type2", "NumOverlap", "BPoverlap", "BPTotal", "PCT")
+system(paste("/usr/local/bin/bedtools coverage -a", "./Data/mappability_repeats/start.bed", "-b ./Data/mappability_repeats/windowmaskerSdust.hg38.bed > ./Data/mappability_repeats/wMasker_start_overlap.bed"), intern = T)
+wMasker_start <- read.table("./Data/mappability_repeats/wMasker_start_overlap.bed", sep = "\t")
+names(wMasker_start) <- c("CHR", "START", "END", "KEY", "NumOverlap", "BPoverlap", "BPTotal", "PCT")
 # end
-system(paste("/home/mmijuskovic/bedtools2/bin/bedtools coverage -a", paste0(patientID, "_sv_end.bed"), "-b /home/mmijuskovic/FFPE/windowmaskerSdust.hg38.bed >", paste0(patientID, "_sv_wMasker_end_overlap.bed")), intern = T)
-sv_wMasker_end <- read.table(paste0(patientID, "_sv_wMasker_end_overlap.bed"), sep = "\t")
-names(sv_wMasker_end) <- c("CHR", "START", "END", "KEY", "Score", "Type2", "NumOverlap", "BPoverlap", "BPTotal", "PCT")
+system(paste("/usr/local/bin/bedtools coverage -a", "./Data/mappability_repeats/end.bed", "-b ./Data/mappability_repeats/windowmaskerSdust.hg38.bed > ./Data/mappability_repeats/wMasker_end_overlap.bed"), intern = T)
+wMasker_end <- read.table("./Data/mappability_repeats/wMasker_end_overlap.bed", sep = "\t")
+names(wMasker_end) <- c("CHR", "START", "END", "KEY", "NumOverlap", "BPoverlap", "BPTotal", "PCT")
 
-# FLAG SVs where START or END overlaps with WindowMasker
-wMasker_keys <- unique(c(as.character(sv_wMasker_start %>% filter(NumOverlap != 0) %>% .$KEY), as.character(sv_wMasker_end %>% filter(NumOverlap != 0) %>% .$KEY)))
-ff_ffpe_merged$wMasker_filtered <- 0
-ff_ffpe_merged[(ff_ffpe_merged$KEY %in% wMasker_keys),]$wMasker_filtered <- 1
+
 
 
 ### Call bedtools to find overlaps with simple repeats
 
 # start
-system(paste("/home/mmijuskovic/bedtools2/bin/bedtools coverage -a", paste0(patientID, "_sv_start.bed"), "-b /home/mmijuskovic/FFPE/simpleRepeat.hg38.bed >", paste0(patientID, "_sv_repeats_start_overlap.bed")), intern = T)
-sv_repeats_start <- read.table(paste0(patientID, "_sv_repeats_start_overlap.bed"), sep = "\t")
-names(sv_repeats_start) <- c("CHR", "START", "END", "KEY", "Score", "Type2", "NumOverlap", "BPoverlap", "BPTotal", "PCT")
+system(paste("/usr/local/bin/bedtools coverage -a", "./Data/mappability_repeats/start.bed", "-b ./Data/mappability_repeats/simpleRepeat.hg38.bed > ./Data/mappability_repeats/simpleRepeat_start_overlap.bed"), intern = T)
+simpleRepeat_start <- read.table("./Data/mappability_repeats/simpleRepeat_start_overlap.bed", sep = "\t")
+names(simpleRepeat_start) <- c("CHR", "START", "END", "KEY", "NumOverlap", "BPoverlap", "BPTotal", "PCT")
 # end
-system(paste("/home/mmijuskovic/bedtools2/bin/bedtools coverage -a", paste0(patientID, "_sv_end.bed"), "-b /home/mmijuskovic/FFPE/simpleRepeat.hg38.bed >", paste0(patientID, "_sv_repeats_end_overlap.bed")), intern = T)
-sv_repeats_end <- read.table(paste0(patientID, "_sv_repeats_end_overlap.bed"), sep = "\t")
-names(sv_repeats_end) <- c("CHR", "START", "END", "KEY", "Score", "Type2", "NumOverlap", "BPoverlap", "BPTotal", "PCT")
+system(paste("/usr/local/bin/bedtools coverage -a", "./Data/mappability_repeats/end.bed", "-b ./Data/mappability_repeats/simpleRepeat.hg38.bed > ./Data/mappability_repeats/simpleRepeat_end_overlap.bed"), intern = T)
+simpleRepeat_end <- read.table("./Data/mappability_repeats/simpleRepeat_end_overlap.bed", sep = "\t")
+names(simpleRepeat_end) <- c("CHR", "START", "END", "KEY", "NumOverlap", "BPoverlap", "BPTotal", "PCT")
 
-# FLAG SVs where START or END overlaps with repeats
-repeats_keys <- unique(c(as.character(sv_repeats_start %>% filter(NumOverlap != 0) %>% .$KEY), as.character(sv_repeats_end %>% filter(NumOverlap != 0) %>% .$KEY)))
-ff_ffpe_merged$repeats_filtered <- 0
-ff_ffpe_merged[(ff_ffpe_merged$KEY %in% repeats_keys),]$repeats_filtered <- 1
 
 
 
 ### Call bedtools to find overlaps with segmental duplications
 
 # start
-system(paste("/home/mmijuskovic/bedtools2/bin/bedtools coverage -a", paste0(patientID, "_sv_start.bed"), "-b /home/mmijuskovic/FFPE/genomicSuperDups.hg38.bed >", paste0(patientID, "_sv_segdups_start_overlap.bed")), intern = T)
-sv_segdups_start <- read.table(paste0(patientID, "_sv_segdups_start_overlap.bed"), sep = "\t")
-names(sv_segdups_start) <- c("CHR", "START", "END", "KEY", "Score", "Type2", "NumOverlap", "BPoverlap", "BPTotal", "PCT")
+system(paste("/usr/local/bin/bedtools coverage -a", "./Data/mappability_repeats/start.bed", "-b ./Data/mappability_repeats/genomicSuperDups.hg38.bed > ./Data/mappability_repeats/segDups_start_overlap.bed"), intern = T)
+segDups_start <- read.table("./Data/mappability_repeats/segDups_start_overlap.bed", sep = "\t")
+names(segDups_start) <- c("CHR", "START", "END", "KEY", "NumOverlap", "BPoverlap", "BPTotal", "PCT")
 # end
-system(paste("/home/mmijuskovic/bedtools2/bin/bedtools coverage -a", paste0(patientID, "_sv_end.bed"), "-b /home/mmijuskovic/FFPE/genomicSuperDups.hg38.bed >", paste0(patientID, "_sv_segdups_end_overlap.bed")), intern = T)
-sv_segdups_end <- read.table(paste0(patientID, "_sv_segdups_end_overlap.bed"), sep = "\t")
-names(sv_segdups_end) <- c("CHR", "START", "END", "KEY", "Score", "Type2", "NumOverlap", "BPoverlap", "BPTotal", "PCT")
-
-# FLAG SVs where START or END overlaps with repeats
-segdups_keys <- unique(c(as.character(sv_segdups_start %>% filter(NumOverlap != 0) %>% .$KEY), as.character(sv_segdups_end %>% filter(NumOverlap != 0) %>% .$KEY)))
-ff_ffpe_merged$segdups_filtered <- 0
-ff_ffpe_merged[(ff_ffpe_merged$KEY %in% segdups_keys),]$segdups_filtered <- 1 
+system(paste("/usr/local/bin/bedtools coverage -a", "./Data/mappability_repeats/end.bed", "-b ./Data/mappability_repeats/genomicSuperDups.hg38.bed > ./Data/mappability_repeats/segDups_end_overlap.bed"), intern = T)
+segDups_end <- read.table("./Data/mappability_repeats/segDups_end_overlap.bed", sep = "\t")
+names(segDups_end) <- c("CHR", "START", "END", "KEY", "NumOverlap", "BPoverlap", "BPTotal", "PCT")
 
 
 
 
+# Add overlap percentage
+
+domain1_SVs_fix$Umap36_PCT_overlap_START <- Umap36_start[match(domain1_SVs_fix$KEY, Umap36_start$KEY),]$PCT
+domain1_SVs_fix$Umap36_PCT_overlap_END <- Umap36_end[match(domain1_SVs_fix$KEY, Umap36_end$KEY),]$PCT
+
+domain1_SVs_fix$wMasker_PCT_overlap_START <- wMasker_start[match(domain1_SVs_fix$KEY, wMasker_start$KEY),]$PCT
+domain1_SVs_fix$wMasker_PCT_overlap_END <- wMasker_end[match(domain1_SVs_fix$KEY, wMasker_end$KEY),]$PCT
+
+domain1_SVs_fix$simpleRepeat_PCT_overlap_START <- simpleRepeat_start[match(domain1_SVs_fix$KEY, simpleRepeat_start$KEY),]$PCT
+domain1_SVs_fix$simpleRepeat_PCT_overlap_END <- simpleRepeat_end[match(domain1_SVs_fix$KEY, simpleRepeat_end$KEY),]$PCT
+
+domain1_SVs_fix$segDups_PCT_overlap_START <- segDups_start[match(domain1_SVs_fix$KEY, segDups_start$KEY),]$PCT
+domain1_SVs_fix$segDups_PCT_overlap_END <- segDups_end[match(domain1_SVs_fix$KEY, segDups_end$KEY),]$PCT
+
+# Set BND END to mappable and repeat overlap as none (placeholder)
+domain1_SVs_fix[domain1_SVs_fix$SVTYPE == "BND",]$Umap36_PCT_overlap_END <- 1
+domain1_SVs_fix[domain1_SVs_fix$SVTYPE == "BND",]$wMasker_PCT_overlap_END <- 0
+domain1_SVs_fix[domain1_SVs_fix$SVTYPE == "BND",]$simpleRepeat_PCT_overlap_END <- 0
+domain1_SVs_fix[domain1_SVs_fix$SVTYPE == "BND",]$segDups_PCT_overlap_END <- 0
+  
+  
+# Add flag for high confidence variants (100% mappability, or 100% mappability and no repeat overlap)
+domain1_SVs_fix <- domain1_SVs_fix %>% mutate(Mappable = case_when(Umap36_PCT_overlap_START == 1 & Umap36_PCT_overlap_END == 1 ~ 1, TRUE ~ 0),
+                                              Mappable_noRepeats = case_when(Umap36_PCT_overlap_START == 1 & Umap36_PCT_overlap_END == 1 & 
+                                                                               wMasker_PCT_overlap_START == 0 & wMasker_PCT_overlap_END == 0 & 
+                                                                               simpleRepeat_PCT_overlap_START == 0 & simpleRepeat_PCT_overlap_END == 0 &
+                                                                               segDups_PCT_overlap_START == 0 & segDups_PCT_overlap_END ==0 ~ 1, TRUE ~ 0)
+)
+
+
+### Set BND whose mate is unmappable to unmapable
+
+# Add MATE_KEY to the table for BND ----- > continue here
+
+
+# Get unmappable BND
+unmap_BND <- domain1_SVs_fix %>% filter(SVTYPE == "BND", Mappable == 0) %>% pull(KEY)  # 329
 
 
 
+#### High confidence SV analysis #### 
+
+# SVs with 100% mappable regions
+dim(domain1_SVs_fix %>% filter(Mappable == 1))  # 428
+dim(domain1_SVs_fix %>% filter(Mappable_noRepeats == 1))  # 63
+
+# Mappable by type (BND needs fixing)
+table((domain1_SVs_fix %>% filter(Mappable == 1)) %>% pull(SVTYPE))
+# BND DEL DUP INS INV 
+# 277  48   8   8  87 
+table((domain1_SVs_fix %>% filter(Mappable_noRepeats == 1)) %>% pull(SVTYPE))
+# BND DEL DUP INV 
+# 57   2   1   3 
 
 
+# List of mappable with no repeat overlap (no BND): high confidence candidates
+domain1_SVs_fix %>% filter(Mappable_noRepeats == 1, SVTYPE != "BND") %>% dplyr::select(SAMPLE_WELL_ID, KEY, VAF, recurrent, PR_REF, PR_ALT, SR_REF, SR_ALT, SVLEN, CIPOS,CIEND, SOMATICSCORE)
 
-
-
-
-
-
-### Step 1: overlap SV breakpoints with Umap36
-
-# Load Umap M36 bedgraph, only 100% mappable regions (others filtered out)
-umap36 <- read.table("./Data/mappability_repeats/mappable_k36.umap.bedgraph", skip = 1, col.names = c("CHR", "START", "END", "umap36"))
-
-
-
-
-
-
-
-
-
-
-
-
-
+# Mean VAF
+mean((domain1_SVs_fix %>% filter(Mappable_noRepeats == 1, SVTYPE != "BND") %>% pull(VAF)))  # 0.1855203
 
 
 
