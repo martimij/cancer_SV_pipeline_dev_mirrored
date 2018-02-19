@@ -1176,45 +1176,230 @@ domain1_SVs_fix <- domain1_SVs_fix %>% mutate(Mappable = case_when(Umap36_PCT_ov
 )
 
 
-### Set BND whose mate is unmappable to unmapable
+# Add another flag for mappable+no repeats that excludes windowMasker (windowMasker is over-filtering)
+domain1_SVs_fix <- domain1_SVs_fix %>% mutate(
+                                              Mappable_noRepeats_2 = case_when(Umap36_PCT_overlap_START == 1 & Umap36_PCT_overlap_END == 1 & 
+                                                                               simpleRepeat_PCT_overlap_START == 0 & simpleRepeat_PCT_overlap_END == 0 &
+                                                                               segDups_PCT_overlap_START == 0 & segDups_PCT_overlap_END ==0 ~ 1, TRUE ~ 0)
+)
 
-# Add MATE_KEY to the table for BND ----- > continue here
 
+
+
+### Add mappability for BND mate
+
+# Add MATE_KEY to the table for BND
 
 # Get unmappable BND
 unmap_BND <- domain1_SVs_fix %>% filter(SVTYPE == "BND", Mappable == 0) %>% pull(KEY)  # 329
+# Check if recurrent also have same directionality (yes)
+sum(duplicated(unmap_BND))  # 6
+domain1_SVs_fix %>% filter(KEY %in% unmap_BND[duplicated(unmap_BND)]) %>% dplyr::select(KEY, SAMPLE_WELL_ID, VAF,  BND5,  BND3, PR_ALT, SR_ALT) %>% arrange(KEY)
+
+# Get mappable + no repeats BND
+map_norep_BND <- domain1_SVs_fix %>% filter(SVTYPE == "BND", Mappable_noRepeats == 1) %>% pull(KEY)  # 57
+map_norep_BND_2 <- domain1_SVs_fix %>% filter(SVTYPE == "BND", Mappable_noRepeats_2 == 1) %>% pull(KEY)  # 267
+
+
+# Add MATE_KEY
+domain1_SVs_fix$MATE_KEY <- NA
+domain1_SVs_fix[domain1_SVs_fix$SVTYPE == "BND",]$MATE_KEY <- domain1_SVs_fix[domain1_SVs_fix$SVTYPE == "BND",][match(domain1_SVs_fix[domain1_SVs_fix$SVTYPE == "BND",]$MATEID, domain1_SVs_fix[domain1_SVs_fix$SVTYPE == "BND",]$ID),]$KEY
+# Sanity check
+head(domain1_SVs_fix %>% dplyr::select(SAMPLE_WELL_ID, KEY, ID, MATEID, MATE_KEY) %>% arrange(SAMPLE_WELL_ID),20)
+
+# Add MATE_Mappable and MATE_Mappable_noRepeats, MATE_Mappable_noRepeats_2
+domain1_SVs_fix <- domain1_SVs_fix %>% mutate(
+  MATE_Mappable = case_when(
+    SVTYPE == "BND" & (MATE_KEY %in% unmap_BND) ~ 0,
+    SVTYPE == "BND" & (!MATE_KEY %in% unmap_BND) ~ 1,
+    SVTYPE != "BND" ~ 0
+  ),
+  MATE_Mappable_noRepeats = case_when(
+    SVTYPE == "BND" & (MATE_KEY %in% map_norep_BND) ~ 1,
+    SVTYPE == "BND" & (!MATE_KEY %in% map_norep_BND) ~ 0,
+    SVTYPE != "BND" ~ 0
+  ),
+  MATE_Mappable_noRepeats_2 = case_when(
+    SVTYPE == "BND" & (MATE_KEY %in% map_norep_BND_2) ~ 1,
+    SVTYPE == "BND" & (!MATE_KEY %in% map_norep_BND_2) ~ 0,
+    SVTYPE != "BND" ~ 0
+  )
+)
+
+# Set non-BND to NA
+domain1_SVs_fix[domain1_SVs_fix$SVTYPE != "BND",]$MATE_Mappable <- NA
+domain1_SVs_fix[domain1_SVs_fix$SVTYPE != "BND",]$MATE_Mappable_noRepeats <- NA
+domain1_SVs_fix[domain1_SVs_fix$SVTYPE != "BND",]$MATE_Mappable_noRepeats_2 <- NA
 
 
 
 #### High confidence SV analysis #### 
 
-# SVs with 100% mappable regions
-dim(domain1_SVs_fix %>% filter(Mappable == 1))  # 428
-dim(domain1_SVs_fix %>% filter(Mappable_noRepeats == 1))  # 63
-
-# Mappable by type (BND needs fixing)
-table((domain1_SVs_fix %>% filter(Mappable == 1)) %>% pull(SVTYPE))
-# BND DEL DUP INS INV 
-# 277  48   8   8  87 
-table((domain1_SVs_fix %>% filter(Mappable_noRepeats == 1)) %>% pull(SVTYPE))
-# BND DEL DUP INV 
-# 57   2   1   3 
+# SVs with 100% mappable regions (both breakpoints)
+dim(domain1_SVs_fix %>% filter(Mappable == 1, (is.na(MATE_Mappable) | (MATE_Mappable == 1) )))  # 297, 151 non-BND plus 146 BND (73 TR) with mate mappable
+# Mappable by type
+table(domain1_SVs_fix$Mappable, domain1_SVs_fix$SVTYPE, domain1_SVs_fix$MATE_Mappable, exclude = NULL)
 
 
-# List of mappable with no repeat overlap (no BND): high confidence candidates
-domain1_SVs_fix %>% filter(Mappable_noRepeats == 1, SVTYPE != "BND") %>% dplyr::select(SAMPLE_WELL_ID, KEY, VAF, recurrent, PR_REF, PR_ALT, SR_REF, SR_ALT, SVLEN, CIPOS,CIEND, SOMATICSCORE)
+# SVs with 100% mappable regions and no TRF or segDup overlap
+dim(domain1_SVs_fix %>% filter(Mappable_noRepeats_2 == 1, (is.na(MATE_Mappable_noRepeats_2) | (MATE_Mappable_noRepeats_2 == 1))  ))  # 279 
+# Mappable and no repeats by type
+table(domain1_SVs_fix$Mappable_noRepeats_2, domain1_SVs_fix$SVTYPE, domain1_SVs_fix$MATE_Mappable_noRepeats_2, exclude = NULL)  # 138 BND (69 TR) plus 141
 
+
+# SVs with 100% mappable regions and with some TRF or segDup overlap
+dim(domain1_SVs_fix %>% filter(Mappable == 1, Mappable_noRepeats_2 == 0 , SVTYPE != "BND"))  #  10
+domain1_SVs_fix %>% filter(Mappable == 1, MATE_Mappable == 1, (Mappable_noRepeats_2 == 0 | MATE_Mappable_noRepeats_2 == 0), SVTYPE == "BND")  # 4 with both BND mappable and 1 or both overlapping repeats
+
+# SVs NOT 100% mappable but no TRF or segDup overlap
+
+dim(domain1_SVs_fix %>% filter(SVTYPE != "BND", Mappable == 0, simpleRepeat_PCT_overlap_START == 0, simpleRepeat_PCT_overlap_END == 0, segDups_PCT_overlap_START == 0, segDups_PCT_overlap_END == 0))  # 176
+table((domain1_SVs_fix %>% filter(SVTYPE != "BND", Mappable == 0, simpleRepeat_PCT_overlap_START == 0, simpleRepeat_PCT_overlap_END == 0, segDups_PCT_overlap_START == 0, segDups_PCT_overlap_END == 0)) %>%  pull(SVTYPE))
+
+dim(domain1_SVs_fix %>% filter(SVTYPE == "BND", (Mappable == 0 | MATE_Mappable == 0), simpleRepeat_PCT_overlap_START == 0, segDups_PCT_overlap_START == 0))  # 164 TR
+
+
+
+######### Manual review lists
+
+#### non-BND
+
+# List of mappable with no repeat overlap (no BND): super-high confidence candidates  (6)
+domain1_SVs_fix %>% filter(Mappable_noRepeats == 1, SVTYPE != "BND") %>% dplyr::select(SAMPLE_WELL_ID, IMPRECISE, KEY, VAF, recurrent, PR_REF, PR_ALT, SR_REF, SR_ALT, SVLEN, CIPOS,CIEND, SOMATICSCORE)
 # Mean VAF
 mean((domain1_SVs_fix %>% filter(Mappable_noRepeats == 1, SVTYPE != "BND") %>% pull(VAF)))  # 0.1855203
 
 
 
+# List of mappable with no TRF, segDup repeat overlap (no BND): high confidence candidates (141)
+as.data.frame(domain1_SVs_fix %>% filter(Mappable_noRepeats_2 == 1, SVTYPE != "BND") %>% dplyr::select(SAMPLE_WELL_ID, IMPRECISE, KEY, VAF, recurrent, PR_REF, PR_ALT, SR_REF, SR_ALT, SVLEN, CIPOS,CIEND, SOMATICSCORE))[1:76,]
+as.data.frame(domain1_SVs_fix %>% filter(Mappable_noRepeats_2 == 1, SVTYPE != "BND") %>% dplyr::select(SAMPLE_WELL_ID, IMPRECISE, KEY, VAF, recurrent, PR_REF, PR_ALT, SR_REF, SR_ALT, SVLEN, CIPOS,CIEND, SOMATICSCORE))[77:141,]
+# Mean VAF
+mean((domain1_SVs_fix %>% filter(Mappable_noRepeats_2 == 1, SVTYPE != "BND") %>% pull(VAF)))  # 0.1634514
 
 
 
+#### BND
+
+# List of mappable with no repeat overlap (BND): super-high confidence candidates (2 TR)
+domain1_SVs_fix %>% filter(Mappable_noRepeats == 1, MATE_Mappable_noRepeats == 1, SVTYPE == "BND") %>% dplyr::select(SAMPLE_WELL_ID, IMPRECISE, KEY, MATE_KEY, VAF, recurrent, PR_REF, PR_ALT, SR_REF, SR_ALT, SVLEN, CIPOS, SOMATICSCORE)
+# Mean VAF
+mean((domain1_SVs_fix %>% filter(Mappable_noRepeats == 1, MATE_Mappable_noRepeats == 1, SVTYPE == "BND") %>% pull(VAF)))  # 0.02308771
+
+
+# List of mappable with no TRF, segDup repeat overlap (BND): high confidence candidates (69 TR)
+as.data.frame(domain1_SVs_fix %>% filter(Mappable_noRepeats_2 == 1, MATE_Mappable_noRepeats_2 == 1, SVTYPE == "BND") %>% dplyr::select(SAMPLE_WELL_ID, IMPRECISE, KEY, MATE_KEY, VAF, recurrent, PR_REF, PR_ALT, SR_REF, SR_ALT, SVLEN, CIPOS, SOMATICSCORE))[1:71,]
+as.data.frame(domain1_SVs_fix %>% filter(Mappable_noRepeats_2 == 1, MATE_Mappable_noRepeats_2 == 1, SVTYPE == "BND") %>% dplyr::select(SAMPLE_WELL_ID, IMPRECISE, KEY, MATE_KEY, VAF, recurrent, PR_REF, PR_ALT, SR_REF, SR_ALT, SVLEN, CIPOS, SOMATICSCORE))[72:138,]
+# Mean VAF
+mean((domain1_SVs_fix %>% filter(Mappable_noRepeats_2 == 1, MATE_Mappable_noRepeats_2 == 1, SVTYPE == "BND") %>% pull(VAF)))  # 0.1075102
+
+
+##### Mean VAF and imprecise summary 
+
+# Mean VAF for all super high conf (adding 2 transl manually)
+mean(c((domain1_SVs_fix %>% filter(Mappable_noRepeats == 1, SVTYPE != "BND") %>% pull(VAF)), 0.02614379, 0.02003163))  # 0.1449121
+
+# Mean VAF for all high conf (0.1450707)
+mean(c((domain1_SVs_fix %>% filter(Mappable_noRepeats_2 == 1, SVTYPE != "BND") %>% pull(VAF)), ((domain1_SVs_fix %>% filter(Mappable_noRepeats_2 == 1, MATE_Mappable_noRepeats_2 == 1, SVTYPE == "BND") %>% pull(VAF))[!duplicated(domain1_SVs_fix %>% filter(Mappable_noRepeats_2 == 1, MATE_Mappable_noRepeats_2 == 1, SVTYPE == "BND") %>% pull(VAF))])))  
+
+# % imprecise in high conf (wrong, BND mates not taken into account, calc manually) 10/69 = 0.1449275
+#table(domain1_SVs_fix[domain1_SVs_fix$Mappable_noRepeats_2 == 1,]$SVTYPE, domain1_SVs_fix[domain1_SVs_fix$Mappable_noRepeats_2 == 1,]$IMPRECISE)
+
+# View imprecise high conf SVs
+domain1_SVs_fix %>% filter(Mappable_noRepeats_2 == 1, MATE_Mappable_noRepeats_2 == 1 | is.na(MATE_Mappable_noRepeats_2), IMPRECISE == TRUE) %>% dplyr::select(SAMPLE_WELL_ID, IMPRECISE, KEY, MATE_KEY, VAF, SVINSLEN, recurrent, PR_REF, PR_ALT, SR_REF, SR_ALT, SVLEN, CIPOS, SOMATICSCORE)
 
 
 
+#### Mappable with repeat overlap (TRF, segDup)
+
+# Non-BND
+domain1_SVs_fix %>% filter(Mappable == 1, Mappable_noRepeats_2 == 0 , SVTYPE != "BND") %>% 
+  dplyr::select(SAMPLE_WELL_ID, IMPRECISE, KEY, MATE_KEY, VAF, recurrent, PR_REF, PR_ALT, SR_REF, SR_ALT, SVLEN, CIPOS, CIEND, SOMATICSCORE, simpleRepeat_PCT_overlap_START, simpleRepeat_PCT_overlap_END, segDups_PCT_overlap_START, segDups_PCT_overlap_END)
+
+# BND
+domain1_SVs_fix %>% filter(Mappable == 1, MATE_Mappable == 1, (Mappable_noRepeats_2 == 0 | MATE_Mappable_noRepeats_2 == 0), SVTYPE == "BND")  %>% 
+  dplyr::select(SAMPLE_WELL_ID, IMPRECISE, KEY, MATE_KEY, VAF, recurrent, PR_REF, PR_ALT, SR_REF, SR_ALT, SVLEN, CIPOS, CIEND, SOMATICSCORE, simpleRepeat_PCT_overlap_START, simpleRepeat_PCT_overlap_END, segDups_PCT_overlap_START, segDups_PCT_overlap_END)
 
 
 
+######### Tiering SVs by confidence #########
+
+# Add tiering flags:
+
+# TIER 1: Super-high confidence
+# • both breakpoints 100% mappable
+# • no simple repeat, segmental duplication nor windowMasker overlap
+
+# TIER 2: High confidence
+# • both breakpoints 100% mappable
+# • no simple repeat nor segmental duplication (windowMasker overlap allowed)
+
+# TIER 3: Medium confidence
+# • both breakpoints 100% mappable
+# • some overlap with simple repeats or segmental duplication in one or both breakpoints
+
+# TIER 4: Low confidence
+# • only one breakpoint 100% mappable
+
+# TIER 5: Super-low confidence
+# • neither breakpoint 100% mappable
+
+
+domain1_SVs_fix <- domain1_SVs_fix %>% mutate(Tier1 = case_when(
+  (Mappable_noRepeats == 1 & SVTYPE != "BND")  ~ 1,
+  (Mappable_noRepeats == 1 & MATE_Mappable_noRepeats == 1 & SVTYPE == "BND") ~ 1,
+  TRUE ~ 0
+))
+
+domain1_SVs_fix <- domain1_SVs_fix %>% mutate(Tier2 = case_when(
+  (Mappable_noRepeats_2 == 1 & SVTYPE != "BND" & Tier1 == 0)  ~ 1,
+  (Mappable_noRepeats_2 == 1 & MATE_Mappable_noRepeats_2 == 1 & SVTYPE == "BND" & Tier1 == 0) ~ 1,
+  TRUE ~ 0
+))
+
+domain1_SVs_fix <- domain1_SVs_fix %>% mutate(Tier3 = case_when(
+  (Mappable == 1 & SVTYPE != "BND" & Tier1 == 0 & Tier2 == 0)  ~ 1,
+  (Mappable == 1 & MATE_Mappable == 1 & SVTYPE == "BND" & Tier1 == 0 & Tier2 == 0) ~ 1,
+  TRUE ~ 0
+))
+
+domain1_SVs_fix <- domain1_SVs_fix %>% mutate(Tier4 = case_when(
+  (SVTYPE != "BND" & (Umap36_PCT_overlap_START != 1 & Umap36_PCT_overlap_END == 1))  ~ 1,
+  (SVTYPE != "BND" & (Umap36_PCT_overlap_START == 1 & Umap36_PCT_overlap_END != 1))  ~ 1,
+  (Mappable == 1 & MATE_Mappable == 0 & SVTYPE == "BND") ~ 1,
+  (Mappable == 0 & MATE_Mappable == 1 & SVTYPE == "BND") ~ 1,
+  TRUE ~ 0
+))
+
+domain1_SVs_fix <- domain1_SVs_fix %>% mutate(Tier5 = case_when(
+  (Tier1 == 0 & Tier2 == 0 & Tier3 == 0 & Tier4 == 0) ~ 1,
+  TRUE ~ 0
+))
+
+# Add Tier field
+domain1_SVs_fix <- domain1_SVs_fix %>% mutate(Tier = case_when(
+  Tier1 == 1 ~ "Tier 1",
+  Tier2 == 1 ~ "Tier 2",
+  Tier3 == 1 ~ "Tier 3",
+  Tier4 == 1 ~ "Tier 4",
+  Tier5 == 1 ~ "Tier 5",
+  TRUE ~ ""
+))
+
+
+
+# Sanity checks
+table(domain1_SVs_fix$Tier, exclude = NULL)
+table(domain1_SVs_fix$Tier, domain1_SVs_fix$SVTYPE)
+
+table(domain1_SVs_fix$Tier1, domain1_SVs_fix$SVTYPE)
+table(domain1_SVs_fix$Tier2, domain1_SVs_fix$SVTYPE)
+table(domain1_SVs_fix$Tier3, domain1_SVs_fix$SVTYPE)
+table(domain1_SVs_fix$Tier4, domain1_SVs_fix$SVTYPE)
+table(domain1_SVs_fix$Tier5, domain1_SVs_fix$SVTYPE)
+
+domain1_SVs_fix %>% filter(Tier3 == 1) %>% dplyr::select(SAMPLE_WELL_ID, KEY, MATE_KEY, Mappable, MATE_Mappable, simpleRepeat_PCT_overlap_START, simpleRepeat_PCT_overlap_END, segDups_PCT_overlap_START, segDups_PCT_overlap_END, Tier1, Tier2, Tier3)
+domain1_SVs_fix %>% filter(Tier4 == 1, SVTYPE != "BND") %>% dplyr::select(SAMPLE_WELL_ID, KEY, Mappable, Umap36_PCT_overlap_START, Umap36_PCT_overlap_END, simpleRepeat_PCT_overlap_START, simpleRepeat_PCT_overlap_END, segDups_PCT_overlap_START, segDups_PCT_overlap_END)
+domain1_SVs_fix %>% filter(Tier4 == 1, SVTYPE == "BND") %>% dplyr::select(SAMPLE_WELL_ID, KEY, MATE_KEY, Mappable, MATE_Mappable, Umap36_PCT_overlap_START, simpleRepeat_PCT_overlap_START, simpleRepeat_PCT_overlap_END, segDups_PCT_overlap_START, segDups_PCT_overlap_END)
+domain1_SVs_fix %>% filter(Tier5 == 1, SVTYPE != "BND") %>% dplyr::select(SAMPLE_WELL_ID, KEY, Mappable, Umap36_PCT_overlap_START, Umap36_PCT_overlap_END, simpleRepeat_PCT_overlap_START, simpleRepeat_PCT_overlap_END, segDups_PCT_overlap_START, segDups_PCT_overlap_END)
+domain1_SVs_fix %>% filter(Tier5 == 1, SVTYPE == "BND") %>% dplyr::select(SAMPLE_WELL_ID, KEY, MATE_KEY, Mappable, MATE_Mappable, Umap36_PCT_overlap_START, simpleRepeat_PCT_overlap_START, simpleRepeat_PCT_overlap_END, segDups_PCT_overlap_START, segDups_PCT_overlap_END)
