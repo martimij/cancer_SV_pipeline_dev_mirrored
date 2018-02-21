@@ -11,6 +11,7 @@ library(jsonlite)
 library(VariantAnnotation)
 library(ensembldb)
 
+options(max.print=10000)
 
 ####### Prepare a list of SV.VCF paths ####### 
 ### use FF PCR free with known tumour type in the first instance)
@@ -1403,3 +1404,31 @@ domain1_SVs_fix %>% filter(Tier4 == 1, SVTYPE != "BND") %>% dplyr::select(SAMPLE
 domain1_SVs_fix %>% filter(Tier4 == 1, SVTYPE == "BND") %>% dplyr::select(SAMPLE_WELL_ID, KEY, MATE_KEY, Mappable, MATE_Mappable, Umap36_PCT_overlap_START, simpleRepeat_PCT_overlap_START, simpleRepeat_PCT_overlap_END, segDups_PCT_overlap_START, segDups_PCT_overlap_END)
 domain1_SVs_fix %>% filter(Tier5 == 1, SVTYPE != "BND") %>% dplyr::select(SAMPLE_WELL_ID, KEY, Mappable, Umap36_PCT_overlap_START, Umap36_PCT_overlap_END, simpleRepeat_PCT_overlap_START, simpleRepeat_PCT_overlap_END, segDups_PCT_overlap_START, segDups_PCT_overlap_END)
 domain1_SVs_fix %>% filter(Tier5 == 1, SVTYPE == "BND") %>% dplyr::select(SAMPLE_WELL_ID, KEY, MATE_KEY, Mappable, MATE_Mappable, Umap36_PCT_overlap_START, simpleRepeat_PCT_overlap_START, simpleRepeat_PCT_overlap_END, segDups_PCT_overlap_START, segDups_PCT_overlap_END)
+
+
+# List of Tier 4 non-TR SVs
+domain1_SVs_fix %>% filter(Tier == "Tier 4", SVTYPE != "BND") %>% 
+  dplyr::select(SAMPLE_WELL_ID, IMPRECISE, KEY, VAF, recurrent, PR_REF, PR_ALT, SR_REF, SR_ALT, SVLEN, CIPOS, CIEND, SOMATICSCORE, Umap36_PCT_overlap_START, Umap36_PCT_overlap_END, wMasker_PCT_overlap_START, wMasker_PCT_overlap_END, simpleRepeat_PCT_overlap_START, simpleRepeat_PCT_overlap_END, segDups_PCT_overlap_START, segDups_PCT_overlap_END)
+
+# List of Tier 4 TR SVs
+domain1_SVs_fix %>% filter(Tier == "Tier 4", SVTYPE == "BND") %>% 
+  dplyr::select(SAMPLE_WELL_ID, IMPRECISE, KEY, MATE_KEY, VAF, recurrent, PR_REF, PR_ALT, SR_REF, SR_ALT, CIPOS, SOMATICSCORE, Umap36_PCT_overlap_START, wMasker_PCT_overlap_START, simpleRepeat_PCT_overlap_START, segDups_PCT_overlap_START)
+
+
+# List of Tier 5 non-TR SVs
+domain1_SVs_fix %>% filter(Tier == "Tier 5", SVTYPE != "BND") %>% 
+  dplyr::select(SAMPLE_WELL_ID, IMPRECISE, KEY, VAF, recurrent, PR_REF, PR_ALT, SR_REF, SR_ALT, SVLEN, CIPOS, CIEND, SOMATICSCORE, Umap36_PCT_overlap_START, Umap36_PCT_overlap_END, wMasker_PCT_overlap_START, wMasker_PCT_overlap_END, simpleRepeat_PCT_overlap_START, simpleRepeat_PCT_overlap_END, segDups_PCT_overlap_START, segDups_PCT_overlap_END)
+
+
+# List of Tier 5 TR SVs
+domain1_SVs_fix %>% filter(Tier == "Tier 5", SVTYPE == "BND") %>% 
+  dplyr::select(SAMPLE_WELL_ID, IMPRECISE, KEY, MATE_KEY, VAF, recurrent, PR_REF, PR_ALT, SR_REF, SR_ALT, CIPOS, SOMATICSCORE, Umap36_PCT_overlap_START, wMasker_PCT_overlap_START, simpleRepeat_PCT_overlap_START, segDups_PCT_overlap_START)
+
+
+
+
+
+
+
+
+
